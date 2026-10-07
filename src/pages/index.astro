@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+import HutMap from '../components/HutMap.astro';
+import Charts from '../components/Charts.astro';
+import { huts, countable, active, events, sources, meta, fmt, IS_DRAFT, geo } from '../lib/data';
+
+const base = import.meta.env.BASE_URL;
+const beds = active.reduce((s, h) => s + (h.beds ?? 0), 0);
+const above3000 = countable.filter((h) => (h.elev_m ?? 0) >= 3000).length;
+const heli = active.filter((h) => h.logistics.includes('直升機吊掛')).length;
+const gradeB = countable.filter((h) => h.grade?.startsWith('B') || h.grade?.startsWith('A')).length;
+const oldest = countable.filter((h) => h.first_built_year).sort((a, b) => a.first_built_year!.localeCompare(b.first_built_year!))[0];
+const newest = countable.filter((h) => h.first_built_year).sort((a, b) => b.first_built_year!.localeCompare(a.first_built_year!))[0];
+const noYear = countable.filter((h) => !h.first_built_year).length;
+const features = geo;
+---
+<Base title="總覽">
+  <div class="page-head">
+    <div class="eyebrow">TAIWAN HUT ATLAS · PHASE 1 · {meta.generated.slice(0, 10)}</div>
+    <h1>台灣山屋的整體圖像</h1>
+    <p class="lede">把散在各管理處、新聞與山友紀錄裡的山屋資料放進同一張表：有幾座、誰管、多高、哪一年、什麼構造、運補有多難。每一個數字都附來源與查證等級。</p>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi"><div class="label">收錄山屋</div><div class="value">{countable.length}<small>座</small></div></div>
+    <div class="kpi"><div class="label">現役（使用中・整修中）</div><div class="value">{active.length}<small>座</small></div></div>
+    <div class="kpi accent"><div class="label">現役核定床位</div><div class="value">{fmt(beds)}<small>床</small></div></div>
+    <div class="kpi"><div class="label">海拔 3,000 m 以上</div><div class="value">{above3000}<small>座</small></div></div>
+    <div class="kpi"><div class="label">現役靠直升機運補</div><div class="value">{heli}<small>座</small></div></div>
+    <div class="kpi"><div class="label">查證等級 A／B</div><div class="value">{gradeB}<small>／{countable.length}</small></div></div>
+  </div>
+
+  <section class="section">
+    <h2>地形上的分布</h2>
+    <HutMap features={features} />
+    <p class="note">點一座山屋進入詳頁。3D 地形為內政部 20 m DEM（OsmHackTW 圖磚，原型期暫用）；{geo.features.length} 座有座標，{huts.length - geo.features.length} 座座標待補。<a href={base + 'map/'}>全螢幕地形圖 →</a></p>
+  </section>
+
+  <section class="section">
+    <h2>結構性數字</h2>
+    <Charts huts={huts} />
+    <p class="note">
+      最早有紀錄的現存或曾存在山屋：{oldest ? `${oldest.name}（${oldest.first_built_year}）` : '—'}；最新：{newest ? `${newest.name}（${newest.first_built_year}）` : '—'}。{noYear} 座尚無任何年份事件。事件 {events.length} 筆、來源 {sources.length} 筆。
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>這份資料怎麼讀</h2>
+    <div class="grid-3">
+      <div class="pp-card">
+        <h3>查證等級</h3>
+        <p style="margin:0;font-size:14px">A 現勘／B 官方或學術／C 二手彙整／D 僅知存在。網路二手來源最高只給 C。{IS_DRAFT ? '目前全部為 AI 初稿，尚未人工覆核。' : '網站只輸出已覆核筆。'}</p>
+      </div>
+      <div class="pp-card">
+        <h3>座標降階</h3>
+        <p style="margin:0;font-size:14px">服務型、避難型與民營山屋公開完整座標；遺構、工寮、獵寮、已拆除者對外只到 1 km 網格，避免遺址受擾。</p>
+      </div>
+      <div class="pp-card">
+        <h3>運補難度指數</h3>
+        <p style="margin:0;font-size:14px">1–5 級，由運補方式與海拔推得，是本所詮釋不是官方數據。公式與版本見<a href={base + 'about/#logistics'}>方法頁</a>。</p>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,64 @@
+---
+import Base from '../../layouts/Base.astro';
+import { huts, TYPE_ORDER, GRADE_LABEL, fmt } from '../../lib/data';
+const base = import.meta.env.BASE_URL;
+const sorted = [...huts].sort((a, b) => a.id.localeCompare(b.id));
+const regions = [...new Set(huts.map((h) => h.region).filter(Boolean))];
+const types = TYPE_ORDER.filter((t) => huts.some((h) => h.type === t));
+---
+<Base title="山屋清單" wide>
+  <div class="page-head">
+    <div class="eyebrow">HUTS · {sorted.length}</div>
+    <h1>山屋清單</h1>
+    <p class="lede">依永久識別碼 TWH 排序。可依區域、類型、查證等級篩選，或輸入名稱搜尋。表格可用<a href={base + 'data/huts.json'}>JSON</a>或<a href={base + 'data/huts.public.geojson'}>GeoJSON</a>下載（CC BY 4.0）。</p>
+  </div>
+  <div class="filters">
+    <input type="search" id="q" placeholder="搜尋名稱、英文名、步道…" aria-label="搜尋" />
+    <select id="f-region" aria-label="區域"><option value="">全部區域</option>{regions.map((r) => <option>{r}</option>)}</select>
+    <select id="f-type" aria-label="類型"><option value="">全部類型</option>{types.map((t) => <option>{t}</option>)}</select>
+    <select id="f-grade" aria-label="查證等級"><option value="">全部等級</option><option value="A">A 現勘</option><option value="B">B 官方或學術</option><option value="C">C 二手彙整</option><option value="D">D 僅知存在</option></select>
+    <span class="muted" id="count" style="align-self:center;font-size:13px"></span>
+  </div>
+  <div class="table-wrap">
+    <table id="huts">
+      <thead><tr>
+        <th>TWH</th><th>名稱</th><th>類型</th><th>現況</th><th>管理單位</th><th>步道</th>
+        <th class="num">海拔 m</th><th class="num">床位</th><th class="num">首建</th><th>結構</th><th class="num">運補</th><th>查證</th>
+      </tr></thead>
+      <tbody>
+        {sorted.map((h) => (
+          <tr data-region={h.region} data-type={h.type} data-grade={(h.grade ?? '').slice(0, 1)} data-q={[h.name, h.name_en, h.aliases, ...h.trails.map((t) => t.name), ...h.agencies.map((a) => a.name)].join(' ').toLowerCase()}>
+            <td class="num" style="text-align:left">{h.id}</td>
+            <td class="wrap-text"><a href={`${base}huts/${h.slug}/`}>{h.name}</a>{h.name_en && <div class="muted" style="font-size:12px">{h.name_en}</div>}</td>
+            <td>{h.type}</td>
+            <td>{h.status}</td>
+            <td class="wrap-text">{h.agencies.map((a) => a.name.replace('林業及自然保育署', '林保署')).join('、')}</td>
+            <td class="wrap-text">{h.trails.map((t) => t.name).join('、')}</td>
+            <td class="num">{fmt(h.elev_m)}</td>
+            <td class="num">{fmt(h.beds)}</td>
+            <td class="num">{h.first_built_year ?? '—'}</td>
+            <td>{h.structure_system ?? <span class="muted">—</span>}</td>
+            <td class="num">{h.logistics_index ?? '—'}{h.logistics_index_estimated && h.logistics_index != null ? <span class="muted">*</span> : ''}</td>
+            <td><span class:list={['grade', GRADE_LABEL[h.grade ?? '']]}>{GRADE_LABEL[h.grade ?? ''] ?? '?'}</span></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="note" style="font-size:13px;color:var(--pp-ink-sub);margin-top:8px">運補欄 * 表示以海拔推估。「—」為查無或未填。關聯設施（保線所、公路旁山莊）列入清單但不計入統計。</p>
+  <script>
+    const rows = [...document.querySelectorAll<HTMLTableRowElement>('#huts tbody tr')];
+    const q = document.getElementById('q') as HTMLInputElement, fr = document.getElementById('f-region') as HTMLSelectElement,
+      ft = document.getElementById('f-type') as HTMLSelectElement, fg = document.getElementById('f-grade') as HTMLSelectElement, cnt = document.getElementById('count')!;
+    const apply = () => {
+      const s = q.value.trim().toLowerCase(); let n = 0;
+      for (const r of rows) {
+        const ok = (!fr.value || r.dataset.region === fr.value) && (!ft.value || r.dataset.type === ft.value) && (!fg.value || r.dataset.grade === fg.value) && (!s || r.dataset.q!.includes(s));
+        r.hidden = !ok; if (ok) n++;
+      }
+      cnt.textContent = `顯示 ${n}／${rows.length} 座`;
+    };
+    for (const el of [q, fr, ft, fg]) el.addEventListener('input', apply);
+    apply();
+  </script>
+</Base>

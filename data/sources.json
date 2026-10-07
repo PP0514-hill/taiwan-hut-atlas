@@ -1,0 +1,1178 @@
+[
+ {
+  "id": "SRC-001",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜排雲山莊、圓峰山屋、樂樂山屋…｜bed_6.aspx",
+  "url": "https://hike.taiwan.gov.tw/bed_6.aspx",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0013",
+   "TWH-0010",
+   "TWH-0017",
+   "TWH-0014",
+   "TWH-0011",
+   "TWH-0001",
+   "TWH-0004",
+   "TWH-0006",
+   "TWH-0015",
+   "TWH-0007",
+   "TWH-0005",
+   "TWH-0012",
+   "TWH-0009",
+   "TWH-0016",
+   "TWH-0008",
+   "TWH-0003",
+   "TWH-0002"
+  ],
+  "notes": "關聯候選編號：C-001、C-002、C-003、C-004、C-005、C-006、C-007、C-008、C-009、C-010、C-011、C-012、C-013、C-014、C-015、C-016、C-017"
+ },
+ {
+  "id": "SRC-002",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜排雲山莊｜information_node.aspx?id=3",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=3",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0001"
+  ],
+  "notes": "關聯候選編號：C-001"
+ },
+ {
+  "id": "SRC-003",
+  "title": "維基百科（社群編輯）｜排雲山莊｜排雲山莊",
+  "url": "https://zh.wikipedia.org/wiki/排雲山莊",
+  "type": "維基百科",
+  "reliability": "C 二手彙整",
+  "publisher": "維基百科（社群編輯）",
+  "license": "CC BY-SA 4.0",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0001"
+  ],
+  "notes": "關聯候選編號：C-001"
+ },
+ {
+  "id": "SRC-004",
+  "title": "工商時報｜排雲山莊｜20260728701070-431401",
+  "url": "https://www.ctee.com.tw/news/20260728701070-431401",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "工商時報",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0001"
+  ],
+  "notes": "關聯候選編號：C-001"
+ },
+ {
+  "id": "SRC-005",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜圓峰山屋｜information_node.aspx?id=4",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=4",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0002"
+  ],
+  "notes": "關聯候選編號：C-002"
+ },
+ {
+  "id": "SRC-006",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜樂樂山屋｜information_node.aspx?id=222",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=222",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0003"
+  ],
+  "notes": "關聯候選編號：C-003"
+ },
+ {
+  "id": "SRC-007",
+  "title": "文化部文化資產局／國家文化記憶庫｜樂樂山屋｜detail?id=325330",
+  "url": "https://tcmb.culture.tw/zh-tw/detail?id=325330",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "文化部文化資產局／國家文化記憶庫",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0003"
+  ],
+  "notes": "關聯候選編號：C-003"
+ },
+ {
+  "id": "SRC-008",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜觀高山屋｜information_node.aspx?id=727",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=727",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0004"
+  ],
+  "notes": "關聯候選編號：C-004"
+ },
+ {
+  "id": "SRC-009",
+  "title": "中央社｜觀高山屋｜202511090170.aspx",
+  "url": "https://www.cna.com.tw/news/ahel/202511090170.aspx",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "中央社",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0004"
+  ],
+  "notes": "關聯候選編號：C-004"
+ },
+ {
+  "id": "SRC-010",
+  "title": "Outsiders 戶外媒體｜觀高山屋｜38969",
+  "url": "https://www.outsiders.com.tw/post/38969",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "Outsiders 戶外媒體",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0004"
+  ],
+  "notes": "關聯候選編號：C-004"
+ },
+ {
+  "id": "SRC-011",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜中央金礦山屋｜information_node.aspx?id=224",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=224",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0005"
+  ],
+  "notes": "關聯候選編號：C-005"
+ },
+ {
+  "id": "SRC-012",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜白洋金礦山屋｜information_node.aspx?id=225",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=225",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0006"
+  ],
+  "notes": "關聯候選編號：C-006"
+ },
+ {
+  "id": "SRC-013",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜大水窟山屋｜information_node.aspx?id=228",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=228",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0007"
+  ],
+  "notes": "關聯候選編號：C-007"
+ },
+ {
+  "id": "SRC-014",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜塔芬谷山屋｜information_node.aspx?id=229",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=229",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0008"
+  ],
+  "notes": "關聯候選編號：C-008"
+ },
+ {
+  "id": "SRC-015",
+  "title": "中時新聞網｜塔芬谷山屋｜20250320900107-420501",
+  "url": "https://wantrich.chinatimes.com/news/20250320900107-420501",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "中時新聞網",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0008"
+  ],
+  "notes": "關聯候選編號：C-008"
+ },
+ {
+  "id": "SRC-016",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜轆轆谷山屋｜information_node.aspx?id=230",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=230",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0009"
+  ],
+  "notes": "關聯候選編號：C-009"
+ },
+ {
+  "id": "SRC-017",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜拉庫音溪山屋｜information_node.aspx?id=232",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=232",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0010"
+  ],
+  "notes": "關聯候選編號：C-010"
+ },
+ {
+  "id": "SRC-018",
+  "title": "聯合新聞網｜拉庫音溪山屋｜7764991",
+  "url": "https://udn.com/news/story/7325/7764991",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "聯合新聞網",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0010"
+  ],
+  "notes": "關聯候選編號：C-010"
+ },
+ {
+  "id": "SRC-019",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜馬博山屋｜information_node.aspx?id=233",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=233",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0011"
+  ],
+  "notes": "關聯候選編號：C-011"
+ },
+ {
+  "id": "SRC-020",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜馬利加南山屋｜information_node.aspx?id=234",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=234",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0012"
+  ],
+  "notes": "關聯候選編號：C-012"
+ },
+ {
+  "id": "SRC-021",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜馬布谷山屋｜information_node.aspx?id=235",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=235",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0013"
+  ],
+  "notes": "關聯候選編號：C-013"
+ },
+ {
+  "id": "SRC-022",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜瓦拉米山屋｜information_node.aspx?id=7",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=7",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0014"
+  ],
+  "notes": "關聯候選編號：C-014"
+ },
+ {
+  "id": "SRC-023",
+  "title": "維基百科（社群編輯）｜瓦拉米山屋｜瓦拉米",
+  "url": "https://zh.wikipedia.org/wiki/瓦拉米",
+  "type": "維基百科",
+  "reliability": "C 二手彙整",
+  "publisher": "維基百科（社群編輯）",
+  "license": "CC BY-SA 4.0",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0014"
+  ],
+  "notes": "關聯候選編號：C-014"
+ },
+ {
+  "id": "SRC-024",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜抱崖山屋｜information_node.aspx?id=215",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=215",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0015"
+  ],
+  "notes": "關聯候選編號：C-015"
+ },
+ {
+  "id": "SRC-025",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜大分山屋｜information_node.aspx?id=237",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=237",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0016"
+  ],
+  "notes": "關聯候選編號：C-016"
+ },
+ {
+  "id": "SRC-026",
+  "title": "維基百科（社群編輯）｜大分山屋｜大分_(花蓮縣)",
+  "url": "https://zh.wikipedia.org/wiki/大分_(花蓮縣)",
+  "type": "維基百科",
+  "reliability": "C 二手彙整",
+  "publisher": "維基百科（社群編輯）",
+  "license": "CC BY-SA 4.0",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0016"
+  ],
+  "notes": "關聯候選編號：C-016"
+ },
+ {
+  "id": "SRC-027",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜庫哈諾辛山屋｜information_node.aspx?id=239",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=239",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0017"
+  ],
+  "notes": "關聯候選編號：C-017"
+ },
+ {
+  "id": "SRC-028",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜七卡山莊、三六九山莊、翠池山屋…｜bed_1.aspx",
+  "url": "https://hike.taiwan.gov.tw/bed_1.aspx",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0021",
+   "TWH-0018",
+   "TWH-0022",
+   "TWH-0028",
+   "TWH-0019",
+   "TWH-0020",
+   "TWH-0023",
+   "TWH-0027",
+   "TWH-0025",
+   "TWH-0024",
+   "TWH-0026",
+   "TWH-0056",
+   "TWH-0029"
+  ],
+  "notes": "關聯候選編號：C-018、C-019、C-020、C-021、C-022、C-023、C-024、C-025、C-026、C-027、C-028、C-029、C-056"
+ },
+ {
+  "id": "SRC-029",
+  "title": "監察院｜七卡山莊、三六九山莊、瓢簞山屋…｜77034",
+  "url": "https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/77034",
+  "type": "監察院或審計",
+  "reliability": "B 官方或學術",
+  "publisher": "監察院",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0018",
+   "TWH-0044",
+   "TWH-0019",
+   "TWH-0045",
+   "TWH-0042",
+   "TWH-0043",
+   "TWH-0023",
+   "TWH-0046",
+   "TWH-0024",
+   "TWH-0055"
+  ],
+  "notes": "關聯候選編號：C-018、C-019、C-023、C-024、C-042、C-043、C-044、C-045、C-046、C-055"
+ },
+ {
+  "id": "SRC-030",
+  "title": "中時新聞網｜七卡山莊｜20200501003347-260405",
+  "url": "https://www.chinatimes.com/realtimenews/20200501003347-260405",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "中時新聞網",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0018"
+  ],
+  "notes": "關聯候選編號：C-018"
+ },
+ {
+  "id": "SRC-031",
+  "title": "中央社｜三六九山莊｜202603210148.aspx",
+  "url": "https://www.cna.com.tw/news/aipl/202603210148.aspx",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "中央社",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0019"
+  ],
+  "notes": "關聯候選編號：C-019"
+ },
+ {
+  "id": "SRC-032",
+  "title": "自由時報｜三六九山莊｜5503676",
+  "url": "https://news.ltn.com.tw/news/life/breakingnews/5503676",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "自由時報",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0019"
+  ],
+  "notes": "關聯候選編號：C-019"
+ },
+ {
+  "id": "SRC-033",
+  "title": "維基百科（社群編輯）｜翠池山屋｜翠池山屋",
+  "url": "https://zh.wikipedia.org/wiki/翠池山屋",
+  "type": "維基百科",
+  "reliability": "C 二手彙整",
+  "publisher": "維基百科（社群編輯）",
+  "license": "CC BY-SA 4.0",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0020"
+  ],
+  "notes": "關聯候選編號：C-020"
+ },
+ {
+  "id": "SRC-034",
+  "title": "聯合新聞網｜翠池山屋、桃山山屋｜9555082",
+  "url": "https://udn.com/news/story/7324/9555082",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "聯合新聞網",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0021",
+   "TWH-0020"
+  ],
+  "notes": "關聯候選編號：C-020、C-021"
+ },
+ {
+  "id": "SRC-035",
+  "title": "健行筆記｜新達山屋｜index.php?q=chalet&act=detail&id=188",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=188",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0022"
+  ],
+  "notes": "關聯候選編號：C-022"
+ },
+ {
+  "id": "SRC-036",
+  "title": "公視｜瓢簞山屋、油婆蘭山屋｜596076",
+  "url": "https://news.pts.org.tw/article/596076",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "公視",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0023",
+   "TWH-0024"
+  ],
+  "notes": "關聯候選編號：C-023、C-024"
+ },
+ {
+  "id": "SRC-037",
+  "title": "健行筆記｜雪北山屋｜index.php?q=chalet&act=detail&id=197",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=197",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0025"
+  ],
+  "notes": "關聯候選編號：C-025"
+ },
+ {
+  "id": "SRC-038",
+  "title": "健行筆記｜素密達山屋｜index.php?q=chalet&act=detail&id=189",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=189",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0026"
+  ],
+  "notes": "關聯候選編號：C-026"
+ },
+ {
+  "id": "SRC-039",
+  "title": "內政部｜霸南山屋｜detail?id=9",
+  "url": "https://nppw.cpami.gov.tw/excellent-engineering-case/detail?id=9",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "內政部",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0027"
+  ],
+  "notes": "關聯候選編號：C-027"
+ },
+ {
+  "id": "SRC-040",
+  "title": "維基百科（社群編輯）｜霸南山屋｜霸南山屋",
+  "url": "https://zh.wikipedia.org/wiki/霸南山屋",
+  "type": "維基百科",
+  "reliability": "C 二手彙整",
+  "publisher": "維基百科（社群編輯）",
+  "license": "CC BY-SA 4.0",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0027"
+  ],
+  "notes": "關聯候選編號：C-027"
+ },
+ {
+  "id": "SRC-041",
+  "title": "農業部林業及自然保育署｜九九山莊｜basic?mode=detail&node=28",
+  "url": "https://99online.forest.gov.tw/basic/?mode=detail&node=28",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部林業及自然保育署",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0028"
+  ],
+  "notes": "關聯候選編號：C-028"
+ },
+ {
+  "id": "SRC-042",
+  "title": "農業部林業及自然保育署｜九九山莊｜basic?mode=detail&node=158",
+  "url": "https://99online.forest.gov.tw/basic/?mode=detail&node=158",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部林業及自然保育署",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0028"
+  ],
+  "notes": "關聯候選編號：C-028"
+ },
+ {
+  "id": "SRC-043",
+  "title": "農業部林業及自然保育署｜中霸山屋｜basic?mode=detail&node=138",
+  "url": "https://99online.forest.gov.tw/basic/?mode=detail&node=138",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部林業及自然保育署",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0029"
+  ],
+  "notes": "關聯候選編號：C-029"
+ },
+ {
+  "id": "SRC-044",
+  "title": "農業部林業及自然保育署｜天池山莊｜about_us?parent_id=160",
+  "url": "https://tconline.forest.gov.tw/about_us/?parent_id=160",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部林業及自然保育署",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0030"
+  ],
+  "notes": "關聯候選編號：C-030"
+ },
+ {
+  "id": "SRC-045",
+  "title": "農業部（農政與農情）｜天池山莊｜ws.php?id=2446808",
+  "url": "https://www.moa.gov.tw/ws.php?id=2446808",
+  "type": "官方文件或新聞稿",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部（農政與農情）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0030"
+  ],
+  "notes": "關聯候選編號：C-030"
+ },
+ {
+  "id": "SRC-046",
+  "title": "農業部林業及自然保育署｜檜谷山莊｜index.php?parent_id=238",
+  "url": "https://kgonline.forest.gov.tw/questions/index.php?parent_id=238",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部林業及自然保育署",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0031"
+  ],
+  "notes": "關聯候選編號：C-031"
+ },
+ {
+  "id": "SRC-047",
+  "title": "農業部林業及自然保育署｜檜谷山莊｜RT?tr_id=119",
+  "url": "https://recreation.forest.gov.tw/Trail/RT?tr_id=119",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部林業及自然保育署",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0031"
+  ],
+  "notes": "關聯候選編號：C-031"
+ },
+ {
+  "id": "SRC-048",
+  "title": "農業部林業及自然保育署｜向陽山屋、嘉明湖避難山屋｜index.php?parent_id=251",
+  "url": "https://jmlnt.forest.gov.tw/travelInfo/index.php?parent_id=251",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部林業及自然保育署",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0033",
+   "TWH-0032"
+  ],
+  "notes": "關聯候選編號：C-032、C-033"
+ },
+ {
+  "id": "SRC-049",
+  "title": "農業部（農政與農情）｜向陽山屋｜ws.php?id=2500425",
+  "url": "https://www.moa.gov.tw/ws.php?id=2500425",
+  "type": "官方文件或新聞稿",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部（農政與農情）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0032"
+  ],
+  "notes": "關聯候選編號：C-032"
+ },
+ {
+  "id": "SRC-050",
+  "title": "農業部林業及自然保育署｜嘉明湖避難山屋｜139.kml",
+  "url": "https://recreation.forest.gov.tw/Files/RT/GE/139.kml",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部林業及自然保育署",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0033"
+  ],
+  "notes": "關聯候選編號：C-033"
+ },
+ {
+  "id": "SRC-051",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜黑水塘山屋、成功山屋、成功二號堡…｜bed_4.aspx",
+  "url": "https://hike.taiwan.gov.tw/bed_4.aspx",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0044",
+   "TWH-0036",
+   "TWH-0034",
+   "TWH-0045",
+   "TWH-0041",
+   "TWH-0046",
+   "TWH-0040",
+   "TWH-0039",
+   "TWH-0035"
+  ],
+  "notes": "關聯候選編號：C-034、C-035、C-036、C-039、C-040、C-041、C-044、C-045、C-046"
+ },
+ {
+  "id": "SRC-052",
+  "title": "臺中市政府消防局｜黑水塘山屋、審馬陣山屋、成功一號堡｜協助機關轄內山莊(屋)工寮清冊.pdf",
+  "url": "https://www.fire.taichung.gov.tw/df_ufiles/f/協助機關轄內山莊(屋)工寮清冊.pdf",
+  "type": "官方文件或新聞稿",
+  "reliability": "B 官方或學術",
+  "publisher": "臺中市政府消防局",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0034",
+   "TWH-0047",
+   "TWH-0040"
+  ],
+  "notes": "關聯候選編號：C-034、C-040、C-047"
+ },
+ {
+  "id": "SRC-053",
+  "title": "聯合新聞網｜成功山屋、成功二號堡｜8876258",
+  "url": "https://time.udn.com/udntime/story/122833/8876258",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "聯合新聞網",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0036",
+   "TWH-0035"
+  ],
+  "notes": "關聯候選編號：C-035、C-036"
+ },
+ {
+  "id": "SRC-054",
+  "title": "內政部｜奇萊山屋（新）｜News_Content.aspx?n=4&s=339588",
+  "url": "https://www.moi.gov.tw/News_Content.aspx?n=4&s=339588",
+  "type": "官方文件或新聞稿",
+  "reliability": "B 官方或學術",
+  "publisher": "內政部",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0037"
+  ],
+  "notes": "關聯候選編號：C-037"
+ },
+ {
+  "id": "SRC-055",
+  "title": "中央社｜奇萊山屋（新）｜202607120098.aspx",
+  "url": "https://www.cna.com.tw/news/ahel/202607120098.aspx",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "中央社",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0037"
+  ],
+  "notes": "關聯候選編號：C-037"
+ },
+ {
+  "id": "SRC-056",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜奇萊山屋（新）｜news_0_1.aspx?id=4920",
+  "url": "https://hike.taiwan.gov.tw/news_0_1.aspx?id=4920",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0037"
+  ],
+  "notes": "關聯候選編號：C-037"
+ },
+ {
+  "id": "SRC-057",
+  "title": "健行筆記｜奇萊稜線山屋（舊）｜index.php?q=chalet&act=detail&id=218",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=218",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0038"
+  ],
+  "notes": "關聯候選編號：C-038"
+ },
+ {
+  "id": "SRC-058",
+  "title": "中央社｜奇萊稜線山屋（舊）｜202508190104.aspx",
+  "url": "https://www.cna.com.tw/news/ahel/202508190104.aspx",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "中央社",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0038"
+  ],
+  "notes": "關聯候選編號：C-038"
+ },
+ {
+  "id": "SRC-059",
+  "title": "中央社｜雲稜山屋、南湖山屋｜202209270214.aspx",
+  "url": "https://www.cna.com.tw/news/ahel/202209270214.aspx",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "中央社",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0041",
+   "TWH-0039"
+  ],
+  "notes": "關聯候選編號：C-039、C-041"
+ },
+ {
+  "id": "SRC-060",
+  "title": "中時新聞網｜鋸東避難小屋、屏風避難山屋｜20211229004541-260405",
+  "url": "https://www.chinatimes.com/realtimenews/20211229004541-260405",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "中時新聞網",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0042",
+   "TWH-0043"
+  ],
+  "notes": "關聯候選編號：C-042、C-043"
+ },
+ {
+  "id": "SRC-061",
+  "title": "中央社｜磐石中峰避難小屋、大理石營地避難小屋｜202306290183.aspx",
+  "url": "https://www.cna.com.tw/news/aloc/202306290183.aspx",
+  "type": "新聞",
+  "reliability": "C 二手彙整",
+  "publisher": "中央社",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0044",
+   "TWH-0046"
+  ],
+  "notes": "關聯候選編號：C-044、C-046"
+ },
+ {
+  "id": "SRC-062",
+  "title": "健行筆記｜成功一號堡｜index.php?q=chalet&act=detail&id=216",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=216",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0047"
+  ],
+  "notes": "關聯候選編號：C-047"
+ },
+ {
+  "id": "SRC-063",
+  "title": "健行筆記｜多加屯小鋁屋｜index.php?q=chalet&act=detail&id=228",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=228",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0048"
+  ],
+  "notes": "關聯候選編號：C-048"
+ },
+ {
+  "id": "SRC-064",
+  "title": "健行筆記｜中央尖溪木屋｜index.php?q=chalet&act=detail&id=226",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=226",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0049"
+  ],
+  "notes": "關聯候選編號：C-049"
+ },
+ {
+  "id": "SRC-065",
+  "title": "健行筆記｜南湖溪山屋｜index.php?q=chalet&act=detail&id=227",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=227",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0050"
+  ],
+  "notes": "關聯候選編號：C-050"
+ },
+ {
+  "id": "SRC-066",
+  "title": "健行筆記｜南湖南峰山屋｜index.php?q=chalet&act=detail&id=225",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=225",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0051"
+  ],
+  "notes": "關聯候選編號：C-051"
+ },
+ {
+  "id": "SRC-067",
+  "title": "健行筆記｜南湖池山屋｜index.php?q=chalet&act=detail&id=223",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=223",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0052"
+  ],
+  "notes": "關聯候選編號：C-052"
+ },
+ {
+  "id": "SRC-068",
+  "title": "玉山國家公園管理處｜鹿林山莊｜1fbfec62-e8ce-4916-a902-a6c28c9dd33e?Tab=3&ID=e47604c3-82f1-4091-82d1-35a7d3a9a158",
+  "url": "https://www.ysnp.gov.tw/RecreationArea/1fbfec62-e8ce-4916-a902-a6c28c9dd33e?Tab=3&ID=e47604c3-82f1-4091-82d1-35a7d3a9a158",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "玉山國家公園管理處",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0053"
+  ],
+  "notes": "關聯候選編號：C-053"
+ },
+ {
+  "id": "SRC-069",
+  "title": "健行筆記｜鹿林山莊｜index.php?act=detail&id=297&q=trail",
+  "url": "https://hiking.biji.co/index.php?act=detail&id=297&q=trail",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0053"
+  ],
+  "notes": "關聯候選編號：C-053"
+ },
+ {
+  "id": "SRC-070",
+  "title": "玉山國家公園管理處｜觀高工作站（舊）、華巴諾駐在所、太魯那斯駐在所｜AncientRoad1",
+  "url": "https://www.ysnp.gov.tw/StaticPage/AncientRoad1",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "玉山國家公園管理處",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0061",
+   "TWH-0054",
+   "TWH-0060"
+  ],
+  "notes": "關聯候選編號：C-054、C-060、C-061"
+ },
+ {
+  "id": "SRC-071",
+  "title": "維基百科（社群編輯）｜舊三六九山莊｜三六九山莊",
+  "url": "https://zh.wikipedia.org/wiki/三六九山莊",
+  "type": "維基百科",
+  "reliability": "C 二手彙整",
+  "publisher": "維基百科（社群編輯）",
+  "license": "CC BY-SA 4.0",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0055"
+  ],
+  "notes": "關聯候選編號：C-055"
+ },
+ {
+  "id": "SRC-072",
+  "title": "健行筆記｜瓢簞工寮（舊）｜index.php?q=chalet&act=detail&id=208",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=208",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0057"
+  ],
+  "notes": "關聯候選編號：C-057"
+ },
+ {
+  "id": "SRC-073",
+  "title": "健行筆記｜巴紗拉雲山屋｜index.php?q=chalet&act=detail&id=193",
+  "url": "https://hiking.biji.co/index.php?q=chalet&act=detail&id=193",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0058"
+  ],
+  "notes": "關聯候選編號：C-058"
+ },
+ {
+  "id": "SRC-074",
+  "title": "維基百科（社群編輯）｜舊雲稜山莊｜雲稜山屋",
+  "url": "https://zh.wikipedia.org/zh-tw/雲稜山屋",
+  "type": "維基百科",
+  "reliability": "C 二手彙整",
+  "publisher": "維基百科（社群編輯）",
+  "license": "CC BY-SA 4.0",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0059"
+  ],
+  "notes": "關聯候選編號：C-059"
+ },
+ {
+  "id": "SRC-075",
+  "title": "維基百科（社群編輯）｜華巴諾駐在所｜八通關越道路",
+  "url": "https://zh.wikipedia.org/zh-tw/八通關越道路",
+  "type": "維基百科",
+  "reliability": "C 二手彙整",
+  "publisher": "維基百科（社群編輯）",
+  "license": "CC BY-SA 4.0",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0060"
+  ],
+  "notes": "關聯候選編號：C-060"
+ },
+ {
+  "id": "SRC-076",
+  "title": "臺灣國家公園登山資訊（內政部國家公園署）｜巴奈伊克鐵皮屋｜information_node.aspx?id=223",
+  "url": "https://hike.taiwan.gov.tw/information_node.aspx?id=223",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "臺灣國家公園登山資訊（內政部國家公園署）",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0062"
+  ],
+  "notes": "關聯候選編號：C-062"
+ },
+ {
+  "id": "SRC-077",
+  "title": "健行筆記｜巴奈伊克鐵皮屋｜hiking.biji.co",
+  "url": "https://hiking.biji.co/",
+  "type": "民間彙整",
+  "reliability": "C 二手彙整",
+  "publisher": "健行筆記",
+  "license": "著作權保留",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0062"
+  ],
+  "notes": "關聯候選編號：C-062"
+ },
+ {
+  "id": "SRC-078",
+  "title": "農業部林業及自然保育署｜雲海保線所｜ifa?parent_id=253",
+  "url": "https://tconline.forest.gov.tw/ifa/?parent_id=253",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部林業及自然保育署",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0063"
+  ],
+  "notes": "關聯候選編號：C-063"
+ },
+ {
+  "id": "SRC-079",
+  "title": "農業部林業及自然保育署｜檜林保線所｜RT?tr_id=066",
+  "url": "https://recreation.forest.gov.tw/Trail/RT?tr_id=066",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "農業部林業及自然保育署",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0064"
+  ],
+  "notes": "關聯候選編號：C-064"
+ },
+ {
+  "id": "SRC-080",
+  "title": "文化部文化資產局／國家文化記憶庫｜利稻山莊｜20260525000001",
+  "url": "http://nchdb.boch.gov.tw/assets/advanceSearch/historicalBuilding/20260525000001",
+  "type": "官方網頁",
+  "reliability": "B 官方或學術",
+  "publisher": "文化部文化資產局／國家文化記憶庫",
+  "license": "政府資料開放授權條款第1版",
+  "retrieved": "2026-10-05",
+  "huts": [
+   "TWH-0068"
+  ],
+  "notes": "關聯候選編號：C-068"
+ }
+]

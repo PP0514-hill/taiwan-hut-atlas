@@ -1,0 +1,26 @@
+{
+  "name": "taiwan-hut-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "台灣山屋誌 Taiwan Hut Atlas｜全台山屋盤點與地形互動網站（Astro + MapLibre GL JS + Observable Plot；資料源 Notion）",
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "fetch": "node scripts/fetch-notion.mjs",
+    "backfill:logistics": "node scripts/backfill-logistics.mjs",
+    "check": "node scripts/check-data.mjs",
+    "prebuild": "node scripts/check-data.mjs && node scripts/publish-data.mjs",
+    "predev": "node scripts/publish-data.mjs"
+  },
+  "dependencies": {
+    "@observablehq/plot": "^0.6.17",
+    "astro": "^7.3.5",
+    "maplibre-gl": "^6.12.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}

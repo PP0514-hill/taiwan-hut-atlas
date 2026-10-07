@@ -1,0 +1,12 @@
+{
+ "generated": "2026-10-06",
+ "source": "notion-snapshot",
+ "counts": {
+  "huts": 65,
+  "events": 88,
+  "sources": 80,
+  "agencies": 11,
+  "trails": 24
+ },
+ "logistics_index_formula": "base=max(車行1,單軌車/索道2,直升機吊掛3,人力背負4)；無運補資料以海拔推估(<2000:2, 2000–3000:3, ≥3000:4)並標估，兩者皆無則不評分；海拔≥3400 加 1；夾在 1–5；版本 v0.1 2026-10-06"
+}

@@ -1,0 +1,57 @@
+---
+import '../styles/pp-tokens.css';
+import '../styles/site.css';
+import { IS_DRAFT, meta } from '../lib/data';
+interface Props { title: string; description?: string; wide?: boolean }
+const { title, description = '台灣山屋系統的整體圖像：規模、所屬、海拔、年代、構造、運補難度。', wide = false } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const nav = [
+  ['', '總覽'],
+  ['huts/', '山屋清單'],
+  ['map/', '地形圖'],
+  ['about/', '方法與授權'],
+];
+const path = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}｜台灣山屋誌 Taiwan Hut Atlas</title>
+  <meta name="description" content={description} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&family=Noto+Sans+TC:wght@400;500&display=swap" />
+</head>
+<body>
+  {IS_DRAFT && (
+    <div class="draft-bar" role="status">
+      開發預覽：本頁含「AI 初稿待覆核」資料（覆核進度 {meta.review?.['已覆核'] ?? 0}／{meta.counts.huts}）。數值未經人工查證，不得引用。
+    </div>
+  )}
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href={base}>
+        <span class="brand-zh">台灣山屋誌</span>
+        <span class="brand-en">Taiwan Hut Atlas</span>
+      </a>
+      <nav aria-label="主選單">
+        {nav.map(([href, label]) => {
+          const full = base + href;
+          const current = href === '' ? path === base : path.startsWith(full);
+          return <a href={full} aria-current={current ? 'page' : undefined}>{label}</a>;
+        })}
+      </nav>
+    </div>
+  </header>
+  <main class:list={['wrap', { wide }]}>
+    <slot />
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>文字與座標 CC BY 4.0／照片 CC BY-NC 4.0／程式 MIT。資料快照 {meta.generated.slice(0, 10)}。</p>
+      <p>由初樸建築師事務所 ProtoPlain Architects 發起並維護。對外座標依<a href={base + 'about/#coord'}>降階規則</a>處理；遺構與工寮位置不精確到點位。</p>
+    </div>
+  </footer>
+</body>
+</html>

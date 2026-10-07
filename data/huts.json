@@ -1,0 +1,4854 @@
+[
+ {
+  "id": "TWH-0001",
+  "notion_id": "3f1bf2d8-5a3b-8144-bf47-c8e499fe8c18",
+  "cand_id": "C-001",
+  "slug": "paiyun-lodge",
+  "name": "排雲山莊",
+  "name_en": "Paiyun Lodge",
+  "type": "服務型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8106-a01f-c083134e309e",
+    "name": "玉山群峰線",
+    "en": "Yushan Peaks Route"
+   }
+  ],
+  "beds": 136,
+  "elev_m": 3402,
+  "lon": 120.94967,
+  "lat": 23.4666,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "兩層鋼骨；太陽能＋柴油發電；2010 改建設計：聯成聯合建築師事務所（維基）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "床位歷年 82／92／116／136 各來源不一；門牌排雲 101 號",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0001",
+    "title": "排雲山莊｜前身｜1943",
+    "type": "前身",
+    "date": "1943-01-01",
+    "precision": "年",
+    "year_text": "1943",
+    "grade": "C 二手彙整",
+    "description": "日治新高下駐在所木造建築（維基）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0001",
+    "title": "排雲山莊｜重建｜1967",
+    "type": "重建",
+    "date": "1967-01-01",
+    "precision": "年",
+    "year_text": "1967",
+    "grade": "C 二手彙整",
+    "description": "林務局改建磚造（維基）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0001",
+    "title": "排雲山莊｜重建｜2013-06",
+    "type": "重建",
+    "date": "2013-06-01",
+    "precision": "月",
+    "year_text": "2013-06",
+    "grade": "B 官方或學術",
+    "description": "現址鋼骨二層竣工；2010 改建設計聯成聯合建築師事務所（維基、新聞）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0001",
+    "title": "排雲山莊｜擴建｜2026-09",
+    "type": "擴建",
+    "date": "2026-09-01",
+    "precision": "月",
+    "year_text": "2026-09",
+    "grade": "B 官方或學術",
+    "description": "一樓增 2 間 10 人寢室、乾燥室、更衣室，116→136 床（工商時報、聯合報）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-002",
+   "SRC-003",
+   "SRC-004"
+  ],
+  "first_built_year": "1967",
+  "predecessor_year": "1943"
+ },
+ {
+  "id": "TWH-0002",
+  "notion_id": "3f1bf2d8-5a3b-81e4-8370-db12bbd24220",
+  "cand_id": "C-002",
+  "slug": "yuanfong-cabin",
+  "name": "圓峰山屋",
+  "name_en": "Yuanfong Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8106-a01f-c083134e309e",
+    "name": "玉山群峰線",
+    "en": "Yushan Peaks Route"
+   }
+  ],
+  "beds": 15,
+  "elev_m": 3694,
+  "lon": 120.95484,
+  "lat": 23.45677,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "木構造",
+  "materials": [
+   "國產杉木"
+  ],
+  "structure_notes": "木構造（官方）；太陽能、雨水集水",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "台灣最高山屋；附營地 9 名",
+  "aliases": null,
+  "jp_name": null,
+  "events": [],
+  "sources": [
+   "SRC-001",
+   "SRC-005"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0003",
+  "notion_id": "3f1bf2d8-5a3b-81d5-82f8-f6a91608bb64",
+  "cand_id": "C-003",
+  "slug": "lele-cabin",
+  "name": "樂樂山屋",
+  "name_en": "LeLe Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-810d-bafc-f6ad81221ada",
+    "name": "八通關越嶺道西段",
+    "en": "Batongguan Historic Trail (West)"
+   }
+  ],
+  "beds": 12,
+  "elev_m": 1670,
+  "lon": 120.95807,
+  "lat": 23.54599,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "木構造",
+  "materials": [],
+  "structure_notes": "木構造（官方）",
+  "logistics": [
+   "人力背負"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "海拔另說 1696（文化記憶庫）",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0003",
+    "title": "樂樂山屋｜興建｜1985",
+    "type": "興建",
+    "date": "1985-01-01",
+    "precision": "年",
+    "year_text": "1985",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間單一來源）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0003",
+    "title": "樂樂山屋｜前身｜日治",
+    "type": "前身",
+    "date": null,
+    "precision": "不詳",
+    "year_text": "日治",
+    "grade": "C 二手彙整",
+    "description": "建於日治樂樂駐在所地基（國家文化記憶庫）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-006",
+   "SRC-007"
+  ],
+  "first_built_year": "1985",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0004",
+  "notion_id": "3f1bf2d8-5a3b-8161-934b-df8d9a988302",
+  "cand_id": "C-004",
+  "slug": "guangao-cabin",
+  "name": "觀高山屋",
+  "name_en": "Guangao Cabin",
+  "type": "服務型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-810d-bafc-f6ad81221ada",
+    "name": "八通關越嶺道西段",
+    "en": "Batongguan Historic Trail (West)"
+   },
+   {
+    "id": "3f1bf2d8-5a3b-81b9-a71d-e8fdd0e4a3aa",
+    "name": "南二段",
+    "en": "Southern Section 2"
+   },
+   {
+    "id": "3f1bf2d8-5a3b-81cf-a16b-c3dad0f8fba7",
+    "name": "馬博拉斯橫斷",
+    "en": "Mabolasih Traverse"
+   }
+  ],
+  "beds": 42,
+  "elev_m": 2575,
+  "lon": 121.00007,
+  "lat": 23.50341,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "H 型鋼＋C 型鋼模組化構架，山下預組、螺栓接合、直升機吊運；總工程約 6,715 萬（中央社）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "海拔另說 2540；設計單位待查政府電子採購網「新觀高避難山屋新建及周邊設施整修工程」",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0004",
+    "title": "觀高山屋｜規劃或決標｜2023-04",
+    "type": "規劃或決標",
+    "date": "2023-04-01",
+    "precision": "月",
+    "year_text": "2023-04",
+    "grade": "B 官方或學術",
+    "description": "新觀高避難山屋新建及周邊設施整修工程開工公告（玉管處）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0004",
+    "title": "觀高山屋｜啟用或開放｜2025-04",
+    "type": "啟用或開放",
+    "date": "2025-04-01",
+    "precision": "月",
+    "year_text": "2025-04",
+    "grade": "B 官方或學術",
+    "description": "試營運 28 床；2025-12-01 起 42 床收費（玉管處公告）",
+    "cost_twd": 67150000,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-008",
+   "SRC-009",
+   "SRC-010"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0005",
+  "notion_id": "3f1bf2d8-5a3b-81ae-8a8e-d51d331a2f4b",
+  "cand_id": "C-005",
+  "slug": "jhongyang-mine-cabin",
+  "name": "中央金礦山屋",
+  "name_en": "Jhongyang Mine Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81b9-a71d-e8fdd0e4a3aa",
+    "name": "南二段",
+    "en": "Southern Section 2"
+   },
+   {
+    "id": "3f1bf2d8-5a3b-81cf-a16b-c3dad0f8fba7",
+    "name": "馬博拉斯橫斷",
+    "en": "Mabolasih Traverse"
+   }
+  ],
+  "beds": 20,
+  "elev_m": 2823,
+  "lon": 121.02743,
+  "lat": 23.48649,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨二層（官方）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "原稱秀姑巒金礦",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0005",
+    "title": "中央金礦山屋｜興建｜2003",
+    "type": "興建",
+    "date": "2003-01-01",
+    "precision": "年",
+    "year_text": "2003",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0005",
+    "title": "中央金礦山屋｜前身｜日治",
+    "type": "前身",
+    "date": null,
+    "precision": "不詳",
+    "year_text": "日治",
+    "grade": "C 二手彙整",
+    "description": "建於日治秀姑巒駐在所地基（文化記憶庫）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-011"
+  ],
+  "first_built_year": "2003",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0006",
+  "notion_id": "3f1bf2d8-5a3b-8173-a398-fac882525669",
+  "cand_id": "C-006",
+  "slug": "baiyang-mine-cabin",
+  "name": "白洋金礦山屋",
+  "name_en": "Baiyang Mine Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81b9-a71d-e8fdd0e4a3aa",
+    "name": "南二段",
+    "en": "Southern Section 2"
+   }
+  ],
+  "beds": 12,
+  "elev_m": 3380,
+  "lon": 121.04737,
+  "lat": 23.48795,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（官方）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "官方載地基土石流失；附營地 8 帳",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0006",
+    "title": "白洋金礦山屋｜興建｜1985",
+    "type": "興建",
+    "date": "1985-01-01",
+    "precision": "年",
+    "year_text": "1985",
+    "grade": "C 二手彙整",
+    "description": "健行筆記；疑指舊屋，與現存鋼骨是否同棟待查",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-012"
+  ],
+  "first_built_year": "1985",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0007",
+  "notion_id": "3f1bf2d8-5a3b-8199-b75f-ffd6cb1d6fa7",
+  "cand_id": "C-007",
+  "slug": "dashueiku-cabin",
+  "name": "大水窟山屋",
+  "name_en": "Dashueiku Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81b9-a71d-e8fdd0e4a3aa",
+    "name": "南二段",
+    "en": "Southern Section 2"
+   },
+   {
+    "id": "3f1bf2d8-5a3b-81c2-aead-c02478128155",
+    "name": "八通關越嶺道東段",
+    "en": "Batongguan Historic Trail (East)"
+   }
+  ],
+  "beds": 20,
+  "elev_m": 3227,
+  "lon": 121.05627,
+  "lat": 23.4593,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（官方）；PAC",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": null,
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0007",
+    "title": "大水窟山屋｜興建｜2002",
+    "type": "興建",
+    "date": "2002-01-01",
+    "precision": "年",
+    "year_text": "2002",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-013"
+  ],
+  "first_built_year": "2002",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0008",
+  "notion_id": "3f1bf2d8-5a3b-81cc-8860-dbd789b46918",
+  "cand_id": "C-008",
+  "slug": "tafen-valley-cabin",
+  "name": "塔芬谷山屋",
+  "name_en": "Tafen Valley Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81b9-a71d-e8fdd0e4a3aa",
+    "name": "南二段",
+    "en": "Southern Section 2"
+   }
+  ],
+  "beds": 20,
+  "elev_m": 2605,
+  "lon": 121.02674,
+  "lat": 23.41957,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（官方）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": null,
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0008",
+    "title": "塔芬谷山屋｜興建｜2002",
+    "type": "興建",
+    "date": "2002-01-01",
+    "precision": "年",
+    "year_text": "2002",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0008",
+    "title": "塔芬谷山屋｜整修｜2025-03",
+    "type": "整修",
+    "date": "2025-03-01",
+    "precision": "月",
+    "year_text": "2025-03",
+    "grade": "B 官方或學術",
+    "description": "延伸屋簷增炊煮區、拆部分床板改交誼空間、改良式乾式生態廁所（新聞引玉管處）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-014",
+   "SRC-015"
+  ],
+  "first_built_year": "2002",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0009",
+  "notion_id": "3f1bf2d8-5a3b-81c4-b652-d71e52f95dba",
+  "cand_id": "C-009",
+  "slug": "lulu-valley-cabin",
+  "name": "轆轆谷山屋",
+  "name_en": "Lulu Valley Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81b9-a71d-e8fdd0e4a3aa",
+    "name": "南二段",
+    "en": "Southern Section 2"
+   }
+  ],
+  "beds": 20,
+  "elev_m": 2991,
+  "lon": 121.00651,
+  "lat": 23.38599,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（官方）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": null,
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0009",
+    "title": "轆轆谷山屋｜興建｜2002",
+    "type": "興建",
+    "date": "2002-01-01",
+    "precision": "年",
+    "year_text": "2002",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0009",
+    "title": "轆轆谷山屋｜整修｜2025-03",
+    "type": "整修",
+    "date": "2025-03-01",
+    "precision": "月",
+    "year_text": "2025-03",
+    "grade": "B 官方或學術",
+    "description": "與塔芬谷同批整修啟用（新聞引玉管處）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-016"
+  ],
+  "first_built_year": "2002",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0010",
+  "notion_id": "3f1bf2d8-5a3b-8107-9229-e5aead242f6f",
+  "cand_id": "C-010",
+  "slug": "lakuyin-river-cabin",
+  "name": "拉庫音溪山屋",
+  "name_en": "Lakuyin River Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81b9-a71d-e8fdd0e4a3aa",
+    "name": "南二段",
+    "en": "Southern Section 2"
+   }
+  ],
+  "beds": 20,
+  "elev_m": 2690,
+  "lon": 121.02572,
+  "lat": 23.3283,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（官方）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "一站式網作「拉庫音溪底山屋」",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0010",
+    "title": "拉庫音溪山屋｜興建｜2002",
+    "type": "興建",
+    "date": "2002-01-01",
+    "precision": "年",
+    "year_text": "2002",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0010",
+    "title": "拉庫音溪山屋｜擴建｜2024-01",
+    "type": "擴建",
+    "date": "2024-01-01",
+    "precision": "月",
+    "year_text": "2024-01",
+    "grade": "B 官方或學術",
+    "description": "門廳改多功能交誼廳、走廊外推加蓋炊煮空間、廁所更新（聯合報、自由時報）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-017",
+   "SRC-018"
+  ],
+  "first_built_year": "2002",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0011",
+  "notion_id": "3f1bf2d8-5a3b-8143-a498-ffd1810289c6",
+  "cand_id": "C-011",
+  "slug": "mabolasih-cabin",
+  "name": "馬博山屋",
+  "name_en": "Mabolasih Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81cf-a16b-c3dad0f8fba7",
+    "name": "馬博拉斯橫斷",
+    "en": "Mabolasih Traverse"
+   }
+  ],
+  "beds": 20,
+  "elev_m": 3580,
+  "lon": 121.07389,
+  "lat": 23.51833,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（官方）；PAC",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "別名馬博拉斯山屋、馬博前山屋",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0011",
+    "title": "馬博山屋｜興建｜2003",
+    "type": "興建",
+    "date": "2003-01-01",
+    "precision": "年",
+    "year_text": "2003",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-019"
+  ],
+  "first_built_year": "2003",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0012",
+  "notion_id": "3f1bf2d8-5a3b-81bf-ae57-c45ecd6adbea",
+  "cand_id": "C-012",
+  "slug": "malijianan-cabin",
+  "name": "馬利加南山屋",
+  "name_en": "Malijianan Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81cf-a16b-c3dad0f8fba7",
+    "name": "馬博拉斯橫斷",
+    "en": "Mabolasih Traverse"
+   }
+  ],
+  "beds": 20,
+  "elev_m": 3267,
+  "lon": 121.13198,
+  "lat": 23.51552,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（官方）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "海拔另說 3260",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0012",
+    "title": "馬利加南山屋｜興建｜2003",
+    "type": "興建",
+    "date": "2003-01-01",
+    "precision": "年",
+    "year_text": "2003",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-020"
+  ],
+  "first_built_year": "2003",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0013",
+  "notion_id": "3f1bf2d8-5a3b-8100-bacb-eedd76fc2886",
+  "cand_id": "C-013",
+  "slug": "mabu-valley-cabin",
+  "name": "馬布谷山屋",
+  "name_en": "Mabu Valley Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81cf-a16b-c3dad0f8fba7",
+    "name": "馬博拉斯橫斷",
+    "en": "Mabolasih Traverse"
+   }
+  ],
+  "beds": 20,
+  "elev_m": 2964,
+  "lon": 121.16114,
+  "lat": 23.48121,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（官方）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "海拔官方兩值 2964／3050 相差 86 m",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0013",
+    "title": "馬布谷山屋｜興建｜2003",
+    "type": "興建",
+    "date": "2003-01-01",
+    "precision": "年",
+    "year_text": "2003",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-021"
+  ],
+  "first_built_year": "2003",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0014",
+  "notion_id": "3f1bf2d8-5a3b-8135-95d9-e0d6ec3318a4",
+  "cand_id": "C-014",
+  "slug": "walami-cabin",
+  "name": "瓦拉米山屋",
+  "name_en": "Walami Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81c2-aead-c02478128155",
+    "name": "八通關越嶺道東段",
+    "en": "Batongguan Historic Trail (East)"
+   }
+  ],
+  "beds": 24,
+  "elev_m": 1070,
+  "lon": 121.18632,
+  "lat": 23.35378,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨三角架構（維基）",
+  "logistics": [
+   "人力背負"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "原林務局護管所",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0014",
+    "title": "瓦拉米山屋｜興建｜1985-04",
+    "type": "興建",
+    "date": "1985-04-01",
+    "precision": "月",
+    "year_text": "1985-04",
+    "grade": "C 二手彙整",
+    "description": "木造山屋（維基）；原林務局護管所",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0014",
+    "title": "瓦拉米山屋｜重建｜2002",
+    "type": "重建",
+    "date": "2002-01-01",
+    "precision": "年",
+    "year_text": "2002",
+    "grade": "C 二手彙整",
+    "description": "拆除護管所與木屋，原地新建三角架構鋼骨山屋（維基；健行筆記作 2003）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0014",
+    "title": "瓦拉米山屋｜微電網或設備升級｜2025-06",
+    "type": "微電網或設備升級",
+    "date": "2025-06-01",
+    "precision": "月",
+    "year_text": "2025-06",
+    "grade": "B 官方或學術",
+    "description": "太陽光電＋儲能微電網升級（聯合報）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-022",
+   "SRC-023"
+  ],
+  "first_built_year": "1985",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0015",
+  "notion_id": "3f1bf2d8-5a3b-8197-9246-e20d42c5c645",
+  "cand_id": "C-015",
+  "slug": "baoyat-cabin",
+  "name": "抱崖山屋",
+  "name_en": "Baoyat Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81c2-aead-c02478128155",
+    "name": "八通關越嶺道東段",
+    "en": "Batongguan Historic Trail (East)"
+   }
+  ],
+  "beds": 16,
+  "elev_m": 1676,
+  "lon": 121.13973,
+  "lat": 23.33502,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（官方）；兼研究工作室",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "官方歸類研究類型山屋",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0015",
+    "title": "抱崖山屋｜興建｜2002",
+    "type": "興建",
+    "date": "2002-01-01",
+    "precision": "年",
+    "year_text": "2002",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）；抱崖駐在所 1922–1944",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-024"
+  ],
+  "first_built_year": "2002",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0016",
+  "notion_id": "3f1bf2d8-5a3b-81c6-a8a5-fd153e279787",
+  "cand_id": "C-016",
+  "slug": "dafen-cabin",
+  "name": "大分山屋",
+  "name_en": "Dafen Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81c2-aead-c02478128155",
+    "name": "八通關越嶺道東段",
+    "en": "Batongguan Historic Trail (East)"
+   }
+  ],
+  "beds": 20,
+  "elev_m": 1280,
+  "lon": 121.09777,
+  "lat": 23.37478,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼",
+   "HDPE"
+  ],
+  "structure_notes": "鋼骨架構、外牆 HDPE、約 42 ㎡（維基）；黑熊研究站、停機坪",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "海拔另說 1320",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0016",
+    "title": "大分山屋｜興建｜2000–2002",
+    "type": "興建",
+    "date": "2000-01-01",
+    "precision": "年",
+    "year_text": "2000–2002",
+    "grade": "C 二手彙整",
+    "description": "玉管處興建，維基兩說 2000／2002，健行筆記 2002；1998 黑熊研究小組先設研究站",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-025",
+   "SRC-026"
+  ],
+  "first_built_year": "2000",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0017",
+  "notion_id": "3f1bf2d8-5a3b-810f-98a4-e0ad5a4eeec5",
+  "cand_id": "C-017",
+  "slug": "kuhanuosin-cabin",
+  "name": "庫哈諾辛山屋",
+  "name_en": "Kuhanuosin Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81fe-9e1c-ea90ed9148da",
+    "name": "南橫三山／關山線",
+    "en": "Southern Cross-Island Three Peaks"
+   }
+  ],
+  "beds": 24,
+  "elev_m": 3000,
+  "lon": 120.91011,
+  "lat": 23.25529,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（官方）；PAC",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "別名 3026 山屋；健行筆記床位 20 與官方 24 不符",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0017",
+    "title": "庫哈諾辛山屋｜興建｜1985",
+    "type": "興建",
+    "date": "1985-01-01",
+    "precision": "年",
+    "year_text": "1985",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-001",
+   "SRC-027"
+  ],
+  "first_built_year": "1985",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0018",
+  "notion_id": "3f1bf2d8-5a3b-8109-9e4b-fd301d60cf2e",
+  "cand_id": "C-018",
+  "slug": "qika-cabin",
+  "name": "七卡山莊",
+  "name_en": "Qika Cabin",
+  "type": "服務型山屋",
+  "status": "使用中",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81cf-b0b4-e0937fa4dea1",
+    "name": "雪山主東線",
+    "en": "Xueshan Main-East Peak Route"
+   }
+  ],
+  "beds": 106,
+  "elev_m": 2510,
+  "lon": 121.286072,
+  "lat": 24.383429,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "查無",
+  "materials": [],
+  "structure_notes": "構造矛盾：鋼骨（維基）vs 木構造（健行筆記）",
+  "logistics": [
+   "索道"
+  ],
+  "logistics_index": 2,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "床位歷年 157／130／106",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0018",
+    "title": "七卡山莊｜興建｜1960 年代末至 1970 年代",
+    "type": "興建",
+    "date": "1970-01-01",
+    "precision": "年代",
+    "year_text": "1960 年代末至 1970 年代",
+    "grade": "C 二手彙整",
+    "description": "救國團為青年登山活動興建，原登山口距 7K 故名（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0018",
+    "title": "七卡山莊｜整修｜2020",
+    "type": "整修",
+    "date": "2020-11-26",
+    "precision": "日",
+    "year_text": "2020",
+    "grade": "B 官方或學術",
+    "description": "七卡山莊暨雪山登山口服務站活化轉型整建工程，開工 2020-04-27 完工 2020-11-26；索道運補費 153.7 萬（監察院附表）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-028",
+   "SRC-029",
+   "SRC-030"
+  ],
+  "first_built_year": "1970",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0019",
+  "notion_id": "3f1bf2d8-5a3b-811a-8c6f-d975b84feabc",
+  "cand_id": "C-019",
+  "slug": "saliujiu-cabin",
+  "name": "三六九山莊",
+  "name_en": "Saliujiu Cabin",
+  "type": "服務型山屋",
+  "status": "整修中",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81cf-b0b4-e0937fa4dea1",
+    "name": "雪山主東線",
+    "en": "Xueshan Main-East Peak Route"
+   }
+  ],
+  "beds": 0,
+  "elev_m": 3150,
+  "lon": 121.254574,
+  "lat": 24.392298,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "新屋設計：2 層鋼骨、高近 9 m、建築面積 582 ㎡、樓地板 867 ㎡、建材約 1,650 噸；規劃設計監造吳夏雄建築師事務所（監察院）",
+  "logistics": [
+   "單軌車"
+  ],
+  "logistics_index": 2,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "停止申請中，原 106 床；監察院 2026-03 糾正；火災 2001、2008、2014、2019",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0019",
+    "title": "三六九山莊｜規劃或決標｜2021-09-13",
+    "type": "規劃或決標",
+    "date": "2021-09-13",
+    "precision": "日",
+    "year_text": "2021-09-13",
+    "grade": "B 官方或學術",
+    "description": "新三六九山莊決標 1 億 800 萬，最有利標；規劃設計監造吳夏雄建築師事務所 2016 得標（監察院）",
+    "cost_twd": 108000000,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0019",
+    "title": "三六九山莊｜興建｜2021-10-12 開工",
+    "type": "興建",
+    "date": "2021-10-12",
+    "precision": "日",
+    "year_text": "2021-10-12 開工",
+    "grade": "B 官方或學術",
+    "description": "開工，工期 900 日曆天；2025-12 承商提終止契約、2026-05-27 調解結束；2026-07 國家公園署研議改為山屋群（監察院、中央社、自由時報）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-028",
+   "SRC-029",
+   "SRC-031",
+   "SRC-032"
+  ],
+  "first_built_year": "2021",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0020",
+  "notion_id": "3f1bf2d8-5a3b-8179-a833-c55bba8f4118",
+  "cand_id": "C-020",
+  "slug": "cuei-pond-hut",
+  "name": "翠池山屋",
+  "name_en": "Cuei Pond Hut",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-819b-a480-c6f6c3403b47",
+    "name": "雪山西稜／翠池線",
+    "en": "Xueshan West Ridge / Cuei Pond"
+   },
+   {
+    "id": "3f1bf2d8-5a3b-817a-a56c-c1e304043e4c",
+    "name": "聖稜線",
+    "en": "Holy Ridge"
+   }
+  ],
+  "beds": 12,
+  "elev_m": 3510,
+  "lon": 121.222801,
+  "lat": 24.385388,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼",
+   "鐵皮"
+  ],
+  "structure_notes": "鐵皮鋼骨（民間）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "附營地 20",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0020",
+    "title": "翠池山屋｜興建｜2001–2002",
+    "type": "興建",
+    "date": "2001-01-01",
+    "precision": "年",
+    "year_text": "2001–2002",
+    "grade": "C 二手彙整",
+    "description": "維基引《源》雜誌 2005；健行筆記作 2001",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-028",
+   "SRC-033",
+   "SRC-034"
+  ],
+  "first_built_year": "2001",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0021",
+  "notion_id": "3f1bf2d8-5a3b-8109-9e40-d03c7e812d94",
+  "cand_id": "C-021",
+  "slug": "taoshan-hut",
+  "name": "桃山山屋",
+  "name_en": "Taoshan Hut",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81ee-b4e1-fee517a37d9c",
+    "name": "武陵四秀",
+    "en": "Wuling Four Peaks"
+   }
+  ],
+  "beds": 19,
+  "elev_m": 3275,
+  "lon": 121.302476,
+  "lat": 24.433048,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（民間）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "2018 清冊 21 人",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0021",
+    "title": "桃山山屋｜興建｜2002",
+    "type": "興建",
+    "date": "2002-01-01",
+    "precision": "年",
+    "year_text": "2002",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0021",
+    "title": "桃山山屋｜微電網或設備升級｜2026-06",
+    "type": "微電網或設備升級",
+    "date": "2026-06-22",
+    "precision": "日",
+    "year_text": "2026-06",
+    "grade": "B 官方或學術",
+    "description": "3.735 kW 太陽能、10 度儲能、每床 USB，吊掛 680 kg（國家公園署新聞）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-028",
+   "SRC-034"
+  ],
+  "first_built_year": "2002",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0022",
+  "notion_id": "3f1bf2d8-5a3b-810f-b186-dc9e9e5e773d",
+  "cand_id": "C-022",
+  "slug": "xinda-hut",
+  "name": "新達山屋",
+  "name_en": "Xinda Hut",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81ee-b4e1-fee517a37d9c",
+    "name": "武陵四秀",
+    "en": "Wuling Four Peaks"
+   },
+   {
+    "id": "3f1bf2d8-5a3b-817a-a56c-c1e304043e4c",
+    "name": "聖稜線",
+    "en": "Holy Ridge"
+   }
+  ],
+  "beds": 34,
+  "elev_m": 3175,
+  "lon": 121.278751,
+  "lat": 24.429789,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨二層通鋪（民間）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": null,
+  "aliases": null,
+  "jp_name": null,
+  "events": [],
+  "sources": [
+   "SRC-028",
+   "SRC-035"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0023",
+  "notion_id": "3f1bf2d8-5a3b-817a-a796-fcbb7ebf3198",
+  "cand_id": "C-023",
+  "slug": "piaodan-hut",
+  "name": "瓢簞山屋",
+  "name_en": "Piaodan Hut",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8195-8e38-dc5b4c908ff7",
+    "name": "志佳陽線",
+    "en": "Zhijiayang Route"
+   }
+  ],
+  "beds": 15,
+  "elev_m": 3135,
+  "lon": 121.25488,
+  "lat": 24.35571,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨；假組立後直升機吊掛（官方）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "前身瓢簞工寮；維基 2023 說與官方矛盾",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0023",
+    "title": "瓢簞山屋｜興建｜2022",
+    "type": "興建",
+    "date": "2022-10-12",
+    "precision": "日",
+    "year_text": "2022",
+    "grade": "B 官方或學術",
+    "description": "雪霸 110 年度避難山屋興建工程，開工 2022-06-07、完工 2022-10-12，空勤直升機運補 6.85 km（監察院附表）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0023",
+    "title": "瓢簞山屋｜前身｜不詳",
+    "type": "前身",
+    "date": null,
+    "precision": "不詳",
+    "year_text": "不詳",
+    "grade": "D 僅知存在",
+    "description": "前身為廢棄鐵皮瓢簞工寮（健行筆記）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-028",
+   "SRC-029",
+   "SRC-036"
+  ],
+  "first_built_year": "2022",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0024",
+  "notion_id": "3f1bf2d8-5a3b-81be-802f-de4322fa6ce4",
+  "cand_id": "C-024",
+  "slug": "youpolan-hut",
+  "name": "油婆蘭山屋",
+  "name_en": "Youpolan Hut",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-818a-ad39-d68425f44ba2",
+    "name": "雪劍線／大小劍",
+    "en": "Xue-Jian Route"
+   }
+  ],
+  "beds": 15,
+  "elev_m": 3270,
+  "lon": 121.20623,
+  "lat": 24.32371,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨；兩屋共 30 架次、25 噸建材（公視）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": null,
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0024",
+    "title": "油婆蘭山屋｜興建｜2022",
+    "type": "興建",
+    "date": "2022-12-01",
+    "precision": "月",
+    "year_text": "2022",
+    "grade": "B 官方或學術",
+    "description": "同上工程，開工 2022-06-07、完工 2022-12；運補 12.96 km；兩屋共 30 架次 25 噸（監察院附表、公視）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-028",
+   "SRC-029",
+   "SRC-036"
+  ],
+  "first_built_year": "2022",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0025",
+  "notion_id": "3f1bf2d8-5a3b-81a8-87a8-ff875f0cf9b1",
+  "cand_id": "C-025",
+  "slug": "syuebei-hut",
+  "name": "雪北山屋",
+  "name_en": "Syuebei Hut",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-817a-a56c-c1e304043e4c",
+    "name": "聖稜線",
+    "en": "Holy Ridge"
+   }
+  ],
+  "beds": 25,
+  "elev_m": 3595,
+  "lon": 121.242809,
+  "lat": 24.411513,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（民間）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": null,
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0025",
+    "title": "雪北山屋｜興建｜2003",
+    "type": "興建",
+    "date": "2003-01-01",
+    "precision": "年",
+    "year_text": "2003",
+    "grade": "C 二手彙整",
+    "description": "健行筆記；2011 山友紀錄已見現貌",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-028",
+   "SRC-037"
+  ],
+  "first_built_year": "2003",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0026",
+  "notion_id": "3f1bf2d8-5a3b-81cf-99bf-e78feae38c70",
+  "cand_id": "C-026",
+  "slug": "sumida-hut",
+  "name": "素密達山屋",
+  "name_en": "Sumida Hut",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-817a-a56c-c1e304043e4c",
+    "name": "聖稜線",
+    "en": "Holy Ridge"
+   }
+  ],
+  "beds": 24,
+  "elev_m": 3485,
+  "lon": 121.250721,
+  "lat": 24.423256,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（民間）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "別名雲達卡山屋",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0026",
+    "title": "素密達山屋｜興建｜2003",
+    "type": "興建",
+    "date": "2003-01-01",
+    "precision": "年",
+    "year_text": "2003",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-028",
+   "SRC-038"
+  ],
+  "first_built_year": "2003",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0027",
+  "notion_id": "3f1bf2d8-5a3b-8190-8fab-e99a39aa7bc1",
+  "cand_id": "C-027",
+  "slug": "banan-hut",
+  "name": "霸南山屋",
+  "name_en": "Banan Hut",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-817a-a56c-c1e304043e4c",
+    "name": "聖稜線",
+    "en": "Holy Ridge"
+   },
+   {
+    "id": "3f1bf2d8-5a3b-8169-9cbc-f4da060574aa",
+    "name": "大霸尖山國家步道",
+    "en": "Dabajian Mountain National Trail"
+   }
+  ],
+  "beds": 15,
+  "elev_m": 3105,
+  "lon": 121.260944,
+  "lat": 24.450776,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "C 型鋼或鋼管",
+  "materials": [
+   "鋼",
+   "鋁板"
+  ],
+  "structure_notes": "C 型鋼螺栓接合、烤漆板雙斜頂；約 998 萬；設計監造羅佳格建築師事務所；施工旭元昇營造（官方）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "舊址林務造林工寮；官方文字鋁板／鋼板不一",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0027",
+    "title": "霸南山屋｜興建｜2012-07-15",
+    "type": "興建",
+    "date": "2012-07-15",
+    "precision": "日",
+    "year_text": "2012-07-15",
+    "grade": "B 官方或學術",
+    "description": "臺灣國家公園公共設施管理系統優良工程案例；造價約 998 萬；設計監造羅佳格建築師事務所；施工旭元昇營造",
+    "cost_twd": 9980000,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-028",
+   "SRC-039",
+   "SRC-040"
+  ],
+  "first_built_year": "2012",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0028",
+  "notion_id": "3f1bf2d8-5a3b-8111-aad3-e77be5137823",
+  "cand_id": "C-028",
+  "slug": "jiujiu-cabin",
+  "name": "九九山莊",
+  "name_en": "Jiujiu Cabin",
+  "type": "服務型山屋",
+  "status": "整修中",
+  "region": "林保署",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81f1-a909-e196c4a06776",
+    "name": "林業及自然保育署新竹分署",
+    "en": "Hsinchu Branch, Forestry and Nature Conservation Agency"
+   },
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8169-9cbc-f4da060574aa",
+    "name": "大霸尖山國家步道",
+    "en": "Dabajian Mountain National Trail"
+   }
+  ],
+  "beds": 150,
+  "elev_m": 2699,
+  "lon": 121.208353,
+  "lat": 24.468835,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "混合",
+  "materials": [
+   "鋼",
+   "鋁板"
+  ],
+  "structure_notes": "山屋群：6 棟成功堡（金屬圓形）＋3 棟龍門客棧（鋼骨）＋餐廳、機房、廁所；舊索道",
+  "logistics": [
+   "索道"
+  ],
+  "logistics_index": 2,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "床位申請經雪管處；民間誤記為雪霸管轄",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0028",
+    "title": "九九山莊｜興建｜1971 起陸續興建",
+    "type": "興建",
+    "date": "1971-01-01",
+    "precision": "年",
+    "year_text": "1971 起陸續興建",
+    "grade": "B 官方或學術",
+    "description": "自民國 60 年起興建並陸續整建（新竹分署官網）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0028",
+    "title": "九九山莊｜微電網或設備升級｜2021",
+    "type": "微電網或設備升級",
+    "date": "2021-01-01",
+    "precision": "年",
+    "year_text": "2021",
+    "grade": "C 二手彙整",
+    "description": "離網太陽能＋鋰鐵儲能重整（維基引 arXiv 案例）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0028",
+    "title": "九九山莊｜整修｜2026-03-30 至 2028-12-31",
+    "type": "整修",
+    "date": "2026-03-30",
+    "precision": "日",
+    "year_text": "2026-03-30 至 2028-12-31",
+    "grade": "B 官方或學術",
+    "description": "建物及設施整體改善工程，逐棟拆除重建，施工期降載 70 床（新竹分署公告）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-028",
+   "SRC-041",
+   "SRC-042"
+  ],
+  "first_built_year": "1971",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0029",
+  "notion_id": "3f1bf2d8-5a3b-81fa-9e2b-e2d38139511f",
+  "cand_id": "C-029",
+  "slug": "jhongba-hut",
+  "name": "中霸山屋",
+  "name_en": "Jhongba Hut",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "林保署",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81f1-a909-e196c4a06776",
+    "name": "林業及自然保育署新竹分署",
+    "en": "Hsinchu Branch, Forestry and Nature Conservation Agency"
+   },
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8169-9cbc-f4da060574aa",
+    "name": "大霸尖山國家步道",
+    "en": "Dabajian Mountain National Trail"
+   }
+  ],
+  "beds": 12,
+  "elev_m": 3295,
+  "lon": 121.251286,
+  "lat": 24.464724,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "木構造",
+  "materials": [
+   "國產杉木"
+  ],
+  "structure_notes": "木構造（民間）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "管轄矛盾：2025 新竹分署公告 vs 民間記雪霸；KML 海拔 3301；免費",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0029",
+    "title": "中霸山屋｜興建｜2014",
+    "type": "興建",
+    "date": "2014-01-01",
+    "precision": "年",
+    "year_text": "2014",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-028",
+   "SRC-043"
+  ],
+  "first_built_year": "2014",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0030",
+  "notion_id": "3f1bf2d8-5a3b-81a7-84ac-c00ba1d2e6d8",
+  "cand_id": "C-030",
+  "slug": "tianchih-lodge",
+  "name": "天池山莊",
+  "name_en": null,
+  "type": "服務型山屋",
+  "status": "使用中",
+  "region": "林保署",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-810e-8976-f572e2bb4362",
+    "name": "林業及自然保育署南投分署",
+    "en": "Nantou Branch, Forestry and Nature Conservation Agency"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8192-9d25-e50611862b50",
+    "name": "能高越嶺國家步道西段",
+    "en": "Nenggao Cross-Ridge Trail (West)"
+   }
+  ],
+  "beds": 88,
+  "elev_m": 2860,
+  "lon": 121.2796,
+  "lat": 24.0453,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨 2 層、樓地板 615.2 ㎡、綠建築概念（農政與農情）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "房型矛盾：2012 文獻 100 床 vs 現行平面圖 88 床",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0030",
+    "title": "天池山莊｜前身｜1918",
+    "type": "前身",
+    "date": "1918-01-01",
+    "precision": "年",
+    "year_text": "1918",
+    "grade": "B 官方或學術",
+    "description": "能高駐在所檜木造（農政與農情）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0030",
+    "title": "天池山莊｜重建｜1931",
+    "type": "重建",
+    "date": "1931-01-01",
+    "precision": "年",
+    "year_text": "1931",
+    "grade": "B 官方或學術",
+    "description": "重建（農政與農情）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0030",
+    "title": "天池山莊｜焚毀｜1986",
+    "type": "焚毀",
+    "date": "1986-01-01",
+    "precision": "年",
+    "year_text": "1986",
+    "grade": "B 官方或學術",
+    "description": "焚毀（農政與農情）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0030",
+    "title": "天池山莊｜重建｜1993",
+    "type": "重建",
+    "date": "1993-01-01",
+    "precision": "年",
+    "year_text": "1993",
+    "grade": "B 官方或學術",
+    "description": "重建（農政與農情）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0030",
+    "title": "天池山莊｜重建｜2012-10",
+    "type": "重建",
+    "date": "2012-10-01",
+    "precision": "月",
+    "year_text": "2012-10",
+    "grade": "B 官方或學術",
+    "description": "現棟完工：鋼骨 2 層、樓地板 615.2 ㎡（農政與農情）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-044",
+   "SRC-045"
+  ],
+  "first_built_year": "1931",
+  "predecessor_year": "1918"
+ },
+ {
+  "id": "TWH-0031",
+  "notion_id": "3f1bf2d8-5a3b-81e7-a396-c96b298eed8a",
+  "cand_id": "C-031",
+  "slug": "kuaigu-lodge",
+  "name": "檜谷山莊",
+  "name_en": "Kuaigu Lodge",
+  "type": "服務型山屋",
+  "status": "使用中",
+  "region": "林保署",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-8109-8c88-d178fa49de59",
+    "name": "林業及自然保育署屏東分署",
+    "en": "Pingtung Branch, Forestry and Nature Conservation Agency"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8197-8dd2-e9f3e059be38",
+    "name": "北大武山國家步道",
+    "en": "Beidawu Mountain National Trail"
+   }
+  ],
+  "beds": 42,
+  "elev_m": 2110,
+  "lon": 120.7385,
+  "lat": 22.6147,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "完整公開",
+  "structure_system": "查無",
+  "materials": [],
+  "structure_notes": "查無",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "官方文件另稱檜谷山屋",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0031",
+    "title": "檜谷山莊｜災損｜2025-07",
+    "type": "災損",
+    "date": "2025-07-01",
+    "precision": "月",
+    "year_text": "2025-07",
+    "grade": "B 官方或學術",
+    "description": "步道災修封閉；2026-08-03 重新開放，水源修復（中央社）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-046",
+   "SRC-047"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0032",
+  "notion_id": "3f1bf2d8-5a3b-81d1-b441-ebd95ff2ba6f",
+  "cand_id": "C-032",
+  "slug": "siangyang-hut",
+  "name": "向陽山屋",
+  "name_en": null,
+  "type": "服務型山屋",
+  "status": "使用中",
+  "region": "林保署",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81c2-bcca-d88ca376a199",
+    "name": "林業及自然保育署臺東分署",
+    "en": "Taitung Branch, Forestry and Nature Conservation Agency"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81e3-a1b1-d40730d0e48c",
+    "name": "嘉明湖國家步道",
+    "en": "Jiaming Lake National Trail"
+   }
+  ],
+  "beds": 70,
+  "elev_m": 2874,
+  "lon": 120.98443,
+  "lat": 23.26263,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "查無",
+  "materials": [],
+  "structure_notes": "通鋪上下鋪；材料直升機吊掛人力搭建（農政與農情）",
+  "logistics": [
+   "直升機吊掛",
+   "人力背負"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": null,
+  "aliases": null,
+  "jp_name": null,
+  "events": [],
+  "sources": [
+   "SRC-048",
+   "SRC-049"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0033",
+  "notion_id": "3f1bf2d8-5a3b-8185-9e32-c77e09538663",
+  "cand_id": "C-033",
+  "slug": "jiaming-lake-hut",
+  "name": "嘉明湖避難山屋",
+  "name_en": null,
+  "type": "服務型山屋",
+  "status": "使用中",
+  "region": "林保署",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81c2-bcca-d88ca376a199",
+    "name": "林業及自然保育署臺東分署",
+    "en": "Taitung Branch, Forestry and Nature Conservation Agency"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81e3-a1b1-d40730d0e48c",
+    "name": "嘉明湖國家步道",
+    "en": "Jiaming Lake National Trail"
+   }
+  ],
+  "beds": 70,
+  "elev_m": 3350,
+  "lon": 120.99675,
+  "lat": 23.28363,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "查無",
+  "materials": [],
+  "structure_notes": "通鋪；直升機吊掛材料",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "官網現稱嘉明湖山屋；原避難型轉收費服務型",
+  "aliases": null,
+  "jp_name": null,
+  "events": [],
+  "sources": [
+   "SRC-048",
+   "SRC-050"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0034",
+  "notion_id": "3f1bf2d8-5a3b-8117-bff8-ca10bf6b4d6e",
+  "cand_id": "C-034",
+  "slug": "heishuitang-cabin",
+  "name": "黑水塘山屋",
+  "name_en": "Heishuitang Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8156-8bc2-d01122e679b3",
+    "name": "奇萊主北線",
+    "en": "Qilai Main-North Peak Route"
+   }
+  ],
+  "beds": 6,
+  "elev_m": 2710,
+  "lon": 121.3119,
+  "lat": 24.1206,
+  "coord_precision": "官方舊資料",
+  "coord_rule": "完整公開",
+  "structure_system": "鐵皮",
+  "materials": [
+   "鐵皮"
+  ],
+  "structure_notes": "鐵皮屋（民間）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "床位矛盾 6／8／10",
+  "aliases": null,
+  "jp_name": null,
+  "events": [],
+  "sources": [
+   "SRC-051",
+   "SRC-052"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0035",
+  "notion_id": "3f1bf2d8-5a3b-81db-a2d1-ff3d49e2e001",
+  "cand_id": "C-035",
+  "slug": "chenggong-cabin",
+  "name": "成功山屋",
+  "name_en": "Chenggong Cabin",
+  "type": "服務型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8156-8bc2-d01122e679b3",
+    "name": "奇萊主北線",
+    "en": "Qilai Main-North Peak Route"
+   }
+  ],
+  "beds": 34,
+  "elev_m": 2879,
+  "lon": 121.3186,
+  "lat": 24.1161,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（民間）；PAC",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "前身成功三號堡 1971 清大募建",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0035",
+    "title": "成功山屋｜前身｜1971",
+    "type": "前身",
+    "date": "1971-01-01",
+    "precision": "年",
+    "year_text": "1971",
+    "grade": "C 二手彙整",
+    "description": "成功三號堡，清華大學為 1971 山難募建（udn、維基）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0035",
+    "title": "成功山屋｜重建｜2006",
+    "type": "重建",
+    "date": "2006-01-01",
+    "precision": "年",
+    "year_text": "2006",
+    "grade": "C 二手彙整",
+    "description": "太管處於成功三號堡原址新建（udn 報時光引太管處）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-051",
+   "SRC-053"
+  ],
+  "first_built_year": "2006",
+  "predecessor_year": "1971"
+ },
+ {
+  "id": "TWH-0036",
+  "notion_id": "3f1bf2d8-5a3b-8113-93c9-ce9ed690d62a",
+  "cand_id": "C-036",
+  "slug": "chenggong-no2-cabin",
+  "name": "成功二號堡",
+  "name_en": "Chenggong No. 2 Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8156-8bc2-d01122e679b3",
+    "name": "奇萊主北線",
+    "en": "Qilai Main-North Peak Route"
+   }
+  ],
+  "beds": 8,
+  "elev_m": 2879,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼",
+   "鐵皮"
+  ],
+  "structure_notes": "鋼骨＋鐵皮蒙古包（民間）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "床位另說 10",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0036",
+    "title": "成功二號堡｜興建｜1971",
+    "type": "興建",
+    "date": "1971-01-01",
+    "precision": "年",
+    "year_text": "1971",
+    "grade": "C 二手彙整",
+    "description": "清大募建成功堡三棟之一；健行筆記作 1987（矛盾）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-051",
+   "SRC-053"
+  ],
+  "first_built_year": "1971",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0037",
+  "notion_id": "3f1bf2d8-5a3b-81b0-88c6-d0f58aede534",
+  "cand_id": "C-037",
+  "slug": "qilai-cabin",
+  "name": "奇萊山屋（新）",
+  "name_en": "Qilai Cabin",
+  "type": "服務型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8156-8bc2-d01122e679b3",
+    "name": "奇萊主北線",
+    "en": "Qilai Main-North Peak Route"
+   }
+  ],
+  "beds": 40,
+  "elev_m": 3345,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "官方舊資料",
+  "coord_rule": "完整公開",
+  "structure_system": "混合",
+  "materials": [
+   "鋼",
+   "福州杉",
+   "台灣杉",
+   "柳杉"
+  ],
+  "structure_notes": "鋼骨＋國產材：外牆福州杉、地板床架台灣杉、生態廁所燒杉柳杉；2×4 工法、總重約 27 噸；太陽能＋風力、14 噸雨水塔（內政部）",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "經費矛盾 1,700 萬 vs 3,100 萬；床位 38→40",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0037",
+    "title": "奇萊山屋（新）｜規劃或決標｜2023",
+    "type": "規劃或決標",
+    "date": "2023-01-01",
+    "precision": "年",
+    "year_text": "2023",
+    "grade": "B 官方或學術",
+    "description": "112 年啟動選址設計；2024-10 整地（中央社）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0037",
+    "title": "奇萊山屋（新）｜興建｜2026-07",
+    "type": "興建",
+    "date": "2026-07-12",
+    "precision": "日",
+    "year_text": "2026-07",
+    "grade": "B 官方或學術",
+    "description": "完工驗收，2026-08-21 試營運；鋼骨＋國產材約 27 噸（內政部新聞稿、中央社）；經費新聞矛盾 1,700 萬 vs 3,100 萬",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-054",
+   "SRC-055",
+   "SRC-056"
+  ],
+  "first_built_year": "2026",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0038",
+  "notion_id": "3f1bf2d8-5a3b-81c0-8a56-fd6babd3277e",
+  "cand_id": "C-038",
+  "slug": "qilai-ridge-cabin-old",
+  "name": "奇萊稜線山屋（舊）",
+  "name_en": null,
+  "type": "已停用",
+  "status": "停用",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8156-8bc2-d01122e679b3",
+    "name": "奇萊主北線",
+    "en": "Qilai Main-North Peak Route"
+   }
+  ],
+  "beds": 0,
+  "elev_m": 3344,
+  "lon": 121.3269,
+  "lat": 24.1087,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "完整公開",
+  "structure_system": "鋁合金組合屋",
+  "materials": [
+   "鋁板"
+  ],
+  "structure_notes": "鋁製山屋 2 間、8 床",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "拆除或保留查無官方說明",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0038",
+    "title": "奇萊稜線山屋（舊）｜興建｜1995",
+    "type": "興建",
+    "date": "1995-01-01",
+    "precision": "年",
+    "year_text": "1995",
+    "grade": "C 二手彙整",
+    "description": "健行筆記；官方稱啟用逾 30 年",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0038",
+    "title": "奇萊稜線山屋（舊）｜停用｜2025-10-19",
+    "type": "停用",
+    "date": "2025-10-19",
+    "precision": "日",
+    "year_text": "2025-10-19",
+    "grade": "B 官方或學術",
+    "description": "暫停使用（中央社引太管處）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-057",
+   "SRC-058"
+  ],
+  "first_built_year": "1995",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0039",
+  "notion_id": "3f1bf2d8-5a3b-81b6-aa2d-e3a3bde32b70",
+  "cand_id": "C-039",
+  "slug": "yunleng-cabin",
+  "name": "雲稜山屋",
+  "name_en": "Yunleng Cabin",
+  "type": "服務型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8113-8c80-cb97f31cae04",
+    "name": "南湖大山線／北一段",
+    "en": "Nanhu Mountain / Northern Section 1"
+   }
+  ],
+  "beds": 65,
+  "elev_m": 2615,
+  "lon": 121.397,
+  "lat": 24.378,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（民間）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "舊雲稜 1974 捐建已拆",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0039",
+    "title": "雲稜山屋｜興建｜2003–2004",
+    "type": "興建",
+    "date": "2004-01-01",
+    "precision": "年",
+    "year_text": "2003–2004",
+    "grade": "C 二手彙整",
+    "description": "2003 擇址、2004 完工（維基）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0039",
+    "title": "雲稜山屋｜擴建｜2022-11 至 2023-03",
+    "type": "擴建",
+    "date": "2023-03-01",
+    "precision": "月",
+    "year_text": "2022-11 至 2023-03",
+    "grade": "B 官方或學術",
+    "description": "右側住宿區、廚房、玄關擴建，55→65 床（中央社引太管處）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-051",
+   "SRC-059"
+  ],
+  "first_built_year": "2004",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0040",
+  "notion_id": "3f1bf2d8-5a3b-81a4-a76f-f77e70ec0dcd",
+  "cand_id": "C-040",
+  "slug": "shenmazhen-cabin",
+  "name": "審馬陣山屋",
+  "name_en": "Shenmazhen Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8113-8c80-cb97f31cae04",
+    "name": "南湖大山線／北一段",
+    "en": "Nanhu Mountain / Northern Section 1"
+   }
+  ],
+  "beds": 10,
+  "elev_m": 3229,
+  "lon": 121.4261,
+  "lat": 24.3811,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "完整公開",
+  "structure_system": "鋁合金組合屋",
+  "materials": [
+   "鋁板"
+  ],
+  "structure_notes": "組合鋁屋 2 棟（民間）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "廁所位於南湖溪源頭（報導者）",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0040",
+    "title": "審馬陣山屋｜興建｜1978",
+    "type": "興建",
+    "date": "1978-01-01",
+    "precision": "年",
+    "year_text": "1978",
+    "grade": "C 二手彙整",
+    "description": "1978 山難後興建（維基）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0040",
+    "title": "審馬陣山屋｜重建｜1996",
+    "type": "重建",
+    "date": "1996-01-01",
+    "precision": "年",
+    "year_text": "1996",
+    "grade": "C 二手彙整",
+    "description": "改建為相鄰兩棟組合鋁屋（維基、健行筆記）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-051",
+   "SRC-052"
+  ],
+  "first_built_year": "1978",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0041",
+  "notion_id": "3f1bf2d8-5a3b-815e-bb06-ee2538cecfdb",
+  "cand_id": "C-041",
+  "slug": "nanhu-cabin",
+  "name": "南湖山屋",
+  "name_en": "Nanhu Cabin",
+  "type": "服務型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8113-8c80-cb97f31cae04",
+    "name": "南湖大山線／北一段",
+    "en": "Nanhu Mountain / Northern Section 1"
+   }
+  ],
+  "beds": 38,
+  "elev_m": 3394,
+  "lon": 121.4435,
+  "lat": 24.3696,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼"
+  ],
+  "structure_notes": "鋼骨（民間，另說木造）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "床位 38／40／50 矛盾",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0041",
+    "title": "南湖山屋｜前身｜1934",
+    "type": "前身",
+    "date": "1934-01-01",
+    "precision": "年",
+    "year_text": "1934",
+    "grade": "C 二手彙整",
+    "description": "臺灣山岳會建南湖山莊（維基）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0041",
+    "title": "南湖山屋｜興建｜2001",
+    "type": "興建",
+    "date": "2001-01-01",
+    "precision": "年",
+    "year_text": "2001",
+    "grade": "C 二手彙整",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0041",
+    "title": "南湖山屋｜整修｜2022-11 至 2023-03",
+    "type": "整修",
+    "date": "2023-03-01",
+    "precision": "月",
+    "year_text": "2022-11 至 2023-03",
+    "grade": "B 官方或學術",
+    "description": "生態廁所與空間調整（中央社引太管處）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-051",
+   "SRC-059"
+  ],
+  "first_built_year": "2001",
+  "predecessor_year": "1934"
+ },
+ {
+  "id": "TWH-0042",
+  "notion_id": "3f1bf2d8-5a3b-812b-8344-e88b9508823d",
+  "cand_id": "C-042",
+  "slug": "jushan-east-cabin",
+  "name": "鋸東避難小屋",
+  "name_en": "Ju-shan East Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-816f-83a9-e78a4384a04b",
+    "name": "畢羊縱走",
+    "en": "Bilu-Yangtou Traverse"
+   }
+  ],
+  "beds": 14,
+  "elev_m": 3010,
+  "lon": 121.3683,
+  "lat": 24.2077,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "完整公開",
+  "structure_system": "C 型鋼或鋼管",
+  "materials": [
+   "鋼",
+   "耐候帆布"
+  ],
+  "structure_notes": "鋼方管＋耐候帆布構造 2 座；建材 5.5 噸、背工約 220 人次（太管處新聞稿）",
+  "logistics": [
+   "人力背負"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "原畢祿山屋因山椒魚棲地改址；床位 14 vs 16",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0042",
+    "title": "鋸東避難小屋｜興建｜2021",
+    "type": "興建",
+    "date": "2021-10-06",
+    "precision": "日",
+    "year_text": "2021",
+    "grade": "B 官方或學術",
+    "description": "畢祿及屏風山屋興建工程，開工 2021-02-01 完工 2021-10-06，2022-01-10 開放；鋼方管＋耐候帆布、5.5 噸、背工 220 人次（監察院附表、太管處新聞稿）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-029",
+   "SRC-060"
+  ],
+  "first_built_year": "2021",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0043",
+  "notion_id": "3f1bf2d8-5a3b-8165-805c-f5fd892e9785",
+  "cand_id": "C-043",
+  "slug": "pingfong-cabin",
+  "name": "屏風避難山屋",
+  "name_en": "Pingfong Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81f4-9e55-fac541242833",
+    "name": "屏風山線",
+    "en": "Pingfeng Mountain Route"
+   }
+  ],
+  "beds": 28,
+  "elev_m": 2080,
+  "lon": 121.325,
+  "lat": 24.1621,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "完整公開",
+  "structure_system": "混合",
+  "materials": [
+   "鋼",
+   "國產杉木"
+  ],
+  "structure_notes": "2.5 層國產杉木＋鍍鋅方管；建材 18.5 噸、背工約 740 人次（太管處新聞稿）",
+  "logistics": [
+   "人力背負"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "床位 28 vs 32",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0043",
+    "title": "屏風避難山屋｜興建｜2021",
+    "type": "興建",
+    "date": "2021-10-06",
+    "precision": "日",
+    "year_text": "2021",
+    "grade": "B 官方或學術",
+    "description": "同上工程；2.5 層國產杉木＋鍍鋅方管、18.5 噸、背工 740 人次",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-029",
+   "SRC-060"
+  ],
+  "first_built_year": "2021",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0044",
+  "notion_id": "3f1bf2d8-5a3b-8110-919f-c2da1d268020",
+  "cand_id": "C-044",
+  "slug": "panshih-middle-peak-cabin",
+  "name": "磐石中峰避難小屋",
+  "name_en": "Mt. Panshih Middle Peak Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8198-b25e-cfa8059654df",
+    "name": "奇萊東稜",
+    "en": "Qilai East Ridge"
+   }
+  ],
+  "beds": 12,
+  "elev_m": 3154,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "完整公開",
+  "structure_system": "混合",
+  "materials": [
+   "鋼",
+   "台灣杉"
+  ],
+  "structure_notes": "強化鋼管＋台灣杉木、逾 6 噸、直升機吊掛；可收折桌椅",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "2024-09-02 開放申請",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0044",
+    "title": "磐石中峰避難小屋｜興建｜2022",
+    "type": "興建",
+    "date": "2022-01-01",
+    "precision": "年",
+    "year_text": "2022",
+    "grade": "B 官方或學術",
+    "description": "奇萊東稜避難小屋組裝 2022-04-14 至 2023-07-27；2024-09-02 開放申請（監察院附表、中央社）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-029",
+   "SRC-051",
+   "SRC-061"
+  ],
+  "first_built_year": "2022",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0045",
+  "notion_id": "3f1bf2d8-5a3b-8126-9b1f-f578ae5f08ea",
+  "cand_id": "C-045",
+  "slug": "sancha-cabin",
+  "name": "三叉營地避難小屋",
+  "name_en": "Sancha Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8198-b25e-cfa8059654df",
+    "name": "奇萊東稜",
+    "en": "Qilai East Ridge"
+   }
+  ],
+  "beds": 12,
+  "elev_m": 2950,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "完整公開",
+  "structure_system": "混合",
+  "materials": [
+   "鋼",
+   "台灣杉"
+  ],
+  "structure_notes": "同磐石中峰",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "官方名稱含「營地」但列床位 12",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0045",
+    "title": "三叉營地避難小屋｜興建｜2022",
+    "type": "興建",
+    "date": "2022-01-01",
+    "precision": "年",
+    "year_text": "2022",
+    "grade": "B 官方或學術",
+    "description": "同上",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-029",
+   "SRC-051"
+  ],
+  "first_built_year": "2022",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0046",
+  "notion_id": "3f1bf2d8-5a3b-8187-bde8-fd0e6499005a",
+  "cand_id": "C-046",
+  "slug": "dalishi-cabin",
+  "name": "大理石營地避難小屋",
+  "name_en": "Dalishi Cabin",
+  "type": "避難型山屋",
+  "status": "使用中",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "name": "太魯閣國家公園管理處",
+    "en": "Taroko National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8198-b25e-cfa8059654df",
+    "name": "奇萊東稜",
+    "en": "Qilai East Ridge"
+   }
+  ],
+  "beds": 12,
+  "elev_m": 2985,
+  "lon": 121.4453,
+  "lat": 24.1223,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "完整公開",
+  "structure_system": "混合",
+  "materials": [
+   "鋼",
+   "台灣杉"
+  ],
+  "structure_notes": "同磐石中峰；PAC",
+  "logistics": [
+   "直升機吊掛"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": null,
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0046",
+    "title": "大理石營地避難小屋｜興建｜2023-07",
+    "type": "興建",
+    "date": "2023-07-01",
+    "precision": "月",
+    "year_text": "2023-07",
+    "grade": "B 官方或學術",
+    "description": "同上，2023-07 完成組裝（中時）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-029",
+   "SRC-051",
+   "SRC-061"
+  ],
+  "first_built_year": "2023",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0047",
+  "notion_id": "3f1bf2d8-5a3b-8123-b88b-e508f852db04",
+  "cand_id": "C-047",
+  "slug": "chenggong-no1-cabin",
+  "name": "成功一號堡",
+  "name_en": null,
+  "type": "避難型山屋",
+  "status": "不明",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-819c-9046-cfa6433bbca9",
+    "name": "管轄不明",
+    "en": null
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8156-8bc2-d01122e679b3",
+    "name": "奇萊主北線",
+    "en": "Qilai Main-North Peak Route"
+   }
+  ],
+  "beds": 8,
+  "elev_m": null,
+  "lon": 121.3219,
+  "lat": 24.1139,
+  "coord_precision": "官方舊資料",
+  "coord_rule": "完整公開",
+  "structure_system": "鋼骨",
+  "materials": [
+   "鋼",
+   "鐵皮"
+  ],
+  "structure_notes": "鋼骨＋鐵皮蒙古包",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": null,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "D 僅知存在",
+  "review": "AI 初稿待覆核",
+  "notes": "未列入申請系統；無水源",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0047",
+    "title": "成功一號堡｜興建｜1971",
+    "type": "興建",
+    "date": "1971-01-01",
+    "precision": "年",
+    "year_text": "1971",
+    "grade": "D 僅知存在",
+    "description": "清大募建；健行筆記作 1981（矛盾）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-052",
+   "SRC-062"
+  ],
+  "first_built_year": "1971",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0048",
+  "notion_id": "3f1bf2d8-5a3b-815d-972a-d84dadfca67b",
+  "cand_id": "C-048",
+  "slug": "duojiatun-hut",
+  "name": "多加屯小鋁屋",
+  "name_en": null,
+  "type": "避難型山屋",
+  "status": "不明",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-819c-9046-cfa6433bbca9",
+    "name": "管轄不明",
+    "en": null
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8113-8c80-cb97f31cae04",
+    "name": "南湖大山線／北一段",
+    "en": "Nanhu Mountain / Northern Section 1"
+   }
+  ],
+  "beds": 5,
+  "elev_m": 2747,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "1 km 網格",
+  "structure_system": "鋁合金組合屋",
+  "materials": [
+   "鋁板"
+  ],
+  "structure_notes": "鋼構組合鋁屋",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "D 僅知存在",
+  "review": "AI 初稿待覆核",
+  "notes": "未列管",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0048",
+    "title": "多加屯小鋁屋｜興建｜1993",
+    "type": "興建",
+    "date": "1993-01-01",
+    "precision": "年",
+    "year_text": "1993",
+    "grade": "D 僅知存在",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-063"
+  ],
+  "first_built_year": "1993",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0049",
+  "notion_id": "3f1bf2d8-5a3b-81f8-9231-d39cb8680e27",
+  "cand_id": "C-049",
+  "slug": "jhongyangjian-creek-hut",
+  "name": "中央尖溪木屋",
+  "name_en": null,
+  "type": "避難型山屋",
+  "status": "不明",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-819c-9046-cfa6433bbca9",
+    "name": "管轄不明",
+    "en": null
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8113-8c80-cb97f31cae04",
+    "name": "南湖大山線／北一段",
+    "en": "Nanhu Mountain / Northern Section 1"
+   }
+  ],
+  "beds": 8,
+  "elev_m": 2438,
+  "lon": 121.42,
+  "lat": 24.34,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "1 km 網格",
+  "structure_system": "木構造",
+  "materials": [],
+  "structure_notes": "木構造（破損堪用）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "D 僅知存在",
+  "review": "AI 初稿待覆核",
+  "notes": "未列管",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0049",
+    "title": "中央尖溪木屋｜興建｜1987",
+    "type": "興建",
+    "date": "1987-01-01",
+    "precision": "年",
+    "year_text": "1987",
+    "grade": "D 僅知存在",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-064"
+  ],
+  "first_built_year": "1987",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0050",
+  "notion_id": "3f1bf2d8-5a3b-81d6-ad1c-f8024e17a127",
+  "cand_id": "C-050",
+  "slug": "nanhu-creek-hut",
+  "name": "南湖溪山屋",
+  "name_en": null,
+  "type": "避難型山屋",
+  "status": "不明",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-819c-9046-cfa6433bbca9",
+    "name": "管轄不明",
+    "en": null
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8113-8c80-cb97f31cae04",
+    "name": "南湖大山線／北一段",
+    "en": "Nanhu Mountain / Northern Section 1"
+   }
+  ],
+  "beds": 10,
+  "elev_m": 2209,
+  "lon": 121.4,
+  "lat": 24.37,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "1 km 網格",
+  "structure_system": "木構造",
+  "materials": [],
+  "structure_notes": "木構造（破損）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "D 僅知存在",
+  "review": "AI 初稿待覆核",
+  "notes": "維基作無人管理",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0050",
+    "title": "南湖溪山屋｜興建｜1981",
+    "type": "興建",
+    "date": "1981-01-01",
+    "precision": "年",
+    "year_text": "1981",
+    "grade": "D 僅知存在",
+    "description": "健行筆記（民間）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-065"
+  ],
+  "first_built_year": "1981",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0051",
+  "notion_id": "3f1bf2d8-5a3b-8106-837f-fd83030df90e",
+  "cand_id": "C-051",
+  "slug": "nanhu-south-peak-hut",
+  "name": "南湖南峰山屋",
+  "name_en": null,
+  "type": "避難型山屋",
+  "status": "不明",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-819c-9046-cfa6433bbca9",
+    "name": "管轄不明",
+    "en": null
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8113-8c80-cb97f31cae04",
+    "name": "南湖大山線／北一段",
+    "en": "Nanhu Mountain / Northern Section 1"
+   }
+  ],
+  "beds": null,
+  "elev_m": null,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "1 km 網格",
+  "structure_system": "木構造",
+  "materials": [],
+  "structure_notes": "木構造（堪用）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": null,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "D 僅知存在",
+  "review": "AI 初稿待覆核",
+  "notes": "未列管",
+  "aliases": null,
+  "jp_name": null,
+  "events": [],
+  "sources": [
+   "SRC-066"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0052",
+  "notion_id": "3f1bf2d8-5a3b-81c2-86e8-dd375540bed1",
+  "cand_id": "C-052",
+  "slug": "nanhu-pond-hut",
+  "name": "南湖池山屋",
+  "name_en": null,
+  "type": "已拆除",
+  "status": "已拆除",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-819c-9046-cfa6433bbca9",
+    "name": "管轄不明",
+    "en": null
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8113-8c80-cb97f31cae04",
+    "name": "南湖大山線／北一段",
+    "en": "Nanhu Mountain / Northern Section 1"
+   }
+  ],
+  "beds": null,
+  "elev_m": 3525,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "1 km 網格",
+  "structure_system": "鐵皮",
+  "materials": [
+   "鐵皮"
+  ],
+  "structure_notes": "鐵皮",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 5,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "D 僅知存在",
+  "review": "AI 初稿待覆核",
+  "notes": "不堪居住",
+  "aliases": null,
+  "jp_name": null,
+  "events": [],
+  "sources": [
+   "SRC-067"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0053",
+  "notion_id": "3f1bf2d8-5a3b-81db-aaaa-dc62b180e69f",
+  "cand_id": "C-053",
+  "slug": "lulin-lodge",
+  "name": "鹿林山莊",
+  "name_en": null,
+  "type": "已停用",
+  "status": "停用",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-813e-a14a-c68e386e7100",
+    "name": "鹿林山步道",
+    "en": "Lulin Mountain Trail"
+   }
+  ],
+  "beds": 0,
+  "elev_m": null,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "完整公開",
+  "structure_system": "木構造",
+  "materials": [
+   "檜木"
+  ],
+  "structure_notes": "原阿里山檜木造（民間）",
+  "logistics": [
+   "車行"
+  ],
+  "logistics_index": 1,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "興建年、修復年、管理單位三項官方與民間互相矛盾；不對外開放",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0053",
+    "title": "鹿林山莊｜興建｜1934／1926 兩說",
+    "type": "興建",
+    "date": "1934-01-01",
+    "precision": "年",
+    "year_text": "1934／1926 兩說",
+    "grade": "C 二手彙整",
+    "description": "官方 1934；民間 1926 日治哆哆迦線休泊所",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0053",
+    "title": "鹿林山莊｜整修｜1986／1989 兩說",
+    "type": "整修",
+    "date": "1986-01-01",
+    "precision": "年",
+    "year_text": "1986／1989 兩說",
+    "grade": "C 二手彙整",
+    "description": "依原樣重修；官方 1986、民間 1989",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-068",
+   "SRC-069"
+  ],
+  "first_built_year": "1934",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0054",
+  "notion_id": "3f1bf2d8-5a3b-813b-aff3-f8cf0dd9b741",
+  "cand_id": "C-054",
+  "slug": "guangao-station-old",
+  "name": "觀高工作站（舊）",
+  "name_en": null,
+  "type": "已停用",
+  "status": "停用",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-810d-bafc-f6ad81221ada",
+    "name": "八通關越嶺道西段",
+    "en": "Batongguan Historic Trail (West)"
+   }
+  ],
+  "beds": 0,
+  "elev_m": 2540,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "完整公開",
+  "structure_system": "RC",
+  "materials": [
+   "RC"
+  ],
+  "structure_notes": "RC（民間）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "距新觀高山屋約 160 m；床架拆解重組用於新屋",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0054",
+    "title": "觀高工作站（舊）｜興建｜1985",
+    "type": "興建",
+    "date": "1985-01-01",
+    "precision": "年",
+    "year_text": "1985",
+    "grade": "C 二手彙整",
+    "description": "RC 造；原林務局林木檢尺室（健行筆記）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0054",
+    "title": "觀高工作站（舊）｜停用｜2010-09-15",
+    "type": "停用",
+    "date": "2010-09-15",
+    "precision": "日",
+    "year_text": "2010-09-15",
+    "grade": "B 官方或學術",
+    "description": "莫拉克基地下陷，公告關閉（玉管處）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-070"
+  ],
+  "first_built_year": "1985",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0055",
+  "notion_id": "3f1bf2d8-5a3b-81d2-bdfd-dace2a0c6207",
+  "cand_id": "C-055",
+  "slug": "saliujiu-cabin-old",
+  "name": "舊三六九山莊",
+  "name_en": null,
+  "type": "已拆除",
+  "status": "已拆除",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81cf-b0b4-e0937fa4dea1",
+    "name": "雪山主東線",
+    "en": "Xueshan Main-East Peak Route"
+   }
+  ],
+  "beds": 0,
+  "elev_m": 3150,
+  "lon": 121.254574,
+  "lat": 24.392298,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "混合",
+  "materials": [],
+  "structure_notes": "就地取材、各建物散落、建築面積 222 ㎡（監察院）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "原址改三六九臨時營地 24 人",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0055",
+    "title": "舊三六九山莊｜興建｜1969／1972 兩說",
+    "type": "興建",
+    "date": "1969-01-01",
+    "precision": "年",
+    "year_text": "1969／1972 兩說",
+    "grade": "C 二手彙整",
+    "description": "林務局木造工寮起家；維基 1969、國家公園署 1972",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0055",
+    "title": "舊三六九山莊｜焚毀｜2001、2008、2014、2019",
+    "type": "焚毀",
+    "date": "2001-01-01",
+    "precision": "年",
+    "year_text": "2001、2008、2014、2019",
+    "grade": "C 二手彙整",
+    "description": "四次火災（維基）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0055",
+    "title": "舊三六九山莊｜拆除｜2023",
+    "type": "拆除",
+    "date": "2023-01-01",
+    "precision": "年",
+    "year_text": "2023",
+    "grade": "B 官方或學術",
+    "description": "拆除，原址改三六九臨時營地（監察院）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-029",
+   "SRC-071"
+  ],
+  "first_built_year": "1969",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0056",
+  "notion_id": "3f1bf2d8-5a3b-81d1-8b78-dd07b926e083",
+  "cand_id": "C-056",
+  "slug": "xueshan-lodge-site",
+  "name": "雪山山莊舊址",
+  "name_en": "Former Site of Xue Mountain Cabin",
+  "type": "已拆除",
+  "status": "已拆除",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "name": "雪霸國家公園管理處",
+    "en": "Shei-Pa National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8195-8e38-dc5b4c908ff7",
+    "name": "志佳陽線",
+    "en": "Zhijiayang Route"
+   }
+  ],
+  "beds": 0,
+  "elev_m": 3335,
+  "lon": 121.237291,
+  "lat": 24.376272,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "查無",
+  "materials": [],
+  "structure_notes": "查無",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "D 僅知存在",
+  "review": "AI 初稿待覆核",
+  "notes": "僅存營地 18 人",
+  "aliases": null,
+  "jp_name": null,
+  "events": [],
+  "sources": [
+   "SRC-028"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0057",
+  "notion_id": "3f1bf2d8-5a3b-813f-9d28-e2e1209bc6f8",
+  "cand_id": "C-057",
+  "slug": "piaodan-shed-old",
+  "name": "瓢簞工寮（舊）",
+  "name_en": null,
+  "type": "工寮",
+  "status": "已拆除",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-819c-9046-cfa6433bbca9",
+    "name": "管轄不明",
+    "en": null
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8195-8e38-dc5b4c908ff7",
+    "name": "志佳陽線",
+    "en": "Zhijiayang Route"
+   }
+  ],
+  "beds": 0,
+  "elev_m": 3135,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "文獻或民間推估",
+  "coord_rule": "僅步道段",
+  "structure_system": "鐵皮",
+  "materials": [
+   "鐵皮"
+  ],
+  "structure_notes": "鐵皮",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 4,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "D 僅知存在",
+  "review": "AI 初稿待覆核",
+  "notes": null,
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0057",
+    "title": "瓢簞工寮（舊）｜拆除｜2022",
+    "type": "拆除",
+    "date": "2022-01-01",
+    "precision": "年",
+    "year_text": "2022",
+    "grade": "D 僅知存在",
+    "description": "為新瓢簞山屋取代",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-072"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0058",
+  "notion_id": "3f1bf2d8-5a3b-81c4-8b3f-f23fa3c11538",
+  "cand_id": "C-058",
+  "slug": "basalayun-hut",
+  "name": "巴紗拉雲山屋",
+  "name_en": null,
+  "type": "已拆除",
+  "status": "已拆除",
+  "region": "雪霸",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-819c-9046-cfa6433bbca9",
+    "name": "管轄不明",
+    "en": null
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-817a-a56c-c1e304043e4c",
+    "name": "聖稜線",
+    "en": "Holy Ridge"
+   }
+  ],
+  "beds": 0,
+  "elev_m": null,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "僅步道段",
+  "structure_system": "查無",
+  "materials": [],
+  "structure_notes": "查無",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": null,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "D 僅知存在",
+  "review": "AI 初稿待覆核",
+  "notes": "官方未列",
+  "aliases": null,
+  "jp_name": null,
+  "events": [],
+  "sources": [
+   "SRC-073"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0059",
+  "notion_id": "3f1bf2d8-5a3b-81ef-9780-dc780c4aca67",
+  "cand_id": "C-059",
+  "slug": "yunleng-lodge-old",
+  "name": "舊雲稜山莊",
+  "name_en": null,
+  "type": "已拆除",
+  "status": "已拆除",
+  "region": "太魯閣",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81ac-ac9b-e2de55b42eae",
+    "name": "中華民國山岳協會",
+    "en": "Chinese Taipei Alpine Association"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8113-8c80-cb97f31cae04",
+    "name": "南湖大山線／北一段",
+    "en": "Nanhu Mountain / Northern Section 1"
+   }
+  ],
+  "beds": 0,
+  "elev_m": null,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "僅步道段",
+  "structure_system": "查無",
+  "materials": [],
+  "structure_notes": "查無",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": null,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "D 僅知存在",
+  "review": "AI 初稿待覆核",
+  "notes": null,
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0059",
+    "title": "舊雲稜山莊｜興建｜1974",
+    "type": "興建",
+    "date": "1974-01-01",
+    "precision": "年",
+    "year_text": "1974",
+    "grade": "C 二手彙整",
+    "description": "中華山岳協會雲稜登山隊捐建（維基）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-074"
+  ],
+  "first_built_year": "1974",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0060",
+  "notion_id": "3f1bf2d8-5a3b-81e5-902c-c453786f79ab",
+  "cand_id": "C-060",
+  "slug": "huabanuo-police-station",
+  "name": "華巴諾駐在所",
+  "name_en": null,
+  "type": "駐在所或日治遺構",
+  "status": "遺構",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81c2-aead-c02478128155",
+    "name": "八通關越嶺道東段",
+    "en": "Batongguan Historic Trail (East)"
+   }
+  ],
+  "beds": 0,
+  "elev_m": null,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "僅步道段",
+  "structure_system": "磚石",
+  "materials": [
+   "石板"
+  ],
+  "structure_notes": "2 階平台、建築物 4 棟、砲庫（帝俄造三吋速射砲）",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": null,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "東段僅存有建築物的駐在所之一；座標需 Phase 2 古地圖數化",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0060",
+    "title": "華巴諾駐在所｜興建｜1920 年代",
+    "type": "興建",
+    "date": "1921-01-01",
+    "precision": "年代",
+    "year_text": "1920 年代",
+    "grade": "C 二手彙整",
+    "description": "日治華巴諾駐在所（維基、玉管處）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-070",
+   "SRC-075"
+  ],
+  "first_built_year": "1921",
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0061",
+  "notion_id": "3f1bf2d8-5a3b-810e-9fc0-d70e8dc0274a",
+  "cand_id": "C-061",
+  "slug": "talunas-police-station",
+  "name": "太魯那斯駐在所",
+  "name_en": null,
+  "type": "駐在所或日治遺構",
+  "status": "遺構",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "name": "玉山國家公園管理處",
+    "en": "Yushan National Park Headquarters"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81c2-aead-c02478128155",
+    "name": "八通關越嶺道東段",
+    "en": "Batongguan Historic Trail (East)"
+   }
+  ],
+  "beds": 0,
+  "elev_m": null,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "僅步道段",
+  "structure_system": "查無",
+  "materials": [],
+  "structure_notes": "辦公室建築外觀留存，規模次於華巴諾",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": null,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": null,
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0061",
+    "title": "太魯那斯駐在所｜整修｜2021",
+    "type": "整修",
+    "date": "2021-01-01",
+    "precision": "年",
+    "year_text": "2021",
+    "grade": "C 二手彙整",
+    "description": "伐除危木（玉管處）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-070"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0062",
+  "notion_id": "3f1bf2d8-5a3b-819b-88fc-fdb0e8f1429c",
+  "cand_id": "C-062",
+  "slug": "banaiyike-shed",
+  "name": "巴奈伊克鐵皮屋",
+  "name_en": null,
+  "type": "工寮",
+  "status": "不明",
+  "region": "玉山",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-819c-9046-cfa6433bbca9",
+    "name": "管轄不明",
+    "en": null
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-810d-bafc-f6ad81221ada",
+    "name": "八通關越嶺道西段",
+    "en": "Batongguan Historic Trail (West)"
+   }
+  ],
+  "beds": 10,
+  "elev_m": 2820,
+  "lon": 121.02,
+  "lat": 23.49,
+  "coord_precision": "官方公告",
+  "coord_rule": "1 km 網格",
+  "structure_system": "鐵皮",
+  "materials": [
+   "鐵皮"
+  ],
+  "structure_notes": "鐵皮",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "D 僅知存在",
+  "review": "AI 初稿待覆核",
+  "notes": "官方明載非本處設施不另整修",
+  "aliases": null,
+  "jp_name": null,
+  "events": [],
+  "sources": [
+   "SRC-076",
+   "SRC-077"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0063",
+  "notion_id": "3f1bf2d8-5a3b-81bf-9f3d-d287d4478473",
+  "cand_id": "C-063",
+  "slug": "yunhai-powerline-station",
+  "name": "雲海保線所",
+  "name_en": null,
+  "type": "關聯設施",
+  "status": "使用中",
+  "region": "林保署",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-819b-b979-e6ace3466cfc",
+    "name": "台灣電力公司",
+    "en": "Taiwan Power Company"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-8192-9d25-e50611862b50",
+    "name": "能高越嶺國家步道西段",
+    "en": "Nenggao Cross-Ridge Trail (West)"
+   }
+  ],
+  "beds": 0,
+  "elev_m": 2360,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "完整公開",
+  "structure_system": "查無",
+  "materials": [],
+  "structure_notes": "查無",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": 3,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "保線所非住宿；建議列關聯設施或排除；關聯設施，不計入山屋統計",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0063",
+    "title": "雲海保線所｜前身｜日治",
+    "type": "前身",
+    "date": null,
+    "precision": "不詳",
+    "year_text": "日治",
+    "grade": "C 二手彙整",
+    "description": "尾上駐在所（林保署）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-078"
+  ],
+  "first_built_year": null,
+  "predecessor_year": null
+ },
+ {
+  "id": "TWH-0064",
+  "notion_id": "3f1bf2d8-5a3b-81e9-b003-e7c4e8f32a27",
+  "cand_id": "C-064",
+  "slug": "kuailin-powerline-station",
+  "name": "檜林保線所",
+  "name_en": null,
+  "type": "關聯設施",
+  "status": "不明",
+  "region": "林保署",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-819b-b979-e6ace3466cfc",
+    "name": "台灣電力公司",
+    "en": "Taiwan Power Company"
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-81a4-8616-f1e7568f9f80",
+    "name": "能高越嶺國家步道東段",
+    "en": "Nenggao Cross-Ridge Trail (East)"
+   }
+  ],
+  "beds": 0,
+  "elev_m": null,
+  "lon": null,
+  "lat": null,
+  "coord_precision": "查無",
+  "coord_rule": "完整公開",
+  "structure_system": "查無",
+  "materials": [],
+  "structure_notes": "查無",
+  "logistics": [
+   "查無"
+  ],
+  "logistics_index": null,
+  "logistics_index_estimated": true,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "C 二手彙整",
+  "review": "AI 初稿待覆核",
+  "notes": "東段 2024-07 至 2027-12 封閉；關聯設施，不計入山屋統計",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0064",
+    "title": "檜林保線所｜前身｜1925",
+    "type": "前身",
+    "date": "1925-01-01",
+    "precision": "年",
+    "year_text": "1925",
+    "grade": "C 二手彙整",
+    "description": "東能高駐在所（農政與農情）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-079"
+  ],
+  "first_built_year": null,
+  "predecessor_year": "1925"
+ },
+ {
+  "id": "TWH-0068",
+  "notion_id": "3f1bf2d8-5a3b-817b-b5f7-f2d348bf1362",
+  "cand_id": "C-068",
+  "slug": "lidao-lodge",
+  "name": "利稻山莊",
+  "name_en": null,
+  "type": "關聯設施",
+  "status": "停用",
+  "region": "林保署",
+  "agencies": [
+   {
+    "id": "3f0bf2d8-5a3b-8157-9185-eb772fc8927e",
+    "name": "臺東縣海端鄉公所",
+    "en": null
+   }
+  ],
+  "trails": [
+   {
+    "id": "3f1bf2d8-5a3b-813d-90bd-fb54394dbde5",
+    "name": "南橫公路（台 20 線）",
+    "en": "Southern Cross-Island Highway"
+   }
+  ],
+  "beds": null,
+  "elev_m": null,
+  "lon": 121.02297,
+  "lat": 23.18638,
+  "coord_precision": "官方公告",
+  "coord_rule": "完整公開",
+  "structure_system": "木構造",
+  "materials": [
+   "國產杉木"
+  ],
+  "structure_notes": "西式木屋架、雙折陡屋坡；閒置無水電",
+  "logistics": [
+   "車行"
+  ],
+  "logistics_index": 1,
+  "logistics_index_estimated": false,
+  "size_class": null,
+  "floor_area_m2": null,
+  "permit_check": "未查",
+  "building_permit": null,
+  "grade": "B 官方或學術",
+  "review": "AI 初稿待覆核",
+  "notes": "雖車可達，構造史料價值高，建議列為關聯案例而非山屋；關聯設施，不計入山屋統計",
+  "aliases": null,
+  "jp_name": null,
+  "events": [
+   {
+    "hut": "TWH-0068",
+    "title": "利稻山莊｜興建｜1970 年代",
+    "type": "興建",
+    "date": "1975-01-01",
+    "precision": "年代",
+    "year_text": "1970 年代",
+    "grade": "B 官方或學術",
+    "description": "救國團南橫健行隊據點（文資局）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   },
+   {
+    "hut": "TWH-0068",
+    "title": "利稻山莊｜啟用或開放｜2026-03-17",
+    "type": "啟用或開放",
+    "date": "2026-03-17",
+    "precision": "日",
+    "year_text": "2026-03-17",
+    "grade": "B 官方或學術",
+    "description": "登錄歷史建築（臺東縣政府）",
+    "cost_twd": null,
+    "review": "AI 初稿待覆核"
+   }
+  ],
+  "sources": [
+   "SRC-080"
+  ],
+  "first_built_year": "1975",
+  "predecessor_year": null
+ }
+]

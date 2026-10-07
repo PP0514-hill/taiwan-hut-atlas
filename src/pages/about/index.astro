@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import { meta } from '../../lib/data';
+const base = import.meta.env.BASE_URL;
+---
+<Base title="方法與授權">
+  <div class="prose">
+    <div class="page-head">
+      <div class="eyebrow">METHOD · LICENSE · {meta.generated.slice(0, 10)}</div>
+      <h1>方法與授權</h1>
+      <p class="lede">這個網站不是登山資訊站，是一份研究底稿。它想回答的是：台灣的山屋作為一個系統，長什麼樣子。</p>
+    </div>
+
+    <h2 id="scope">收錄判準</h2>
+    <p>收錄「位於步道系統上、車輛不可直達、供人過夜遮蔽之固定構造物」，包含現役的服務型與避難型山屋、民營山莊、工寮與獵寮，以及已停用、已拆除的歷史山屋和尚存建物的日治駐在所遺構。營地不是山屋，列為關聯實體。車可達的民宿與山莊排除；少數與山屋系統有歷史或運補關聯的車行可達設施（保線所、公路旁山莊）以「關聯設施」列入清單，但不計入任何統計。</p>
+
+    <h2 id="grade">查證等級</h2>
+    <table>
+      <tr><th>等級</th><th>意義</th><th>典型來源</th></tr>
+      <tr><td>A 現勘</td><td>本所人員到場量測或拍攝</td><td>Phase 3 配合登山行程</td></tr>
+      <tr><td>B 官方或學術</td><td>主管機關公告、監察院與審計報告、期刊論文</td><td>國家公園署登山資訊、林保署分署官網、監察院調查報告</td></tr>
+      <tr><td>C 二手彙整</td><td>新聞、維基百科、健行筆記等民間彙整</td><td>線上研究階段的上限</td></tr>
+      <tr><td>D 僅知存在</td><td>只有名稱與大略位置，細節無法交叉驗證</td><td>單一山友紀錄</td></tr>
+    </table>
+    <p>年份存在事件表而非山屋本體：一座山屋可能有前身、興建、重建、焚毀、整修、擴建、停用、拆除多筆事件，每筆各自帶日期精度（日／月／年／年代／不詳）與來源等級。兩個來源說法不同時，兩筆都留，矛盾寫在備註。</p>
+
+    <h2 id="coord">座標降階規則</h2>
+    <p>服務型、避難型與民營山屋公開完整座標（WGS84，五位小數）。遺構、工寮、獵寮與已拆除者對外只到 1 km 網格（經緯度取至小數第二位），地圖以外圈標示；少數以「僅步道段」處理者不輸出點位。完整座標留在內部資料庫供研究者申請使用。這不是保密，是避免遺址被打卡踩踏。</p>
+
+    <h2 id="logistics">運補難度指數（本所詮釋）</h2>
+    <p>版本 {meta.logistics_index_version ?? 'v0.1'}。這是把「蓋在這裡有多難」壓成一個 1 到 5 的整數，給比較用，不是官方指標。公式全部公開：</p>
+    <table>
+      <tr><th>步驟</th><th>規則</th></tr>
+      <tr><td>基礎分</td><td>依運補方式取最困難者：車行 1／單軌車・索道 2／直升機吊掛 3／人力背負 4</td></tr>
+      <tr><td>無運補資料</td><td>以海拔推估：&lt;2,000 m 為 2，2,000–2,999 m 為 3，≥3,000 m 為 4，並標「推估」；連海拔也沒有就不評分</td></tr>
+      <tr><td>高海拔加分</td><td>海拔 ≥3,400 m 加 1（直升機載重與天候窗口受限）</td></tr>
+      <tr><td>範圍</td><td>夾在 1–5</td></tr>
+    </table>
+    <p>已知缺陷：沒有把步道里程、累積爬升與最近車行點距離算進去，所以瓦拉米（1,070 m、人力背負）會跟排雲（3,402 m、直升機）同為 4。Phase 2 補上步道里程後改版，舊版本號保留。</p>
+
+    <h2 id="data">資料流</h2>
+    <p>單一真相來源是 Notion 的六個資料庫（山屋、管理單位、步道、事件、來源、照片）。GitHub Action 每日拉 Notion API 產出 JSON 與 GeoJSON 進版控，Astro 靜態建置後發布到 GitHub Pages。正式站只輸出覆核狀態為「已覆核」的筆；開發預覽可含 AI 初稿，頁首會有明顯提示。</p>
+    <p>下載：<a href={base + 'data/huts.json'}>huts.json</a>・<a href={base + 'data/huts.public.geojson'}>huts.public.geojson</a>・<a href={base + 'data/events.json'}>events.json</a>・<a href={base + 'data/sources.json'}>sources.json</a>（皆為對外降階版）。</p>
+
+    <h2 id="terrain">地形與底圖</h2>
+    <p>3D 地形使用內政部 20 公尺網格數值地形模型（2025 年版，政府資料開放授權第 1 版），原型期透過 OsmHackTW 的 terrain-rgb 圖磚載入（z≤13），Phase 2 改為自製圖磚置於 Cloudflare R2。底圖為國土測繪中心通用版電子地圖開放資料（EMAP5_OPENDATA）。</p>
+
+    <h2 id="license">授權</h2>
+    <table>
+      <tr><th>內容</th><th>授權</th></tr>
+      <tr><td>文字、表格、座標</td><td>CC BY 4.0，標示「台灣山屋誌 Taiwan Hut Atlas」</td></tr>
+      <tr><td>照片</td><td>CC BY-NC 4.0（Phase 2 起）</td></tr>
+      <tr><td>程式碼</td><td>MIT</td></tr>
+      <tr><td>引用之第三方來源</td><td>各依原授權，逐筆標於來源表（政府資料開放授權、CC BY-SA、著作權保留等）</td></tr>
+    </table>
+    <p>由初樸建築師事務所 ProtoPlain Architects 發起並維護。</p>
+  </div>
+</Base>

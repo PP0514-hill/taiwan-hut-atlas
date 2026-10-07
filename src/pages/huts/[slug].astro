@@ -1,0 +1,85 @@
+---
+import Base from '../../layouts/Base.astro';
+import HutMap from '../../components/HutMap.astro';
+import { huts, sourceById, GRADE_LABEL, fmt, geo } from '../../lib/data';
+
+export function getStaticPaths() {
+  return huts.map((h) => ({ params: { slug: h.slug }, props: { hut: h } }));
+}
+const { hut: h } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const feat = { ...geo, features: geo.features.filter((f) => f.properties.id === h.id) };
+const hasCoord = feat.features.length > 0;
+const center: [number, number] = hasCoord ? (feat.features[0].geometry as any).coordinates : [121, 23.6];
+const srcs = h.sources.map((id) => sourceById[id]).filter(Boolean);
+const MAJOR = new Set(['興建', '重建', '拆除', '焚毀', '停用']);
+const statusClass: Record<string, string> = { '使用中': 'active', '整修中': 'review', '停用': 'off', '已拆除': 'risk', '遺構': 'done', '不明': 'off' };
+---
+<Base title={h.name} description={`${h.name}${h.name_en ? `（${h.name_en}）` : ''}：${h.type}，${h.region}，海拔 ${fmt(h.elev_m, ' m')}，核定床位 ${fmt(h.beds)}。`}>
+  <div class="hut-head">
+    <div>
+      <div class="eyebrow">{h.type} · {h.region} · {h.agencies.map((a) => a.name).join('、')}</div>
+      <h1 style="margin-bottom:2px">{h.name}</h1>
+      {h.name_en && <p class="en">{h.name_en}{h.jp_name ? `／${h.jp_name}` : ''}</p>}
+      {h.aliases && <p class="pp-caption" style="margin:4px 0 0">別名：{h.aliases}</p>}
+    </div>
+    <div class="ids">
+      <div>{h.id}</div>
+      <div><span class:list={['pp-status', `pp-status--${statusClass[h.status ?? ''] ?? 'off'}`]}>{h.status}</span></div>
+      <div style="margin-top:4px">查證 <span class:list={['grade', GRADE_LABEL[h.grade ?? '']]}>{GRADE_LABEL[h.grade ?? '']}</span>　{h.review}</div>
+    </div>
+  </div>
+
+  {h.type === '關聯設施' && <p class="callout" style="margin-bottom:20px">本筆為關聯設施（車行可達或非步道上之過夜設施），與山屋系統有歷史或運補關聯，不計入山屋統計。</p>}
+
+  <section class="section">
+    <dl class="facts">
+      <div><dt>海拔</dt><dd class="num">{fmt(h.elev_m, ' m')}</dd></div>
+      <div><dt>核定床位</dt><dd class="num">{fmt(h.beds)}</dd></div>
+      <div><dt>首次興建（事件表）</dt><dd class="num">{h.first_built_year ?? '—'}{h.predecessor_year ? <span class="muted">　前身 {h.predecessor_year}</span> : ''}</dd></div>
+      <div><dt>結構系統</dt><dd>{h.structure_system ?? '查無'}{h.materials.length ? <span class="muted">　{h.materials.join('、')}</span> : ''}</dd></div>
+      <div><dt>運補方式</dt><dd>{h.logistics.length ? h.logistics.join('、') : '查無'}</dd></div>
+      <div><dt>運補難度指數</dt><dd class="num">{h.logistics_index ?? '不評分'}{h.logistics_index_estimated && h.logistics_index != null ? <span class="muted">（海拔推估）</span> : ''}</dd></div>
+      <div><dt>量體分級</dt><dd>{h.size_class ?? '—'}{h.floor_area_m2 ? <span class="muted">　{fmt(h.floor_area_m2, ' ㎡')}</span> : ''}</dd></div>
+      <div><dt>建照</dt><dd>{h.permit_check}{h.building_permit ? `　${h.building_permit}` : ''}</dd></div>
+      <div><dt>步道</dt><dd>{h.trails.map((t) => t.name).join('、') || '—'}</dd></div>
+      <div><dt>座標（對外）</dt><dd class="num">{hasCoord ? `${center[1].toFixed(h.coord_rule === '完整公開' ? 5 : 2)}, ${center[0].toFixed(h.coord_rule === '完整公開' ? 5 : 2)}` : '未公開或待補'}<span class="muted">　{h.coord_precision ?? ''}{h.coord_rule && h.coord_rule !== '完整公開' ? `・${h.coord_rule}` : ''}</span></dd></div>
+    </dl>
+    {h.structure_notes && <p style="margin:14px 0 0;font-size:14px"><span class="pp-caption">構造描述：</span>{h.structure_notes}</p>}
+    {h.notes && <p class="callout" style="margin-top:14px"><span class="pp-caption">備註與矛盾：</span>{h.notes}</p>}
+  </section>
+
+  <div class="grid-2">
+    <section class="section">
+      <h2>位置</h2>
+      {hasCoord ? <HutMap features={feat} center={center} zoom={h.coord_rule === '完整公開' ? 12.5 : 10.5} pitch={55} class="small" id={`map-${h.slug}`} focus={h.id} />
+        : <div class="map small" style="display:grid;place-items:center;color:var(--pp-ink-hint)">座標未公開或尚待補齊</div>}
+    </section>
+    <section class="section">
+      <h2>年表</h2>
+      {h.events.length ? (
+        <ul class="timeline">
+          {h.events.map((e) => (
+            <li class:list={{ major: MAJOR.has(e.type) }}>
+              <div><span class="when">{e.year_text}</span>　<span class="what">{e.type}</span>　<span class="grade" style="width:auto;padding:0 5px">{(e.grade ?? '').slice(0, 1)}</span></div>
+              {e.description && <p>{e.description}{e.cost_twd ? `（經費約 ${fmt(e.cost_twd)} 元）` : ''}</p>}
+            </li>
+          ))}
+        </ul>
+      ) : <p class="muted">尚無年份事件。</p>}
+    </section>
+  </div>
+
+  <section class="section">
+    <h2>來源（{srcs.length}）</h2>
+    <ul class="source-list">
+      {srcs.map((s) => (
+        <li>
+          <a href={s.url} rel="noopener" target="_blank">{s.title}</a>
+          <div class="meta">{s.publisher}・{s.type}・可信度 {(s.reliability ?? '').slice(0, 1)}・{s.license}・擷取 {s.retrieved}</div>
+        </li>
+      ))}
+    </ul>
+  </section>
+  <p class="pp-caption"><a href={base + 'huts/'}>← 回山屋清單</a>　｜　發現錯誤？Phase 2 將開放回報表單；目前請由 Notion 工作區提出。</p>
+</Base>

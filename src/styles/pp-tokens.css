@@ -1,0 +1,195 @@
+/* ==========================================================================
+   初樸建築師事務所｜清水模極簡 Concrete Minimal
+   ProtoPlain Architects — Design Tokens
+   淺色為預設主題。深色 blueprint 需加 .pp-dark 於 <html> 或 <body>。
+   ========================================================================== */
+
+:root {
+  /* --- 中性色 Neutral --- */
+  --pp-bg-page:      #ECEAE5;
+  --pp-bg-card:      #FFFFFF;
+  --pp-bg-card-sub:  #F3F1EC;
+  --pp-ink:          #232220;
+  --pp-ink-sub:      #6E6B64;
+  --pp-ink-hint:     #9A968D;
+  --pp-line:         #D8D5CE;
+  --pp-line-strong:  #C3BFB6;
+
+  /* --- 強調色 Accent（單一） --- */
+  --pp-accent:       #9C3D2C;
+  --pp-accent-deep:  #843022;
+  --pp-accent-soft:  #F2E3DE;
+
+  /* --- 狀態色 Status --- */
+  --pp-state-active: #3E6B7D;
+  --pp-state-done:   #5C7355;
+  --pp-state-review: #B07D24;
+  --pp-state-risk:   #B5342A;
+  --pp-state-off:    #9A968D;
+
+  /* --- 字體 Typeface --- */
+  --pp-font-zh:   "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --pp-font-en:   "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --pp-font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --pp-font-base: var(--pp-font-en), var(--pp-font-zh);
+
+  /* --- 字級 Type Scale --- */
+  --pp-fs-h1:      28px;
+  --pp-fs-h2:      20px;
+  --pp-fs-h3:      16px;
+  --pp-fs-body:    15px;
+  --pp-fs-caption: 13px;
+  --pp-fs-data:    13px;
+
+  --pp-lh-h1:      1.35;
+  --pp-lh-h2:      1.45;
+  --pp-lh-h3:      1.5;
+  --pp-lh-body:    1.7;
+
+  --pp-fw-regular: 400;
+  --pp-fw-medium:  500;
+
+  /* --- 版面 Layout --- */
+  --pp-radius-card:    12px;
+  --pp-radius-control: 8px;
+  --pp-border-width:   0.5px;
+
+  --pp-space-xs: 8px;
+  --pp-space-sm: 12px;
+  --pp-space-md: 20px;
+  --pp-space-lg: 32px;
+  --pp-space-xl: 48px;
+}
+
+/* --- 深色 blueprint 備用主題（需明確指定） --------------------------------
+   注意：對比值為推算，正式使用前應實測 WCAG AA。
+   -------------------------------------------------------------------------- */
+.pp-dark {
+  --pp-bg-page:     #14181C;
+  --pp-bg-card:     #1C2126;
+  --pp-bg-card-sub: #222930;
+  --pp-ink:         #E8E6E1;
+  --pp-ink-sub:     #9FA6AD;
+  --pp-ink-hint:    #6B7278;
+  --pp-line:        #2C333A;
+  --pp-line-strong: #3A424A;
+  --pp-accent:      #C4573F;
+  --pp-accent-deep: #A94733;
+  --pp-accent-soft: #2E2320;
+}
+
+/* ==========================================================================
+   基礎樣式 Base
+   ========================================================================== */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--pp-bg-page);
+  color: var(--pp-ink);
+  font-family: var(--pp-font-base);
+  font-size: var(--pp-fs-body);
+  font-weight: var(--pp-fw-regular);
+  line-height: var(--pp-lh-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { font-weight: var(--pp-fw-medium); margin: 0 0 var(--pp-space-sm); }
+h1 { font-size: var(--pp-fs-h1); line-height: var(--pp-lh-h1); }
+h2 { font-size: var(--pp-fs-h2); line-height: var(--pp-lh-h2); }
+h3 { font-size: var(--pp-fs-h3); line-height: var(--pp-lh-h3); }
+
+p { margin: 0 0 var(--pp-space-md); }
+
+small, .pp-caption {
+  font-size: var(--pp-fs-caption);
+  color: var(--pp-ink-sub);
+}
+
+code, .pp-data {
+  font-family: var(--pp-font-mono);
+  font-size: var(--pp-fs-data);
+}
+
+a { color: var(--pp-accent); text-decoration: none; }
+a:hover { color: var(--pp-accent-deep); text-decoration: underline; }
+
+hr {
+  border: 0;
+  border-top: var(--pp-border-width) solid var(--pp-line);
+  margin: var(--pp-space-lg) 0;
+}
+
+/* ==========================================================================
+   元件 Components
+   ========================================================================== */
+
+.pp-card {
+  background: var(--pp-bg-card);
+  border: var(--pp-border-width) solid var(--pp-line);
+  border-radius: var(--pp-radius-card);
+  padding: var(--pp-space-md);
+  /* 無陰影、無漸層 */
+}
+
+.pp-card--sub { background: var(--pp-bg-card-sub); }
+
+.pp-btn {
+  font-family: inherit;
+  font-size: var(--pp-fs-body);
+  font-weight: var(--pp-fw-medium);
+  padding: var(--pp-space-sm) var(--pp-space-md);
+  border-radius: var(--pp-radius-control);
+  border: var(--pp-border-width) solid var(--pp-line-strong);
+  background: var(--pp-bg-card);
+  color: var(--pp-ink);
+  cursor: pointer;
+}
+.pp-btn--accent {
+  background: var(--pp-accent);
+  border-color: var(--pp-accent);
+  color: #FFFFFF;
+}
+.pp-btn--accent:hover { background: var(--pp-accent-deep); }
+
+.pp-tag {
+  display: inline-block;
+  font-size: var(--pp-fs-caption);
+  padding: 2px 10px;
+  border-radius: var(--pp-radius-control);
+  background: var(--pp-accent-soft);
+  color: var(--pp-accent-deep);
+}
+
+/* 狀態標籤 */
+.pp-status { display:inline-flex; align-items:center; gap:6px;
+             font-size: var(--pp-fs-caption); color: var(--pp-ink-sub); }
+.pp-status::before { content:""; width:6px; height:6px; border-radius:50%; }
+.pp-status--active::before { background: var(--pp-state-active); }
+.pp-status--done::before   { background: var(--pp-state-done); }
+.pp-status--review::before { background: var(--pp-state-review); }
+.pp-status--risk::before   { background: var(--pp-state-risk); }
+.pp-status--off::before    { background: var(--pp-state-off); }
+
+/* 表格：無斑馬紋，僅細線 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--pp-fs-body);
+}
+th {
+  background: var(--pp-bg-card-sub);
+  font-weight: var(--pp-fw-medium);
+  text-align: left;
+}
+th, td {
+  padding: var(--pp-space-sm) var(--pp-space-md);
+  border-bottom: var(--pp-border-width) solid var(--pp-line);
+}
+td.pp-num { font-family: var(--pp-font-mono); font-size: var(--pp-fs-data); }
+
+/* ==========================================================================
+   禁用項目提醒（勿於本專案加入以下效果）
+   box-shadow / linear-gradient / radial-gradient / filter: blur / text-shadow
+   ========================================================================== */

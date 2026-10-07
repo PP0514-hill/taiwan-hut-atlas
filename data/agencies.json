@@ -1,0 +1,11 @@
+[{"id":"3f0bf2d8-5a3b-8109-8c88-d178fa49de59","name":"林業及自然保育署屏東分署","en":"Pingtung Branch, Forestry and Nature Conservation Agency","type":"林保署分署","parent":"農業部林業及自然保育署","website":"https://kgonline.forest.gov.tw","notes":"潮州工作站"},
+{"id":"3f0bf2d8-5a3b-810e-8976-f572e2bb4362","name":"林業及自然保育署南投分署","en":"Nantou Branch, Forestry and Nature Conservation Agency","type":"林保署分署","parent":"農業部林業及自然保育署","website":"https://tconline.forest.gov.tw","notes":"屯原服務站；2024 起合歡山國家森林遊樂區亦歸本分署"},
+{"id":"3f0bf2d8-5a3b-814e-b736-f263978c30d9","name":"雪霸國家公園管理處","en":"Shei-Pa National Park Headquarters","type":"國家公園管理處","parent":"內政部國家公園署","website":"https://www.spnp.gov.tw","notes":"武陵、觀霧、雪見管理站；九九山莊與中霸山屋僅辦床位與入園，所有權屬林保署新竹分署"},
+{"id":"3f0bf2d8-5a3b-8157-9185-eb772fc8927e","name":"臺東縣海端鄉公所","en":null,"type":"地方政府","parent":"臺東縣政府","website":null,"notes":"利稻山莊（2004 起移交）"},
+{"id":"3f0bf2d8-5a3b-819b-b979-e6ace3466cfc","name":"台灣電力公司","en":"Taiwan Power Company","type":"公營事業","parent":"經濟部","website":null,"notes":"能高越嶺道保線所（雲海、檜林、奇萊、磐石）"},
+{"id":"3f0bf2d8-5a3b-819c-9046-cfa6433bbca9","name":"管轄不明","en":null,"type":"不明","parent":null,"website":null,"notes":"未列管之避難小屋與舊工寮；待向轄區管理處確認"},
+{"id":"3f0bf2d8-5a3b-81ac-ac9b-e2de55b42eae","name":"中華民國山岳協會","en":"Chinese Taipei Alpine Association","type":"民間團體","parent":null,"website":null,"notes":"1974 捐建舊雲稜山莊"},
+{"id":"3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0","name":"太魯閣國家公園管理處","en":"Taroko National Park Headquarters","type":"國家公園管理處","parent":"內政部國家公園署","website":"https://www.taroko.gov.tw","notes":"合歡山管理站轄奇萊、屏風、畢羊線；南湖、奇萊東稜對應管理站查無"},
+{"id":"3f0bf2d8-5a3b-81c2-bcca-d88ca376a199","name":"林業及自然保育署臺東分署","en":"Taitung Branch, Forestry and Nature Conservation Agency","type":"林保署分署","parent":"農業部林業及自然保育署","website":"https://jmlnt.forest.gov.tw","notes":"關山工作站"},
+{"id":"3f0bf2d8-5a3b-81da-b0fa-ef33e6763596","name":"玉山國家公園管理處","en":"Yushan National Park Headquarters","type":"國家公園管理處","parent":"內政部國家公園署","website":"https://www.ysnp.gov.tw","notes":"西北園區（塔塔加、排雲管理站）、東部園區（南安管理站）、南部園區（梅山管理站）；山屋對應管理站為推定"},
+{"id":"3f0bf2d8-5a3b-81f1-a909-e196c4a06776","name":"林業及自然保育署新竹分署","en":"Hsinchu Branch, Forestry and Nature Conservation Agency","type":"林保署分署","parent":"農業部林業及自然保育署","website":"https://99online.forest.gov.tw","notes":"原林務局新竹林區管理處；九九山莊服務站"}]

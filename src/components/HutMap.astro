@@ -1,0 +1,109 @@
+---
+/**
+ * 3D 地形圖（MapLibre GL JS）
+ * 底圖：國土測繪中心通用版電子地圖 EMAP5_OPENDATA（政府資料開放授權第 1 版）
+ * 地形：OsmHackTW terrain-rgb（內政部 20 m DEM，z≤13；原型期暫用，Phase 2 改自製圖磚放 Cloudflare R2）
+ */
+interface Props {
+  features: GeoJSON.FeatureCollection;
+  center?: [number, number];
+  zoom?: number;
+  pitch?: number;
+  class?: string;
+  id?: string;
+  focus?: string; // 單座山屋頁：高亮此 TWH ID
+}
+const { features, center = [121.0, 23.6], zoom = 7.3, pitch = 45, class: cls = '', id = 'map', focus } = Astro.props;
+const base = import.meta.env.BASE_URL;
+// 色彩依品牌規範：單一強調色給「現役山屋」；歷史層以空心圈（次文色）區別；關聯設施淡化。
+// 類別差異另以形狀（實心／空心）與大小（床位）承載，不只靠顏色。
+const CLASS_OF = (t: string) => ['已停用', '已拆除', '駐在所或日治遺構', '工寮', '獵寮'].includes(t) ? 'historic' : t === '關聯設施' ? 'related' : 'current';
+const CLASS_COLOR: Record<string, string> = { current: '#9C3D2C', historic: '#6E6B64', related: '#9A968D' };
+const CLASS_LABEL: Record<string, string> = { current: '現役山屋（實心；大小＝核定床位）', historic: '歷史層：停用、已拆除、遺構、工寮（空心）', related: '關聯設施（不計入統計）' };
+for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.properties as any).type);
+---
+<div id={id} class:list={['map', cls]} data-features={JSON.stringify(features)} data-center={JSON.stringify(center)} data-zoom={zoom} data-pitch={pitch} data-base={base} data-focus={focus ?? ''} data-colors={JSON.stringify(CLASS_COLOR)}></div>
+<div class="map-legend" aria-hidden="true">
+  {Object.entries(CLASS_COLOR).filter(([k]) => features.features.some((f) => (f.properties as any)?.cls === k)).map(([k, c]) => <span style={`--c:${c}`}>{CLASS_LABEL[k]}</span>)}
+  <span style="--c:transparent">外圈＝座標已降階至 1 km 網格</span>
+</div>
+
+<script>
+  import * as maplibregl from 'maplibre-gl';
+  import 'maplibre-gl/dist/maplibre-gl.css';
+  // MapLibre 6 以 import.meta.url 推導 worker 路徑，經 Vite 打包會失效；改由 Vite 打包 worker 並指定 URL
+  import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
+  maplibregl.setWorkerUrl(workerUrl);
+
+  for (const el of document.querySelectorAll<HTMLElement>('.map[data-features]')) {
+    const features = JSON.parse(el.dataset.features!);
+    const colors = JSON.parse(el.dataset.colors!);
+    const base = el.dataset.base!;
+    const focus = el.dataset.focus;
+    const colorExpr: any = ['match', ['get', 'cls'], ...Object.entries(colors).flat(), '#9A968D'];
+    const isCurrent: any = ['==', ['get', 'cls'], 'current'];
+
+    const map = new maplibregl.Map({
+      container: el,
+      center: JSON.parse(el.dataset.center!),
+      zoom: Number(el.dataset.zoom),
+      pitch: Number(el.dataset.pitch),
+      maxPitch: 70,
+      maxZoom: 15,
+      attributionControl: false,
+      style: {
+        version: 8,
+        glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
+        sources: {
+          emap: {
+            type: 'raster', tileSize: 256, maxzoom: 18,
+            tiles: ['https://wmts.nlsc.gov.tw/wmts/EMAP5_OPENDATA/default/GoogleMapsCompatible/{z}/{y}/{x}'],
+            attribution: '底圖 © 國土測繪中心 通用版電子地圖（政府資料開放授權）',
+          },
+          dem: {
+            type: 'raster-dem', tileSize: 256, maxzoom: 13, encoding: 'mapbox',
+            tiles: ['https://osmhacktw.github.io/terrain-rgb/tiles/{z}/{x}/{y}.png'],
+            attribution: '地形 內政部 20 m DEM／OsmHackTW terrain-rgb',
+          },
+          huts: { type: 'geojson', data: features },
+        },
+        terrain: { source: 'dem', exaggeration: 1.3 },
+        layers: [
+          { id: 'emap', type: 'raster', source: 'emap', paint: { 'raster-saturation': -0.35, 'raster-brightness-max': 0.95 } },
+          { id: 'hillshade', type: 'hillshade', source: 'dem', paint: { 'hillshade-exaggeration': 0.35, 'hillshade-shadow-color': '#6E6B64', 'hillshade-highlight-color': '#FFFFFF', 'hillshade-accent-color': '#C3BFB6' } },
+          { id: 'hut-pts', type: 'circle', source: 'huts', paint: {
+              'circle-radius': ['interpolate', ['linear'], ['coalesce', ['get', 'beds'], 0], 0, 5, 20, 7, 60, 10, 140, 14],
+              'circle-color': ['case', isCurrent, colorExpr, 'rgba(255,255,255,0.75)'],
+              'circle-opacity': 0.92,
+              'circle-stroke-width': ['case', isCurrent, 1, 2],
+              'circle-stroke-color': ['case', isCurrent, '#FFFFFF', colorExpr],
+          } },
+          { id: 'hut-grid', type: 'circle', source: 'huts', filter: ['!=', ['get', 'coord_rule'], '完整公開'],
+            paint: { 'circle-radius': 13, 'circle-color': 'transparent', 'circle-stroke-width': 1, 'circle-stroke-color': '#9A968D', 'circle-stroke-opacity': 0.9 } },
+          { id: 'hut-focus', type: 'circle', source: 'huts', filter: ['==', ['get', 'id'], focus || '__none__'],
+            paint: { 'circle-radius': 18, 'circle-color': 'transparent', 'circle-stroke-width': 1.5, 'circle-stroke-color': '#232220' } },
+          { id: 'hut-label', type: 'symbol', source: 'huts', minzoom: 9,
+            layout: { 'text-field': ['get', 'name'], 'text-size': 12, 'text-offset': [0, 1.2], 'text-anchor': 'top', 'text-font': ['Noto Sans Regular'] },
+            paint: { 'text-color': '#232220', 'text-halo-color': '#FFFFFF', 'text-halo-width': 1.2 } },
+        ],
+      },
+    });
+    map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'top-right');
+    map.addControl(new maplibregl.TerrainControl({ source: 'dem', exaggeration: 1.3 }), 'top-right');
+    map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
+    map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
+
+    const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 10 });
+    map.on('mouseenter', 'hut-pts', (e) => {
+      map.getCanvas().style.cursor = 'pointer';
+      const p = e.features![0].properties as any;
+      const g = (e.features![0].geometry as any).coordinates.slice();
+      popup.setLngLat(g).setHTML(
+        `<b>${p.name}</b>${p.name_en ? `<br><span style="color:#6E6B64">${p.name_en}</span>` : ''}<br>${p.type}・${p.elev_m ?? '—'} m・${p.beds ?? '—'} 床<br>` +
+        `<span style="color:#6E6B64">${p.id}・查證 ${String(p.grade ?? '').slice(0, 1)}${p.coord_rule !== '完整公開' ? '・座標降階' : ''}</span>`,
+      ).addTo(map);
+    });
+    map.on('mouseleave', 'hut-pts', () => { map.getCanvas().style.cursor = ''; popup.remove(); });
+    map.on('click', 'hut-pts', (e) => { const p = e.features![0].properties as any; location.href = `${base}huts/${p.slug}/`; });
+  }
+</script>
