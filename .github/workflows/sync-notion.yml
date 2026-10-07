@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -19,9 +20,18 @@ jobs:
         run: node scripts/fetch-notion.mjs
       - name: Validate
         run: node scripts/check-data.mjs
-      - name: Commit if changed
+      - name: Commit if changed, then trigger deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "hut-atlas-bot"
           git config user.email "bot@users.noreply.github.com"
           git add data/*.json data/*.public.geojson
-          git diff --cached --quiet && echo "no change" || git commit -m "data: notion sync $(date -u +%F)" && git push
+          if git diff --cached --quiet; then
+            echo "no change"
+          else
+            git commit -m "data: notion sync $(date -u +%F)"
+            git push
+            # GITHUB_TOKEN 的 push 不會觸發其他 workflow，需手動喚起 deploy
+            gh workflow run deploy.yml --ref main
+          fi
