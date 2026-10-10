@@ -7,7 +7,11 @@ const features = geo;
 <Base title="地形圖" wide>
   <div class="page-head" style="margin-bottom:16px">
     <h1 style="font-size:20px">地形圖</h1>
-    <p class="lede" style="font-size:14px">拖曳旋轉、右鍵或雙指傾斜；右上角可關閉 3D。點選山屋進入詳頁。座標降階者以外圈標示，位置僅到 1 km 網格。</p>
+    <p class="lede" style="font-size:14px">
+      <span class="mouse-hint">拖曳平移、右鍵拖曳旋轉與傾斜、滾輪縮放；右上角可關閉 3D。點選山屋進入詳頁。</span>
+      <span class="touch-hint">單指拖曳平移、雙指捏合縮放、雙指旋轉或上下滑動傾斜；右上角可關閉 3D 省電。點山屋看資訊卡，再點一次進詳頁。</span>
+      座標降階者以外圈標示，位置僅到 1 km 網格。
+    </p>
   </div>
   <HutMap features={features} class="tall" pitch={55} zoom={7.6} center={[121.05, 23.75]} />
 </Base>

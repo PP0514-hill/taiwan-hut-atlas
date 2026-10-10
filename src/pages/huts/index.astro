@@ -28,18 +28,18 @@ const types = TYPE_ORDER.filter((t) => huts.some((h) => h.type === t));
       <tbody>
         {sorted.map((h) => (
           <tr data-region={h.region} data-type={h.type} data-grade={(h.grade ?? '').slice(0, 1)} data-q={[h.name, h.name_en, h.aliases, ...h.trails.map((t) => t.name), ...h.agencies.map((a) => a.name)].join(' ').toLowerCase()}>
-            <td class="num" style="text-align:left">{h.id}</td>
-            <td class="wrap-text"><a href={`${base}huts/${h.slug}/`}>{h.name}</a>{h.name_en && <div class="muted" style="font-size:12px">{h.name_en}</div>}</td>
-            <td>{h.type}</td>
-            <td>{h.status}</td>
-            <td class="wrap-text">{h.agencies.map((a) => a.name.replace('林業及自然保育署', '林保署')).join('、')}</td>
-            <td class="wrap-text">{h.trails.map((t) => t.name).join('、')}</td>
-            <td class="num">{fmt(h.elev_m)}</td>
-            <td class="num">{fmt(h.beds)}</td>
-            <td class="num">{h.first_built_year ?? '—'}</td>
-            <td>{h.structure_system ?? <span class="muted">—</span>}</td>
-            <td class="num">{h.logistics_index ?? '—'}{h.logistics_index_estimated && h.logistics_index != null ? <span class="muted">*</span> : ''}</td>
-            <td><span class:list={['grade', GRADE_LABEL[h.grade ?? '']]}>{GRADE_LABEL[h.grade ?? ''] ?? '?'}</span></td>
+            <td class="num" style="text-align:left" data-label="TWH">{h.id}</td>
+            <td class="wrap-text" data-label="名稱"><a href={`${base}huts/${h.slug}/`}>{h.name}</a>{h.name_en && <div class="muted" style="font-size:12px">{h.name_en}</div>}</td>
+            <td data-label="類型">{h.type}</td>
+            <td data-label="現況">{h.status}</td>
+            <td class="wrap-text" data-label="管理單位">{h.agencies.map((a) => a.name.replace('林業及自然保育署', '林保署')).join('、')}</td>
+            <td class="wrap-text" data-label="步道">{h.trails.map((t) => t.name).join('、') || '—'}</td>
+            <td class="num" data-label="海拔 m">{fmt(h.elev_m)}</td>
+            <td class="num" data-label="床位">{fmt(h.beds)}</td>
+            <td class="num" data-label="首建">{h.first_built_year ?? '—'}</td>
+            <td data-label="結構">{h.structure_system ?? <span class="muted">—</span>}</td>
+            <td class="num" data-label="運補">{h.logistics_index ?? '—'}{h.logistics_index_estimated && h.logistics_index != null ? <span class="muted">*</span> : ''}</td>
+            <td data-label="查證"><span class:list={['grade', GRADE_LABEL[h.grade ?? '']]}>{GRADE_LABEL[h.grade ?? ''] ?? '?'}</span></td>
           </tr>
         ))}
       </tbody>

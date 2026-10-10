@@ -6,12 +6,6 @@ body { font-family: var(--pp-font-base); }
 main.wrap { padding-top: var(--pp-space-lg); padding-bottom: var(--pp-space-xl); }
 main.wrap.wide { max-width: 1440px; }
 
-.draft-bar {
-  background: var(--pp-accent-soft); color: var(--pp-accent-deep);
-  font-size: var(--pp-fs-caption); text-align: center; padding: 6px var(--pp-space-md);
-  border-bottom: var(--pp-border-width) solid var(--pp-line-strong);
-}
-
 .site-header { background: var(--pp-bg-card); border-bottom: var(--pp-border-width) solid var(--pp-line); }
 .site-header .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: var(--pp-space-md); height: 56px; flex-wrap: wrap; }
 .brand { color: var(--pp-ink); display: inline-flex; gap: 10px; align-items: baseline; }
@@ -105,4 +99,122 @@ th.num { text-align: right; }
 .prose { max-width: 72ch; }
 .prose h2 { margin-top: var(--pp-space-lg); }
 .prose table { font-size: 14px; }
-@media (max-width: 720px) { .hut-head { grid-template-columns: 1fr; } .hut-head .ids { text-align: left; } .site-header .wrap { height: auto; padding-bottom: 6px; } }
+/* ─────────────────────────────────────────────
+   行動裝置：iPad（≤1024）與手機（≤640）
+   原則：不改色、不改字重；只動版面、密度、觸控目標與手勢。
+   ───────────────────────────────────────────── */
+* { -webkit-tap-highlight-color: transparent; }
+a, button, select, input, .maplibregl-ctrl button { touch-action: manipulation; }
+.wrap { padding-left: max(var(--pp-space-md), env(safe-area-inset-left)); padding-right: max(var(--pp-space-md), env(safe-area-inset-right)); }
+.site-footer { padding-bottom: calc(var(--pp-space-lg) + env(safe-area-inset-bottom)); }
+.touch-hint { display: none; }
+@media (hover: none) and (pointer: coarse) {
+  .mouse-hint { display: none; }
+  .touch-hint { display: inline; }
+  .site-header nav a { padding: 14px 2px; }                  /* 觸控目標 ≥44px */
+  .filters input, .filters select { min-height: 44px; font-size: 16px; } /* 16px 避免 iOS 聚焦自動縮放 */
+  .maplibregl-ctrl-group button { width: 36px; height: 36px; }
+  .maplibregl-popup-content { padding: 12px 14px; font-size: 14px; }
+  .maplibregl-popup-content a.go { display: block; margin-top: 8px; font-weight: var(--pp-fw-medium); }
+}
+
+/* iPad 直向與小筆電 */
+@media (max-width: 1024px) {
+  .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+  .map.tall { height: calc(100dvh - 190px); min-height: 440px; }
+  th, td { padding: 9px 10px; }
+  table { font-size: 13px; }
+  /* 清單：次要欄位（步道、結構）收起，表格進得了 iPad 寬度 */
+  #huts th:nth-child(6), #huts td:nth-child(6), #huts th:nth-child(10), #huts td:nth-child(10) { display: none; }
+  #huts td:nth-child(3) { white-space: normal; max-width: 6.5em; }
+  #huts td.wrap-text { min-width: 11ch; }
+  /* 名稱欄黏住，水平捲動時不迷路 */
+  #huts th:nth-child(2), #huts td:nth-child(2) { position: sticky; left: 0; background: var(--pp-bg-card); z-index: 1; box-shadow: 1px 0 0 var(--pp-line); }
+  #huts thead th:nth-child(2) { background: var(--pp-bg-card-sub); }
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+  .grid-2 { grid-template-columns: 1fr 1fr; }               /* 圖表在 iPad 直向仍兩欄 */
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* 版頭堆疊（舊規則保留） */
+@media (max-width: 720px) {
+  .hut-head { grid-template-columns: 1fr; }
+  .hut-head .ids { text-align: left; }
+  .hut-head .ids div { display: inline-block; margin-right: 12px; }
+  .site-header .wrap { height: auto; padding-bottom: 0; }
+}
+
+/* 手機 */
+@media (max-width: 640px) {
+  :root { --pp-fs-h1: 24px; --pp-space-lg: 24px; --pp-space-xl: 36px; }
+  main.wrap { padding-top: var(--pp-space-md); }
+  .site-header .wrap { display: block; }
+  .brand { padding: 10px 0 2px; }
+  .brand-en { display: none; }
+  .site-header nav { gap: 0; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; margin: 0 -14px; }
+  .site-header nav::-webkit-scrollbar { display: none; }
+  .site-header nav a { flex: 0 0 auto; padding: 10px 14px 12px; }
+  .page-head .lede { font-size: 14px; }
+
+  .kpi-grid { grid-template-columns: 1fr 1fr; gap: var(--pp-space-xs); }
+  .kpi { padding: 12px 14px; }
+  .kpi .label { font-size: 12px; min-height: 2.6em; }
+  .kpi .value { font-size: 24px; }
+
+  .map { height: 62vh; min-height: 360px; max-height: 560px; }
+  .map.tall { height: calc(100dvh - 150px); min-height: 380px; max-height: none; }
+  .map.small { height: 300px; min-height: 0; }
+  .map-legend { gap: 6px 14px; font-size: 12px; }
+  .maplibregl-ctrl-top-right { top: 8px; right: 8px; }
+  .maplibregl-ctrl-bottom-left .maplibregl-ctrl-scale { display: none; }
+
+  .chart { padding: 14px 12px; min-height: 0; }
+  .chart h3 { font-size: 15px; }
+
+  .filters { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+  .filters input, .filters select { min-width: 0; width: 100%; box-sizing: border-box; }
+  .filters input[type="search"] { grid-column: 1 / -1; }
+  .filters #count { grid-column: 1 / -1; font-size: 13px; }
+
+  /* 清單表格 → 卡片：每列一張卡，欄位以 data-label 標示 */
+  .table-wrap { background: transparent; border: 0; overflow: visible; }
+  #huts, #huts tbody, #huts tr, #huts td { display: block; }
+  #huts thead { display: none; }
+  #huts tr { background: var(--pp-bg-card); border: var(--pp-border-width) solid var(--pp-line); border-radius: var(--pp-radius-card); padding: 12px 14px 10px; margin-bottom: 10px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px 10px; }
+  #huts tr[hidden] { display: none; }
+  #huts td { padding: 0; white-space: normal; border: 0; min-width: 0; text-align: left; position: static; box-shadow: none; }
+  #huts td::before { content: attr(data-label); display: block; font-size: 11px; color: var(--pp-ink-sub); font-family: var(--pp-font-base); letter-spacing: 0.02em; }
+  #huts td:nth-child(1) { grid-column: 1 / 4; font-size: 12px; color: var(--pp-ink-sub); }
+  #huts td:nth-child(1)::before { display: none; }
+  #huts td:nth-child(12) { grid-column: 4; justify-self: end; }
+  #huts td:nth-child(12)::before { display: none; }
+  #huts { width: 100%; }
+  #huts td:nth-child(2) { grid-column: 1 / -1; font-size: 17px; line-height: 1.3; position: static; box-shadow: none; }
+  #huts td:nth-child(2)::before { display: none; }
+  #huts td:nth-child(2) .muted { font-size: 12px; }
+  #huts td:nth-child(3), #huts td:nth-child(4) { grid-column: span 2; font-size: 14px; }
+  #huts td:nth-child(5) { grid-column: 1 / -1; font-size: 14px; }
+  #huts td:nth-child(6) { grid-column: 1 / -1; font-size: 13px; color: var(--pp-ink-sub); }
+  #huts td:nth-child(7), #huts td:nth-child(8), #huts td:nth-child(9), #huts td:nth-child(11) { display: block; font-family: var(--pp-font-mono); font-size: 15px; }
+  #huts td:nth-child(10) { display: none; }
+
+  /* 詳頁事實格：兩欄、縮排 */
+  .facts { grid-template-columns: 1fr 1fr; }
+  .facts div { padding: 10px 12px; }
+  .facts dd { font-size: 14px; }
+  .facts div:nth-child(odd):last-child { grid-column: 1 / -1; }
+  .timeline li { padding-bottom: 14px; }
+  .timeline .what { font-size: 14px; }
+
+  /* 方法頁表格：允許換行，不再撐破版面 */
+  .prose table { display: block; overflow-x: auto; font-size: 13px; }
+  .prose th, .prose td { white-space: normal; min-width: 7ch; padding: 8px 10px; }
+  .prose h2 { font-size: 18px; }
+}
+
+/* 橫向手機：地圖頁撐滿、版頭縮 */
+@media (max-height: 480px) and (orientation: landscape) {
+  .map.tall { height: calc(100dvh - 110px); min-height: 0; }
+  .page-head { margin-bottom: 8px; }
+}

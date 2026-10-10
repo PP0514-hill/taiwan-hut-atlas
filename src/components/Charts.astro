@@ -33,15 +33,21 @@ const rows = huts.map((h) => ({
   const put = (id: string, plot: Element) => { const f = document.querySelector(`#${id} figure`)!; f.replaceChildren(plot); };
   const countable = rows.filter((r: any) => r.type !== '關聯設施');
   const isHist = (r: any) => ['已停用', '已拆除', '駐在所或日治遺構', '工寮', '獵寮'].includes(r.type);
-  const w = (id: string) => Math.max(280, (document.getElementById(id)!.clientWidth || 480) - 40);
+  const pad = () => { const el = document.querySelector('.chart') as HTMLElement; return parseFloat(getComputedStyle(el).paddingLeft) * 2 || 40; };
+  const w = (id: string) => Math.max(240, (document.getElementById(id)!.clientWidth || 480) - pad());
   const tip = (f: (d: any) => string) => ({ title: f } as any);
+  // 手機：左側標籤欄縮窄、點標籤關掉，避免互相壓字
+  const narrow = () => (document.getElementById('c-agency')!.clientWidth || 480) < 420;
 
+  function render() {
+  const N = narrow();
+  const H = N ? 220 : 260;
   // 1 管理單位（水平長條，排序）
   put('c-agency', Plot.plot({
-    ...base, width: w('c-agency'), height: 260, marginLeft: 150, x: { label: '座', grid: true, tickSize: 0 }, y: { label: null, tickSize: 0 },
+    ...base, width: w('c-agency'), height: H, marginLeft: N ? 118 : 150, x: { label: '座', grid: true, tickSize: 0 }, y: { label: null, tickSize: 0 },
     marks: [
-      Plot.barX(countable, Plot.groupY({ x: 'count' }, { y: (d: any) => d.agency.replace('林業及自然保育署', '林保署'), fill: INK, rx: 3, insetTop: 2, insetBottom: 2, sort: { y: '-x' }, ...tip((d: any) => d.agency) })),
-      Plot.textX(countable, Plot.groupY({ x: 'count', text: 'count' }, { y: (d: any) => d.agency.replace('林業及自然保育署', '林保署'), dx: 6, textAnchor: 'start', fill: SUB, fontFamily: 'JetBrains Mono' })),
+      Plot.barX(countable, Plot.groupY({ x: 'count' }, { y: (d: any) => d.agency.replace('林業及自然保育署', '林保署').replace('國家公園管理處', N ? '國家公園' : '國家公園管理處'), fill: INK, rx: 3, insetTop: 2, insetBottom: 2, sort: { y: '-x' }, ...tip((d: any) => d.agency) })),
+      Plot.textX(countable, Plot.groupY({ x: 'count', text: 'count' }, { y: (d: any) => d.agency.replace('林業及自然保育署', '林保署').replace('國家公園管理處', N ? '國家公園' : '國家公園管理處'), dx: 6, textAnchor: 'start', fill: SUB, fontFamily: 'JetBrains Mono' })),
       Plot.ruleX([0], { stroke: LINE }),
     ],
   }));
@@ -49,9 +55,9 @@ const rows = huts.map((h) => ({
   // 2 海拔分布（strip）
   const withElev = countable.filter((r: any) => r.elev != null);
   put('c-elev', Plot.plot({
-    ...base, width: w('c-elev'), height: 260, marginLeft: 110, x: { label: '海拔 m', grid: true, domain: [800, 3800], tickSize: 0 }, y: { label: null, tickSize: 0 },
+    ...base, width: w('c-elev'), height: H, marginLeft: N ? 70 : 110, x: { label: '海拔 m', grid: true, domain: [800, 3800], tickSize: 0 }, y: { label: null, tickSize: 0 },
     marks: [
-      Plot.dot(withElev, { x: 'elev', y: 'region', r: 5, fill: (d: any) => isHist(d) ? '#FFFFFF' : INK, stroke: (d: any) => isHist(d) ? SUB : '#FFFFFF', strokeWidth: 1, ...tip((d: any) => `${d.name}\n${d.elev} m・${d.type}`) }),
+      Plot.dot(withElev, { x: 'elev', y: 'region', r: N ? 4 : 5, fill: (d: any) => isHist(d) ? '#FFFFFF' : INK, stroke: (d: any) => isHist(d) ? SUB : '#FFFFFF', strokeWidth: 1, ...tip((d: any) => `${d.name}\n${d.elev} m・${d.type}`) }),
       Plot.ruleX([3000], { stroke: HINT, strokeDasharray: '3,3' }),
       Plot.text([{ x: 3000, y: '林保署' }], { x: 'x', y: 'y', text: () => '3,000 m', dy: -14, fill: SUB, fontSize: 11 }),
     ],
@@ -60,7 +66,7 @@ const rows = huts.map((h) => ({
   // 3 興建年代（十年為一格）
   const withYear = countable.filter((r: any) => r.year);
   put('c-year', Plot.plot({
-    ...base, width: w('c-year'), height: 260, x: { label: '年代', tickFormat: (d: number) => `${d}s`, tickSize: 0 }, y: { label: '座', grid: true, tickSize: 0 },
+    ...base, width: w('c-year'), height: H, x: { label: '年代', tickFormat: (d: number) => `${d}s`, tickSize: 0 }, y: { label: '座', grid: true, tickSize: 0 },
     marks: [
       Plot.rectY(withYear, Plot.binX({ y: 'count' }, { x: 'year', thresholds: (d3range(1910, 2040, 10) as any), fill: INK, rx: 3, inset: 1, ...tip((d: any) => d.name) })),
       Plot.ruleY([0], { stroke: LINE }),
@@ -71,16 +77,16 @@ const rows = huts.map((h) => ({
   // 4 床位 × 海拔（現役）
   const current = countable.filter((r: any) => !isHist(r) && r.elev != null && r.beds != null);
   put('c-beds', Plot.plot({
-    ...base, width: w('c-beds'), height: 260, x: { label: '海拔 m', grid: true, tickSize: 0 }, y: { label: '核定床位', grid: true, tickSize: 0 }, r: { range: [3, 9] },
+    ...base, width: w('c-beds'), height: H, x: { label: '海拔 m', grid: true, tickSize: 0 }, y: { label: '核定床位', grid: true, tickSize: 0 }, r: { range: [3, 9] },
     marks: [
       Plot.dot(current, { x: 'elev', y: 'beds', r: (d: any) => d.li ?? 2, fill: (d: any) => d.type === '服務型山屋' ? ACCENT : INK, fillOpacity: 0.85, stroke: '#FFFFFF', strokeWidth: 1, ...tip((d: any) => `${d.name}\n${d.beds} 床・${d.elev} m・運補 ${d.li ?? '—'}`) }),
-      Plot.text(current.filter((d: any) => d.beds >= 60), { x: 'elev', y: 'beds', text: 'name', dy: -11, fill: SUB, fontSize: 11 }),
+      Plot.text(current.filter((d: any) => d.beds >= (N ? 100 : 60)), { x: 'elev', y: 'beds', text: 'name', dy: -11, fill: SUB, fontSize: 11 }),
     ],
   }));
 
   // 5 結構系統
   put('c-structure', Plot.plot({
-    ...base, width: w('c-structure'), height: 260, marginLeft: 120, x: { label: '座', grid: true, tickSize: 0 }, y: { label: null, tickSize: 0 },
+    ...base, width: w('c-structure'), height: H, marginLeft: N ? 100 : 120, x: { label: '座', grid: true, tickSize: 0 }, y: { label: null, tickSize: 0 },
     marks: [
       Plot.barX(countable, Plot.groupY({ x: 'count' }, { y: 'structure', fill: (d: any) => d.structure === '查無' ? HINT : INK, rx: 3, insetTop: 2, insetBottom: 2, sort: { y: '-x' } })),
       Plot.textX(countable, Plot.groupY({ x: 'count', text: 'count' }, { y: 'structure', dx: 6, textAnchor: 'start', fill: SUB, fontFamily: 'JetBrains Mono' })),
@@ -91,11 +97,17 @@ const rows = huts.map((h) => ({
   // 6 運補難度指數（堆疊：實算／推估）
   const withLi = countable.filter((r: any) => r.li != null);
   put('c-li', Plot.plot({
-    ...base, width: w('c-li'), height: 260, x: { label: '指數', tickSize: 0 }, y: { label: '座', grid: true, tickSize: 0 },
+    ...base, width: w('c-li'), height: H, x: { label: '指數', tickSize: 0 }, y: { label: '座', grid: true, tickSize: 0 },
     marks: [
       Plot.barY(withLi, Plot.groupX({ y: 'count' }, { x: 'li', fill: (d: any) => d.li_est ? HINT : INK, rx: 3, inset: 6, order: (d: any) => d.li_est ? 1 : 0 })),
       Plot.textY(withLi, Plot.groupX({ y: 'count', text: 'count' }, { x: 'li', dy: -8, fill: SUB, fontFamily: 'JetBrains Mono' })),
       Plot.ruleY([0], { stroke: LINE }),
     ],
   }));
+  }
+
+  render();
+  // 轉向或視窗縮放時重畫（寬度變化 >24px 才動，避免捲動列造成抖動）
+  let lastW = w('c-agency'), t: number | undefined;
+  addEventListener('resize', () => { clearTimeout(t); t = setTimeout(() => { const nw = w('c-agency'); if (Math.abs(nw - lastW) > 24) { lastW = nw; render(); } }, 150) as unknown as number; });
 </script>

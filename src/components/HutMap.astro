@@ -35,6 +35,10 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
   import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
   maplibregl.setWorkerUrl(workerUrl);
 
+  // 觸控裝置：沒有 hover，點一下先看資訊、再點一次進詳頁；內嵌地圖用雙指操作，單指留給頁面捲動
+  const TOUCH = matchMedia('(hover: none) and (pointer: coarse)').matches;
+  const NARROW = matchMedia('(max-width: 640px)').matches;
+
   for (const el of document.querySelectorAll<HTMLElement>('.map[data-features]')) {
     const features = JSON.parse(el.dataset.features!);
     const colors = JSON.parse(el.dataset.colors!);
@@ -42,14 +46,17 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
     const focus = el.dataset.focus;
     const colorExpr: any = ['match', ['get', 'cls'], ...Object.entries(colors).flat(), '#9A968D'];
     const isCurrent: any = ['==', ['get', 'cls'], 'current'];
+    const embedded = !el.classList.contains('tall');
 
     const map = new maplibregl.Map({
       container: el,
       center: JSON.parse(el.dataset.center!),
-      zoom: Number(el.dataset.zoom),
+      zoom: Number(el.dataset.zoom) - (NARROW && !focus ? 0.6 : 0), // 手機畫面窄，整島要退一級才看得全
       pitch: Number(el.dataset.pitch),
       maxPitch: 70,
       maxZoom: 15,
+      cooperativeGestures: TOUCH && embedded,
+      locale: { 'CooperativeGesturesHandler.MobileHelpText': '用雙指移動地圖', 'CooperativeGesturesHandler.MacHelpText': '按住 ⌘ 加滾輪縮放', 'CooperativeGesturesHandler.WindowsHelpText': '按住 Ctrl 加滾輪縮放' },
       attributionControl: false,
       style: {
         version: 8,
@@ -78,6 +85,8 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
               'circle-stroke-width': ['case', isCurrent, 1, 2],
               'circle-stroke-color': ['case', isCurrent, '#FFFFFF', colorExpr],
           } },
+          // 透明命中層：手指點得到（半徑 18px ≈ 44px 觸控目標），不影響視覺
+          { id: 'hut-hit', type: 'circle', source: 'huts', paint: { 'circle-radius': TOUCH ? 18 : 9, 'circle-color': 'transparent', 'circle-opacity': 0 } },
           { id: 'hut-grid', type: 'circle', source: 'huts', filter: ['!=', ['get', 'coord_rule'], '完整公開'],
             paint: { 'circle-radius': 13, 'circle-color': 'transparent', 'circle-stroke-width': 1, 'circle-stroke-color': '#9A968D', 'circle-stroke-opacity': 0.9 } },
           { id: 'hut-focus', type: 'circle', source: 'huts', filter: ['==', ['get', 'id'], focus || '__none__'],
@@ -92,18 +101,34 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
     map.addControl(new maplibregl.TerrainControl({ source: 'dem', exaggeration: 1.3 }), 'top-right');
     map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
     map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
+    // 窄螢幕預設收合出處（按 ⓘ 可展開），不然會蓋掉南台灣
+    if (NARROW) map.once('load', () => el.querySelector('.maplibregl-ctrl-attrib')?.classList.remove('maplibregl-compact-show'));
 
-    const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false, offset: 10 });
-    map.on('mouseenter', 'hut-pts', (e) => {
-      map.getCanvas().style.cursor = 'pointer';
-      const p = e.features![0].properties as any;
-      const g = (e.features![0].geometry as any).coordinates.slice();
-      popup.setLngLat(g).setHTML(
-        `<b>${p.name}</b>${p.name_en ? `<br><span style="color:#6E6B64">${p.name_en}</span>` : ''}<br>${p.type}・${p.elev_m ?? '—'} m・${p.beds ?? '—'} 床<br>` +
-        `<span style="color:#6E6B64">${p.id}・查證 ${String(p.grade ?? '').slice(0, 1)}${p.coord_rule !== '完整公開' ? '・座標降階' : ''}</span>`,
-      ).addTo(map);
-    });
-    map.on('mouseleave', 'hut-pts', () => { map.getCanvas().style.cursor = ''; popup.remove(); });
-    map.on('click', 'hut-pts', (e) => { const p = e.features![0].properties as any; location.href = `${base}huts/${p.slug}/`; });
+    const html = (p: any) =>
+      `<b>${p.name}</b>${p.name_en ? `<br><span style="color:#6E6B64">${p.name_en}</span>` : ''}<br>${p.type}・${p.elev_m ?? '—'} m・${p.beds ?? '—'} 床<br>` +
+      `<span style="color:#6E6B64">${p.id}・查證 ${String(p.grade ?? '').slice(0, 1)}${p.coord_rule !== '完整公開' ? '・座標降階' : ''}</span>` +
+      (TOUCH ? `<a class="go" href="${base}huts/${p.slug}/">查看詳頁 →</a>` : '');
+    const popup = new maplibregl.Popup({ closeButton: TOUCH, closeOnClick: TOUCH, offset: TOUCH ? 14 : 10, maxWidth: '260px' });
+
+    if (!TOUCH) {
+      map.on('mouseenter', 'hut-hit', (e) => {
+        map.getCanvas().style.cursor = 'pointer';
+        const f = e.features![0];
+        popup.setLngLat((f.geometry as any).coordinates.slice()).setHTML(html(f.properties)).addTo(map);
+      });
+      map.on('mouseleave', 'hut-hit', () => { map.getCanvas().style.cursor = ''; popup.remove(); });
+      map.on('click', 'hut-hit', (e) => { const p = e.features![0].properties as any; location.href = `${base}huts/${p.slug}/`; });
+    } else {
+      // 第一次點：顯示資訊卡；再點同一座：進詳頁
+      let shown: string | null = null;
+      map.on('click', 'hut-hit', (e) => {
+        const f = e.features![0]; const p = f.properties as any;
+        if (shown === p.id) { location.href = `${base}huts/${p.slug}/`; return; }
+        shown = p.id;
+        popup.setLngLat((f.geometry as any).coordinates.slice()).setHTML(html(p)).addTo(map);
+        map.easeTo({ center: (f.geometry as any).coordinates, duration: 350 });
+      });
+      popup.on('close', () => { shown = null; });
+    }
   }
 </script>
