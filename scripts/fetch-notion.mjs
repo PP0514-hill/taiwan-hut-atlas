@@ -64,7 +64,7 @@ function mapAgency(pg) {
 function mapTrail(pg) {
   return { id: pg.id, name: txt(P(pg, '名稱 Name')), en: txt(P(pg, '英文名 EN Name')), system: sel(P(pg, '系統 System')),
     code: txt(P(pg, '林保署步道代碼 Trail Code')), gis: txt(P(pg, 'GIS 來源 GIS Source')), notes: txt(P(pg, '備註 Notes')),
-    category: sel(P(pg, '分類 Category')) ?? '一般路線' };
+    category: sel(P(pg, '分類 Category')) ?? '一般路線', summary: txt(P(pg, '簡介 Summary')) };
 }
 function mapHut(pg, AG, TR) {
   const elev = num(P(pg, '海拔 Elev m'));
