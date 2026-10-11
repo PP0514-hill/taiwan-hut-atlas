@@ -13,6 +13,7 @@
     "backfill:logistics": "node scripts/backfill-logistics.mjs",
     "check": "node scripts/check-data.mjs",
     "check:agency": "node scripts/check-agency.mjs",
+    "build:routes": "node scripts/build-routes.mjs",
     "prebuild": "node scripts/check-data.mjs && node scripts/publish-data.mjs",
     "predev": "node scripts/publish-data.mjs"
   },
@@ -22,6 +23,8 @@
     "maplibre-gl": "^6.12.0"
   },
   "devDependencies": {
+    "fflate": "^0.8.2",
+    "mapshaper": "^0.6.121",
     "playwright": "^1.63.0"
   }
 }

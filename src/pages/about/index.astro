@@ -45,12 +45,27 @@ const base = import.meta.env.BASE_URL;
     <h2 id="terrain">地形與底圖</h2>
     <p>3D 地形使用內政部 20 公尺網格數值地形模型（2025 年版，政府資料開放授權第 1 版），原型期透過 OsmHackTW 的 terrain-rgb 圖磚載入（z≤13），Phase 2 改為自製圖磚置於 Cloudflare R2。底圖為國土測繪中心通用版電子地圖開放資料（EMAP5_OPENDATA）。</p>
 
+    <h2 id="routes">登山路線、登山口與接駁道路</h2>
+    <p>地形圖上的路線只是示意，用來看山屋位在哪條路線上，<strong>不能拿來導航</strong>。步道會改線、封閉、坍方，入山前請查各管理處與林業及自然保育署的最新公告，並使用正式的離線地圖與 GPX 軌跡。</p>
+    <p>來源依序取用，每條線的資訊卡都會標明出處：</p>
+    <table>
+      <tr><th>來源</th><th>涵蓋</th><th>授權</th></tr>
+      <tr><td>雪霸國家公園登山步道路線圖（國家公園署 TGOS）</td><td>聖稜線、雪劍線、志佳陽線、雪山西稜、雪東線、武陵四秀、大霸線</td><td>政府資料開放授權第 1 版</td></tr>
+      <tr><td>林業及自然保育署自然步道軌跡圖</td><td>能高越嶺道東西段、北大武山、嘉明湖</td><td>政府資料開放授權第 1 版</td></tr>
+      <tr><td>OpenStreetMap 路線關聯</td><td>玉山群峰、八通關西段、鹿林山、奇萊主北、奇萊東稜、畢羊縱走、馬博橫斷</td><td>ODbL 1.0</td></tr>
+      <tr><td>OpenStreetMap 步道路網，本專案依山屋順序串接</td><td>南湖大山主線、南二段、八通關東段、關山、屏風山</td><td>ODbL 1.0</td></tr>
+      <tr><td>OpenStreetMap 道路與登山口，本專案計算最短車行路徑</td><td>登山口位置、登山口至省道或縣道的接駁道路</td><td>ODbL 1.0</td></tr>
+    </table>
+    <p>串接路線是電腦依 OSM 步道算出的最短路徑，未經現勘，可能和實際慣用走法不同。南湖北一段經過座標降階的山屋，依座標降階規則不畫。接駁道路包含林道，林道常有管制或車輛限制。</p>
+    <p>下載：<a href={base + 'data/routes.official.geojson'}>routes.official.geojson</a>（政府資料開放授權）・<a href={base + 'data/routes.osm.geojson'}>routes.osm.geojson</a>（ODbL 1.0，衍生自 © OpenStreetMap contributors，再利用須同樣以 ODbL 釋出）・<a href={base + 'data/parks.geojson'}>parks.geojson</a>（國家公園範圍）・<a href={base + 'data/park-hq.geojson'}>park-hq.geojson</a>（管理處位置，ODbL）。</p>
+
     <h2 id="license">授權</h2>
     <table>
       <tr><th>內容</th><th>授權</th></tr>
       <tr><td>文字、表格、座標</td><td>CC BY 4.0，標示「台灣山屋誌 Taiwan Hut Atlas」</td></tr>
       <tr><td>照片</td><td>CC BY-NC 4.0（Phase 2 起）</td></tr>
       <tr><td>程式碼</td><td>MIT</td></tr>
+      <tr><td>OSM 衍生資料（路線、登山口、接駁道路、管理處位置）</td><td>ODbL 1.0，© OpenStreetMap contributors；與上列 CC BY 4.0 內容分檔，不混合</td></tr>
       <tr><td>引用之第三方來源</td><td>各依原授權，逐筆標於來源表（政府資料開放授權、CC BY-SA、著作權保留等）</td></tr>
     </table>
     <p>由初樸建築師事務所 ProtoPlain Architects 發起並維護。</p>

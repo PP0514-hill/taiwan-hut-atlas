@@ -1,0 +1,63 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "license": "ODbL 1.0 © OpenStreetMap contributors",
+  "note": "座標取自 OSM，地址對照各管理處官網；查證 2026-10-11"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "玉山國家公園管理處",
+    "name_en": "Yushan National Park Headquarters",
+    "agency_id": "3f0bf2d8-5a3b-81da-b0fa-ef33e6763596",
+    "website": "https://www.ysnp.gov.tw",
+    "address": "南投縣水里鄉中山路一段 515 號",
+    "osm": "n2960438603"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.84989,
+     23.81263
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "太魯閣國家公園管理處",
+    "name_en": "Taroko National Park Headquarters",
+    "agency_id": "3f0bf2d8-5a3b-81b0-bc6b-db8fc14e6eb0",
+    "website": "https://www.taroko.gov.tw",
+    "address": "花蓮縣秀林鄉富世村富世 291 號",
+    "osm": "n2572304302"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.62171,
+     24.15869
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "雪霸國家公園管理處",
+    "name_en": "Shei-Pa National Park Headquarters",
+    "agency_id": "3f0bf2d8-5a3b-814e-b736-f263978c30d9",
+    "website": "https://www.spnp.gov.tw",
+    "address": "苗栗縣大湖鄉富興村水尾坪 100 號",
+    "osm": "r7779262"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.88067,
+     24.44846
+    ]
+   }
+  }
+ ]
+}

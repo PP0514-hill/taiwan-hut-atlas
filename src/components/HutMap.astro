@@ -12,8 +12,16 @@ interface Props {
   class?: string;
   id?: string;
   focus?: string; // 單座山屋頁：高亮此 TWH ID
+  views?: boolean; // 主地圖：顯示國家公園快速視角按鈕
 }
-const { features, center = [121.0, 23.6], zoom = 7.3, pitch = 45, class: cls = '', id = 'map', focus } = Astro.props;
+const { features, center = [121.0, 23.6], zoom = 7.3, pitch = 45, class: cls = '', id = 'map', focus, views = false } = Astro.props;
+// 快速視角：範圍取自 data/parks.geojson 的外框（2026-10-11 計算），bearing 依主稜走向微轉，讓 3D 地形側光好讀
+const VIEWS = [
+  { label: '全島', center, zoom, pitch, bearing: 0 },
+  { label: '玉山', bounds: [120.825, 23.223, 121.25, 23.577], pitch: 55, bearing: 15 },
+  { label: '雪霸', bounds: [120.997, 24.249, 121.342, 24.53], pitch: 55, bearing: -25 },
+  { label: '太魯閣', bounds: [121.234, 24.042, 121.716, 24.384], pitch: 55, bearing: 20 },
+];
 const base = import.meta.env.BASE_URL;
 // 色彩依品牌規範：單一強調色給「現役山屋」；歷史層以空心圈（次文色）區別；關聯設施淡化。
 // 類別差異另以形狀（實心／空心）與大小（床位）承載，不只靠顏色。
@@ -22,11 +30,20 @@ const CLASS_COLOR: Record<string, string> = { current: '#9C3D2C', historic: '#6E
 const CLASS_LABEL: Record<string, string> = { current: '現役山屋（實心；大小＝核定床位）', historic: '歷史層：停用、已拆除、遺構、工寮（空心）', related: '關聯設施（不計入統計）' };
 for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.properties as any).type);
 ---
+{views && (
+  <nav class="map-views" data-for={id} aria-label="國家公園快速視角">
+    {VIEWS.map((v, i) => <button type="button" data-view={JSON.stringify(v)} aria-pressed={i === 0 ? 'true' : 'false'}>{v.label}</button>)}
+  </nav>
+)}
 <div id={id} class:list={['map', cls]} data-features={JSON.stringify(features)} data-center={JSON.stringify(center)} data-zoom={zoom} data-pitch={pitch} data-base={base} data-focus={focus ?? ''} data-colors={JSON.stringify(CLASS_COLOR)}></div>
 <div class="map-legend" aria-hidden="true">
   {Object.entries(CLASS_COLOR).filter(([k]) => features.features.some((f) => (f.properties as any)?.cls === k)).map(([k, c]) => <span style={`--c:${c}`}>{CLASS_LABEL[k]}</span>)}
   <span style="--c:transparent">外圈＝座標已降階至 1 km 網格</span>
   <span class="park">虛線＝國家公園計畫範圍（玉山、太魯閣、雪霸）</span>
+  <span class="route">黑實線＝主要登山路線（示意，不可作為導航）</span>
+  <span class="access">灰實線＝登山口至主要道路</span>
+  <span class="trailhead">白點＝登山口</span>
+  <span class="hq">黑點＝國家公園管理處</span>
 </div>
 
 <script>
@@ -76,6 +93,10 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
           huts: { type: 'geojson', data: features },
           // 國家公園範圍約 70 KB，以 URL 交給 worker 抓，不內嵌進每一頁
           parks: { type: 'geojson', data: new URL(`${base}data/parks.geojson`, location.href).href, attribution: '國家公園範圍 © 內政部國家公園署（政府資料開放授權）' },
+          // 路線分兩檔：官方開放資料（政府資料開放授權）與 OSM 衍生（ODbL），授權不同不混檔
+          routesGov: { type: 'geojson', data: new URL(`${base}data/routes.official.geojson`, location.href).href, attribution: '登山路線 雪霸國家公園管理處、林業及自然保育署（政府資料開放授權）' },
+          hq: { type: 'geojson', data: new URL(`${base}data/park-hq.geojson`, location.href).href, attribution: '管理處位置 © OpenStreetMap contributors（ODbL）' },
+          routesOsm: { type: 'geojson', data: new URL(`${base}data/routes.osm.geojson`, location.href).href, attribution: '登山路線、登山口、道路 © OpenStreetMap contributors（ODbL）' },
         },
         terrain: { source: 'dem', exaggeration: 1.3 },
         layers: [
@@ -85,10 +106,29 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
           { id: 'park-fill', type: 'fill', source: 'parks', paint: { 'fill-color': '#6E6B64', 'fill-opacity': 0.1 } },
           // 地形暈渲很花，虛線底下墊一道白邊才讀得出來
           { id: 'park-casing', type: 'line', source: 'parks', paint: { 'line-color': '#FFFFFF', 'line-width': ['interpolate', ['linear'], ['zoom'], 7, 3.5, 12, 5], 'line-opacity': 0.8 } },
-          { id: 'park-line', type: 'line', source: 'parks', paint: { 'line-color': '#232220', 'line-width': ['interpolate', ['linear'], ['zoom'], 7, 1.5, 12, 2.5], 'line-dasharray': [3, 2] } },
+          { id: 'park-line', type: 'line', source: 'parks', paint: { 'line-color': '#6E6B64', 'line-width': ['interpolate', ['linear'], ['zoom'], 7, 1.5, 12, 2.5], 'line-dasharray': [3, 2] } },
+          // 路線：同樣墊白邊；登山路線用墨色實線，接駁道路用次文色，皆不另配色
+          ...(['routesGov', 'routesOsm'] as const).flatMap((src) => [
+            { id: `${src}-casing`, type: 'line' as const, source: src, filter: ['in', ['get', 'kind'], ['literal', ['route', 'access']]] as any, layout: { 'line-join': 'round' as const, 'line-cap': 'round' as const },
+              paint: { 'line-color': '#FFFFFF', 'line-width': ['interpolate', ['linear'], ['zoom'], 7, 2.5, 13, 5] as any, 'line-opacity': 0.75 } },
+            { id: `${src}-access`, type: 'line' as const, source: src, filter: ['==', ['get', 'kind'], 'access'] as any, layout: { 'line-join': 'round' as const, 'line-cap': 'round' as const },
+              paint: { 'line-color': '#6E6B64', 'line-width': ['interpolate', ['linear'], ['zoom'], 7, 1, 13, 2.5] as any } },
+            { id: `${src}-route`, type: 'line' as const, source: src, filter: ['==', ['get', 'kind'], 'route'] as any, layout: { 'line-join': 'round' as const, 'line-cap': 'round' as const },
+              paint: { 'line-color': '#232220', 'line-width': ['interpolate', ['linear'], ['zoom'], 7, 1, 13, 2.5] as any } },
+          ]),
+          { id: 'trailhead', type: 'circle', source: 'routesOsm', filter: ['==', ['get', 'kind'], 'trailhead'], minzoom: 8.5,
+            paint: { 'circle-radius': 3.5, 'circle-color': '#FFFFFF', 'circle-stroke-width': 1.5, 'circle-stroke-color': '#232220' } },
+          { id: 'trailhead-label', type: 'symbol', source: 'routesOsm', filter: ['==', ['get', 'kind'], 'trailhead'], minzoom: 10.5,
+            layout: { 'text-field': ['get', 'name'], 'text-size': 11, 'text-offset': [0, -1.1], 'text-anchor': 'bottom', 'text-font': ['Noto Sans Regular'] },
+            paint: { 'text-color': '#6E6B64', 'text-halo-color': '#FFFFFF', 'text-halo-width': 1.2 } },
           { id: 'park-label', type: 'symbol', source: 'parks', maxzoom: 11,
             layout: { 'text-field': ['get', 'name'], 'text-size': 13, 'text-font': ['Noto Sans Regular'], 'text-letter-spacing': 0.15 },
             paint: { 'text-color': '#6E6B64', 'text-halo-color': '#FFFFFF', 'text-halo-width': 1.4 } },
+          { id: 'hq', type: 'circle', source: 'hq',
+            paint: { 'circle-radius': 5, 'circle-color': '#232220', 'circle-stroke-width': 2, 'circle-stroke-color': '#FFFFFF' } },
+          { id: 'hq-label', type: 'symbol', source: 'hq', minzoom: 7,
+            layout: { 'text-field': ['get', 'name'], 'text-size': 12, 'text-offset': [0, 1.1], 'text-anchor': 'top', 'text-font': ['Noto Sans Regular'] },
+            paint: { 'text-color': '#232220', 'text-halo-color': '#FFFFFF', 'text-halo-width': 1.4 } },
           { id: 'hut-pts', type: 'circle', source: 'huts', paint: {
               'circle-radius': ['interpolate', ['linear'], ['coalesce', ['get', 'beds'], 0], 0, 5, 20, 7, 60, 10, 140, 14],
               'circle-color': ['case', isCurrent, colorExpr, 'rgba(255,255,255,0.75)'],
@@ -141,6 +181,36 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
         map.easeTo({ center: (f.geometry as any).coordinates, duration: 350 });
       });
       popup.on('close', () => { shown = null; });
+    }
+
+    // 快速視角按鈕：外框用 fitBounds（自動依畫面寬度決定縮放），全島回到初始中心
+    document.querySelector(`.map-views[data-for="${el.id}"]`)?.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest('button'); if (!btn) return;
+      const v = JSON.parse(btn.dataset.view!);
+      btn.parentElement!.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      const motion = { pitch: v.pitch, bearing: v.bearing, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1600, essential: true };
+      if (v.bounds) map.fitBounds([[v.bounds[0], v.bounds[1]], [v.bounds[2], v.bounds[3]]], { ...motion, padding: NARROW ? 16 : 48 });
+      else map.flyTo({ ...motion, center: v.center, zoom: v.zoom - (NARROW ? 0.6 : 0) });
+    });
+    // 使用者自己拖曳後，按鈕不再顯示為選取中
+    map.on('dragstart', () => document.querySelectorAll(`.map-views[data-for="${el.id}"] button`).forEach((b) => b.setAttribute('aria-pressed', 'false')));
+
+    // 路線、接駁道路、登山口：只顯示名稱與來源，不進詳頁
+    const lineHtml = (p: any) =>
+      p.address ? `<b>${p.name}</b><br>${p.address}${p.website ? `<br><a href="${p.website}" target="_blank" rel="noopener">官方網站 →</a>` : ''}`
+      : p.kind === 'trailhead' ? `<b>${p.name}</b><br><span style="color:#6E6B64">${p.trail}</span>`
+      : p.kind === 'access' ? `<b>${p.name}聯外道路</b><br>${p.via || '—'}・約 ${p.length_km} km<br><span style="color:#6E6B64">OSM 道路路網計算，車行限制以公告為準</span>`
+      : `<b>${p.trail}</b>${p.trail_en ? `<br><span style="color:#6E6B64">${p.trail_en}</span>` : ''}<br><span style="color:#6E6B64">${p.source}</span>`;
+    const linePopup = new maplibregl.Popup({ closeButton: TOUCH, closeOnClick: TOUCH, offset: 8, maxWidth: '280px' });
+    for (const layer of ['routesGov-route', 'routesOsm-route', 'routesOsm-access', 'trailhead', 'hq']) {
+      if (TOUCH) {
+        map.on('click', layer, (e) => { if (!map.queryRenderedFeatures(e.point, { layers: ['hut-hit'] }).length) linePopup.setLngLat(e.lngLat).setHTML(lineHtml(e.features![0].properties)).addTo(map); });
+      } else {
+        map.on('mousemove', layer, (e) => {
+          if (map.queryRenderedFeatures(e.point, { layers: ['hut-hit'] }).length) { linePopup.remove(); return; } // 山屋優先
+          map.getCanvas().style.cursor = 'help'; linePopup.setLngLat(e.lngLat).setHTML(lineHtml(e.features![0].properties)).addTo(map); });
+        map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = ''; linePopup.remove(); });
+      }
     }
   }
 </script>

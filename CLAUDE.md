@@ -58,4 +58,5 @@ gh workflow run deploy.yml --ref main
 - MapLibre 6 在 Vite 下 worker 路徑失效，`HutMap.astro` 以 `?worker&url` 匯入並 `setWorkerUrl`。
 - `.geojson` 不能直接 import，`src/lib/data.ts` 由 huts.json 組 GeoJSON。
 - 地形圖磚 z>13 與海域會 404，無害。
+- 公開 Overpass 常 429／504，`build:routes` 已改讀本機 Geofabrik 全島檔（`.cache/osm/`，需 `brew install osmium-tool`）；OSM 衍生資料一律放 `routes.osm.geojson`／`park-hq.geojson`（ODbL），不可併入 CC BY 或官方檔。
 - 後加的圖層別掛在 `map.once('load')`：國土測繪中心底圖載得慢，load 會延遲十幾秒。國家公園範圍改在 style 內以 URL 宣告 geojson source。
