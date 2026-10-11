@@ -17,7 +17,7 @@
 
 ## 待辦（依優先順序）
 
-1. 確認 deploy 綠燈、網站可開。（頁首 draft 紅字提示已依使用者指示移除，2026-10-07）
+1. 確認 deploy 綠燈、網站可開；首頁應掛紅字「draft」提示。
 2. 使用者在 Settings → Secrets 貼入 `NOTION_TOKEN`，之後手動跑一次 `sync-notion`（workflow_dispatch）驗證。
 3. `npm run backfill:logistics`（需 `.env` 的 NOTION_TOKEN）補齊運補難度指數；TWH-0001～0011 已由 MCP 回填。
 4. 在 Notion 決策頁（id `3f0bf2d8-5a3b-81c1-90a5-d360863f1643`）記錄 repo、Pages 網址、本次 workflow 修正。
