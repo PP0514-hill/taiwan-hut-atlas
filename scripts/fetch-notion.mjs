@@ -64,7 +64,10 @@ function mapAgency(pg) {
 function mapTrail(pg) {
   return { id: pg.id, name: txt(P(pg, '名稱 Name')), en: txt(P(pg, '英文名 EN Name')), system: sel(P(pg, '系統 System')),
     code: txt(P(pg, '林保署步道代碼 Trail Code')), gis: txt(P(pg, 'GIS 來源 GIS Source')), notes: txt(P(pg, '備註 Notes')),
-    category: sel(P(pg, '分類 Category')) ?? '一般路線', summary: txt(P(pg, '簡介 Summary')) };
+    category: sel(P(pg, '分類 Category')) ?? '一般路線', summary: txt(P(pg, '簡介 Summary')),
+    // 外部參考值（天數、難度、里程）原文照錄，網站標註出處與查證日
+    ref: url(P(pg, '參考來源 Reference')) ? { days: txt(P(pg, '參考天數 Days')), difficulty: txt(P(pg, '參考難度 Difficulty')), distance: txt(P(pg, '參考里程 Distance')),
+      url: url(P(pg, '參考來源 Reference')), checked: date(P(pg, '參考查證日 Checked')) } : null };
 }
 function mapHut(pg, AG, TR) {
   const elev = num(P(pg, '海拔 Elev m'));
