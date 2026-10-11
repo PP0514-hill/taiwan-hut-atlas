@@ -1,1 +1,1328 @@
-{"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [120.94967, 23.4666]}, "properties": {"id": "TWH-0001", "slug": "paiyun-lodge", "name": "排雲山莊", "name_en": "Paiyun Lodge", "type": "服務型山屋", "status": "使用中", "region": "玉山", "beds": 136, "elev_m": 3402, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": "1967", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [120.95484, 23.45677]}, "properties": {"id": "TWH-0002", "slug": "yuanfong-cabin", "name": "圓峰山屋", "name_en": "Yuanfong Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 15, "elev_m": 3694, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": null, "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [120.95807, 23.54599]}, "properties": {"id": "TWH-0003", "slug": "lele-cabin", "name": "樂樂山屋", "name_en": "LeLe Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 12, "elev_m": 1670, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": "1985", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.00007, 23.50341]}, "properties": {"id": "TWH-0004", "slug": "guangao-cabin", "name": "觀高山屋", "name_en": "Guangao Cabin", "type": "服務型山屋", "status": "使用中", "region": "玉山", "beds": 42, "elev_m": 2575, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": null, "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.02743, 23.48649]}, "properties": {"id": "TWH-0005", "slug": "jhongyang-mine-cabin", "name": "中央金礦山屋", "name_en": "Jhongyang Mine Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 20, "elev_m": 2823, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2003", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.04737, 23.48795]}, "properties": {"id": "TWH-0006", "slug": "baiyang-mine-cabin", "name": "白洋金礦山屋", "name_en": "Baiyang Mine Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 12, "elev_m": 3380, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "1985", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.05627, 23.4593]}, "properties": {"id": "TWH-0007", "slug": "dashueiku-cabin", "name": "大水窟山屋", "name_en": "Dashueiku Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 20, "elev_m": 3227, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2002", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.02674, 23.41957]}, "properties": {"id": "TWH-0008", "slug": "tafen-valley-cabin", "name": "塔芬谷山屋", "name_en": "Tafen Valley Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 20, "elev_m": 2605, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2002", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.00651, 23.38599]}, "properties": {"id": "TWH-0009", "slug": "lulu-valley-cabin", "name": "轆轆谷山屋", "name_en": "Lulu Valley Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 20, "elev_m": 2991, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2002", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.02572, 23.3283]}, "properties": {"id": "TWH-0010", "slug": "lakuyin-river-cabin", "name": "拉庫音溪山屋", "name_en": "Lakuyin River Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 20, "elev_m": 2690, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2002", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.07389, 23.51833]}, "properties": {"id": "TWH-0011", "slug": "mabolasih-cabin", "name": "馬博山屋", "name_en": "Mabolasih Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 20, "elev_m": 3580, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": "2003", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.13198, 23.51552]}, "properties": {"id": "TWH-0012", "slug": "malijianan-cabin", "name": "馬利加南山屋", "name_en": "Malijianan Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 20, "elev_m": 3267, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2003", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.16114, 23.48121]}, "properties": {"id": "TWH-0013", "slug": "mabu-valley-cabin", "name": "馬布谷山屋", "name_en": "Mabu Valley Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 20, "elev_m": 2964, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2003", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.18632, 23.35378]}, "properties": {"id": "TWH-0014", "slug": "walami-cabin", "name": "瓦拉米山屋", "name_en": "Walami Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 24, "elev_m": 1070, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": "1985", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.13973, 23.33502]}, "properties": {"id": "TWH-0015", "slug": "baoyat-cabin", "name": "抱崖山屋", "name_en": "Baoyat Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 16, "elev_m": 1676, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2002", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.09777, 23.37478]}, "properties": {"id": "TWH-0016", "slug": "dafen-cabin", "name": "大分山屋", "name_en": "Dafen Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 20, "elev_m": 1280, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2000", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [120.91011, 23.25529]}, "properties": {"id": "TWH-0017", "slug": "kuhanuosin-cabin", "name": "庫哈諾辛山屋", "name_en": "Kuhanuosin Cabin", "type": "避難型山屋", "status": "使用中", "region": "玉山", "beds": 24, "elev_m": 3000, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "1985", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.286072, 24.383429]}, "properties": {"id": "TWH-0018", "slug": "qika-cabin", "name": "七卡山莊", "name_en": "Qika Cabin", "type": "服務型山屋", "status": "使用中", "region": "雪霸", "beds": 106, "elev_m": 2510, "logistics_index": 2, "grade": "B 官方或學術", "first_built_year": "1970", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.254574, 24.392298]}, "properties": {"id": "TWH-0019", "slug": "saliujiu-cabin", "name": "三六九山莊", "name_en": "Saliujiu Cabin", "type": "服務型山屋", "status": "整修中", "region": "雪霸", "beds": 0, "elev_m": 3150, "logistics_index": 2, "grade": "B 官方或學術", "first_built_year": "2021", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.222801, 24.385388]}, "properties": {"id": "TWH-0020", "slug": "cuei-pond-hut", "name": "翠池山屋", "name_en": "Cuei Pond Hut", "type": "避難型山屋", "status": "使用中", "region": "雪霸", "beds": 12, "elev_m": 3510, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": "2001", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.302476, 24.433048]}, "properties": {"id": "TWH-0021", "slug": "taoshan-hut", "name": "桃山山屋", "name_en": "Taoshan Hut", "type": "避難型山屋", "status": "使用中", "region": "雪霸", "beds": 19, "elev_m": 3275, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2002", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.278751, 24.429789]}, "properties": {"id": "TWH-0022", "slug": "xinda-hut", "name": "新達山屋", "name_en": "Xinda Hut", "type": "避難型山屋", "status": "使用中", "region": "雪霸", "beds": 34, "elev_m": 3175, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": null, "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.25488, 24.35571]}, "properties": {"id": "TWH-0023", "slug": "piaodan-hut", "name": "瓢簞山屋", "name_en": "Piaodan Hut", "type": "避難型山屋", "status": "使用中", "region": "雪霸", "beds": 15, "elev_m": 3135, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2022", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.20623, 24.32371]}, "properties": {"id": "TWH-0024", "slug": "youpolan-hut", "name": "油婆蘭山屋", "name_en": "Youpolan Hut", "type": "避難型山屋", "status": "使用中", "region": "雪霸", "beds": 15, "elev_m": 3270, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2022", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.242809, 24.411513]}, "properties": {"id": "TWH-0025", "slug": "syuebei-hut", "name": "雪北山屋", "name_en": "Syuebei Hut", "type": "避難型山屋", "status": "使用中", "region": "雪霸", "beds": 25, "elev_m": 3595, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": "2003", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.250721, 24.423256]}, "properties": {"id": "TWH-0026", "slug": "sumida-hut", "name": "素密達山屋", "name_en": "Sumida Hut", "type": "避難型山屋", "status": "使用中", "region": "雪霸", "beds": 24, "elev_m": 3485, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": "2003", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.260944, 24.450776]}, "properties": {"id": "TWH-0027", "slug": "banan-hut", "name": "霸南山屋", "name_en": "Banan Hut", "type": "避難型山屋", "status": "使用中", "region": "雪霸", "beds": 15, "elev_m": 3105, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2012", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.208353, 24.468835]}, "properties": {"id": "TWH-0028", "slug": "jiujiu-cabin", "name": "九九山莊", "name_en": "Jiujiu Cabin", "type": "服務型山屋", "status": "整修中", "region": "林保署", "beds": 150, "elev_m": 2699, "logistics_index": 2, "grade": "B 官方或學術", "first_built_year": "1971", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.251286, 24.464724]}, "properties": {"id": "TWH-0029", "slug": "jhongba-hut", "name": "中霸山屋", "name_en": "Jhongba Hut", "type": "避難型山屋", "status": "使用中", "region": "林保署", "beds": 12, "elev_m": 3295, "logistics_index": 4, "grade": "C 二手彙整", "first_built_year": "2014", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.2796, 24.0453]}, "properties": {"id": "TWH-0030", "slug": "tianchih-lodge", "name": "天池山莊", "name_en": null, "type": "服務型山屋", "status": "使用中", "region": "林保署", "beds": 88, "elev_m": 2860, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "1931", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [120.7385, 22.6147]}, "properties": {"id": "TWH-0031", "slug": "kuaigu-lodge", "name": "檜谷山莊", "name_en": "Kuaigu Lodge", "type": "服務型山屋", "status": "使用中", "region": "林保署", "beds": 42, "elev_m": 2110, "logistics_index": 3, "grade": "C 二手彙整", "first_built_year": null, "coord_precision": "文獻或民間推估", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [120.98443, 23.26263]}, "properties": {"id": "TWH-0032", "slug": "siangyang-hut", "name": "向陽山屋", "name_en": null, "type": "服務型山屋", "status": "使用中", "region": "林保署", "beds": 70, "elev_m": 2874, "logistics_index": 4, "grade": "C 二手彙整", "first_built_year": null, "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [120.99675, 23.28363]}, "properties": {"id": "TWH-0033", "slug": "jiaming-lake-hut", "name": "嘉明湖避難山屋", "name_en": null, "type": "服務型山屋", "status": "使用中", "region": "林保署", "beds": 70, "elev_m": 3350, "logistics_index": 3, "grade": "C 二手彙整", "first_built_year": null, "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.3119, 24.1206]}, "properties": {"id": "TWH-0034", "slug": "heishuitang-cabin", "name": "黑水塘山屋", "name_en": "Heishuitang Cabin", "type": "避難型山屋", "status": "使用中", "region": "太魯閣", "beds": 6, "elev_m": 2710, "logistics_index": 3, "grade": "C 二手彙整", "first_built_year": null, "coord_precision": "官方舊資料", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.3186, 24.1161]}, "properties": {"id": "TWH-0035", "slug": "chenggong-cabin", "name": "成功山屋", "name_en": "Chenggong Cabin", "type": "服務型山屋", "status": "使用中", "region": "太魯閣", "beds": 34, "elev_m": 2879, "logistics_index": 3, "grade": "C 二手彙整", "first_built_year": "2006", "coord_precision": "文獻或民間推估", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.3269, 24.1087]}, "properties": {"id": "TWH-0038", "slug": "qilai-ridge-cabin-old", "name": "奇萊稜線山屋（舊）", "name_en": null, "type": "已停用", "status": "停用", "region": "太魯閣", "beds": 0, "elev_m": 3344, "logistics_index": 4, "grade": "C 二手彙整", "first_built_year": "1995", "coord_precision": "文獻或民間推估", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.397, 24.378]}, "properties": {"id": "TWH-0039", "slug": "yunleng-cabin", "name": "雲稜山屋", "name_en": "Yunleng Cabin", "type": "服務型山屋", "status": "使用中", "region": "太魯閣", "beds": 65, "elev_m": 2615, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2004", "coord_precision": "文獻或民間推估", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.4261, 24.3811]}, "properties": {"id": "TWH-0040", "slug": "shenmazhen-cabin", "name": "審馬陣山屋", "name_en": "Shenmazhen Cabin", "type": "避難型山屋", "status": "使用中", "region": "太魯閣", "beds": 10, "elev_m": 3229, "logistics_index": 4, "grade": "C 二手彙整", "first_built_year": "1978", "coord_precision": "文獻或民間推估", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.4435, 24.3696]}, "properties": {"id": "TWH-0041", "slug": "nanhu-cabin", "name": "南湖山屋", "name_en": "Nanhu Cabin", "type": "服務型山屋", "status": "使用中", "region": "太魯閣", "beds": 38, "elev_m": 3394, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": "2001", "coord_precision": "文獻或民間推估", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.3683, 24.2077]}, "properties": {"id": "TWH-0042", "slug": "jushan-east-cabin", "name": "鋸東避難小屋", "name_en": "Ju-shan East Cabin", "type": "避難型山屋", "status": "使用中", "region": "太魯閣", "beds": 14, "elev_m": 3010, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": "2021", "coord_precision": "文獻或民間推估", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.325, 24.1621]}, "properties": {"id": "TWH-0043", "slug": "pingfong-cabin", "name": "屏風避難山屋", "name_en": "Pingfong Cabin", "type": "避難型山屋", "status": "使用中", "region": "太魯閣", "beds": 28, "elev_m": 2080, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": "2021", "coord_precision": "文獻或民間推估", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.4453, 24.1223]}, "properties": {"id": "TWH-0046", "slug": "dalishi-cabin", "name": "大理石營地避難小屋", "name_en": "Dalishi Cabin", "type": "避難型山屋", "status": "使用中", "region": "太魯閣", "beds": 12, "elev_m": 2985, "logistics_index": 3, "grade": "B 官方或學術", "first_built_year": "2023", "coord_precision": "文獻或民間推估", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.3219, 24.1139]}, "properties": {"id": "TWH-0047", "slug": "chenggong-no1-cabin", "name": "成功一號堡", "name_en": null, "type": "避難型山屋", "status": "不明", "region": "太魯閣", "beds": 8, "elev_m": null, "logistics_index": null, "grade": "D 僅知存在", "first_built_year": "1971", "coord_precision": "官方舊資料", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.42, 24.34]}, "properties": {"id": "TWH-0049", "slug": "jhongyangjian-creek-hut", "name": "中央尖溪木屋", "name_en": null, "type": "避難型山屋", "status": "不明", "region": "太魯閣", "beds": 8, "elev_m": 2438, "logistics_index": 3, "grade": "D 僅知存在", "first_built_year": "1987", "coord_precision": "文獻或民間推估", "coord_rule": "1 km 網格"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.4, 24.37]}, "properties": {"id": "TWH-0050", "slug": "nanhu-creek-hut", "name": "南湖溪山屋", "name_en": null, "type": "避難型山屋", "status": "不明", "region": "太魯閣", "beds": 10, "elev_m": 2209, "logistics_index": 3, "grade": "D 僅知存在", "first_built_year": "1981", "coord_precision": "文獻或民間推估", "coord_rule": "1 km 網格"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.254574, 24.392298]}, "properties": {"id": "TWH-0055", "slug": "saliujiu-cabin-old", "name": "舊三六九山莊", "name_en": null, "type": "已拆除", "status": "已拆除", "region": "雪霸", "beds": 0, "elev_m": 3150, "logistics_index": 4, "grade": "B 官方或學術", "first_built_year": "1969", "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.237291, 24.376272]}, "properties": {"id": "TWH-0056", "slug": "xueshan-lodge-site", "name": "雪山山莊舊址", "name_en": "Former Site of Xue Mountain Cabin", "type": "已拆除", "status": "已拆除", "region": "雪霸", "beds": 0, "elev_m": 3335, "logistics_index": 4, "grade": "D 僅知存在", "first_built_year": null, "coord_precision": "官方公告", "coord_rule": "完整公開"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.02, 23.49]}, "properties": {"id": "TWH-0062", "slug": "banaiyike-shed", "name": "巴奈伊克鐵皮屋", "name_en": null, "type": "工寮", "status": "不明", "region": "玉山", "beds": 10, "elev_m": 2820, "logistics_index": 3, "grade": "D 僅知存在", "first_built_year": null, "coord_precision": "官方公告", "coord_rule": "1 km 網格"}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [121.02297, 23.18638]}, "properties": {"id": "TWH-0068", "slug": "lidao-lodge", "name": "利稻山莊", "name_en": null, "type": "關聯設施", "status": "停用", "region": "林保署", "beds": null, "elev_m": null, "logistics_index": 1, "grade": "B 官方或學術", "first_built_year": "1975", "coord_precision": "官方公告", "coord_rule": "完整公開"}}]}
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.94967,
+     23.4666
+    ]
+   },
+   "properties": {
+    "id": "TWH-0001",
+    "slug": "paiyun-lodge",
+    "name": "排雲山莊",
+    "name_en": "Paiyun Lodge",
+    "type": "服務型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 136,
+    "elev_m": 3402,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": "1967",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.95484,
+     23.45677
+    ]
+   },
+   "properties": {
+    "id": "TWH-0002",
+    "slug": "yuanfong-cabin",
+    "name": "圓峰山屋",
+    "name_en": "Yuanfong Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 15,
+    "elev_m": 3694,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": null,
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.95807,
+     23.54599
+    ]
+   },
+   "properties": {
+    "id": "TWH-0003",
+    "slug": "lele-cabin",
+    "name": "樂樂山屋",
+    "name_en": "LeLe Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 12,
+    "elev_m": 1670,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": "1985",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.00007,
+     23.50341
+    ]
+   },
+   "properties": {
+    "id": "TWH-0004",
+    "slug": "guangao-cabin",
+    "name": "觀高山屋",
+    "name_en": "Guangao Cabin",
+    "type": "服務型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 42,
+    "elev_m": 2575,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": null,
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.02743,
+     23.48649
+    ]
+   },
+   "properties": {
+    "id": "TWH-0005",
+    "slug": "jhongyang-mine-cabin",
+    "name": "中央金礦山屋",
+    "name_en": "Jhongyang Mine Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 20,
+    "elev_m": 2823,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2003",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.04737,
+     23.48795
+    ]
+   },
+   "properties": {
+    "id": "TWH-0006",
+    "slug": "baiyang-mine-cabin",
+    "name": "白洋金礦山屋",
+    "name_en": "Baiyang Mine Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 12,
+    "elev_m": 3380,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "1985",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.05627,
+     23.4593
+    ]
+   },
+   "properties": {
+    "id": "TWH-0007",
+    "slug": "dashueiku-cabin",
+    "name": "大水窟山屋",
+    "name_en": "Dashueiku Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 20,
+    "elev_m": 3227,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2002",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.02674,
+     23.41957
+    ]
+   },
+   "properties": {
+    "id": "TWH-0008",
+    "slug": "tafen-valley-cabin",
+    "name": "塔芬谷山屋",
+    "name_en": "Tafen Valley Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 20,
+    "elev_m": 2605,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2002",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.00651,
+     23.38599
+    ]
+   },
+   "properties": {
+    "id": "TWH-0009",
+    "slug": "lulu-valley-cabin",
+    "name": "轆轆谷山屋",
+    "name_en": "Lulu Valley Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 20,
+    "elev_m": 2991,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2002",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.02572,
+     23.3283
+    ]
+   },
+   "properties": {
+    "id": "TWH-0010",
+    "slug": "lakuyin-river-cabin",
+    "name": "拉庫音溪山屋",
+    "name_en": "Lakuyin River Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 20,
+    "elev_m": 2690,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2002",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.07389,
+     23.51833
+    ]
+   },
+   "properties": {
+    "id": "TWH-0011",
+    "slug": "mabolasih-cabin",
+    "name": "馬博山屋",
+    "name_en": "Mabolasih Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 20,
+    "elev_m": 3580,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": "2003",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.13198,
+     23.51552
+    ]
+   },
+   "properties": {
+    "id": "TWH-0012",
+    "slug": "malijianan-cabin",
+    "name": "馬利加南山屋",
+    "name_en": "Malijianan Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 20,
+    "elev_m": 3267,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2003",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.16114,
+     23.48121
+    ]
+   },
+   "properties": {
+    "id": "TWH-0013",
+    "slug": "mabu-valley-cabin",
+    "name": "馬布谷山屋",
+    "name_en": "Mabu Valley Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 20,
+    "elev_m": 2964,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2003",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.18632,
+     23.35378
+    ]
+   },
+   "properties": {
+    "id": "TWH-0014",
+    "slug": "walami-cabin",
+    "name": "瓦拉米山屋",
+    "name_en": "Walami Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 24,
+    "elev_m": 1070,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": "1985",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.13973,
+     23.33502
+    ]
+   },
+   "properties": {
+    "id": "TWH-0015",
+    "slug": "baoyat-cabin",
+    "name": "抱崖山屋",
+    "name_en": "Baoyat Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 16,
+    "elev_m": 1676,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2002",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.09777,
+     23.37478
+    ]
+   },
+   "properties": {
+    "id": "TWH-0016",
+    "slug": "dafen-cabin",
+    "name": "大分山屋",
+    "name_en": "Dafen Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 20,
+    "elev_m": 1280,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2000",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.91011,
+     23.25529
+    ]
+   },
+   "properties": {
+    "id": "TWH-0017",
+    "slug": "kuhanuosin-cabin",
+    "name": "庫哈諾辛山屋",
+    "name_en": "Kuhanuosin Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "玉山",
+    "beds": 24,
+    "elev_m": 3000,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "1985",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.286072,
+     24.383429
+    ]
+   },
+   "properties": {
+    "id": "TWH-0018",
+    "slug": "qika-cabin",
+    "name": "七卡山莊",
+    "name_en": "Qika Cabin",
+    "type": "服務型山屋",
+    "status": "使用中",
+    "region": "雪霸",
+    "beds": 106,
+    "elev_m": 2510,
+    "logistics_index": 2,
+    "grade": "B 官方或學術",
+    "first_built_year": "1970",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.254574,
+     24.392298
+    ]
+   },
+   "properties": {
+    "id": "TWH-0019",
+    "slug": "saliujiu-cabin",
+    "name": "三六九山莊",
+    "name_en": "Saliujiu Cabin",
+    "type": "服務型山屋",
+    "status": "整修中",
+    "region": "雪霸",
+    "beds": 0,
+    "elev_m": 3150,
+    "logistics_index": 2,
+    "grade": "B 官方或學術",
+    "first_built_year": "2021",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.222801,
+     24.385388
+    ]
+   },
+   "properties": {
+    "id": "TWH-0020",
+    "slug": "cuei-pond-hut",
+    "name": "翠池山屋",
+    "name_en": "Cuei Pond Hut",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "雪霸",
+    "beds": 12,
+    "elev_m": 3510,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": "2001",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.302476,
+     24.433048
+    ]
+   },
+   "properties": {
+    "id": "TWH-0021",
+    "slug": "taoshan-hut",
+    "name": "桃山山屋",
+    "name_en": "Taoshan Hut",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "雪霸",
+    "beds": 19,
+    "elev_m": 3275,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2002",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.278751,
+     24.429789
+    ]
+   },
+   "properties": {
+    "id": "TWH-0022",
+    "slug": "xinda-hut",
+    "name": "新達山屋",
+    "name_en": "Xinda Hut",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "雪霸",
+    "beds": 34,
+    "elev_m": 3175,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": null,
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.25488,
+     24.35571
+    ]
+   },
+   "properties": {
+    "id": "TWH-0023",
+    "slug": "piaodan-hut",
+    "name": "瓢簞山屋",
+    "name_en": "Piaodan Hut",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "雪霸",
+    "beds": 15,
+    "elev_m": 3135,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2022",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.20623,
+     24.32371
+    ]
+   },
+   "properties": {
+    "id": "TWH-0024",
+    "slug": "youpolan-hut",
+    "name": "油婆蘭山屋",
+    "name_en": "Youpolan Hut",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "雪霸",
+    "beds": 15,
+    "elev_m": 3270,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2022",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.242809,
+     24.411513
+    ]
+   },
+   "properties": {
+    "id": "TWH-0025",
+    "slug": "syuebei-hut",
+    "name": "雪北山屋",
+    "name_en": "Syuebei Hut",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "雪霸",
+    "beds": 25,
+    "elev_m": 3595,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": "2003",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.250721,
+     24.423256
+    ]
+   },
+   "properties": {
+    "id": "TWH-0026",
+    "slug": "sumida-hut",
+    "name": "素密達山屋",
+    "name_en": "Sumida Hut",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "雪霸",
+    "beds": 24,
+    "elev_m": 3485,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": "2003",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.260944,
+     24.450776
+    ]
+   },
+   "properties": {
+    "id": "TWH-0027",
+    "slug": "banan-hut",
+    "name": "霸南山屋",
+    "name_en": "Banan Hut",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "雪霸",
+    "beds": 15,
+    "elev_m": 3105,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2012",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.208353,
+     24.468835
+    ]
+   },
+   "properties": {
+    "id": "TWH-0028",
+    "slug": "jiujiu-cabin",
+    "name": "九九山莊",
+    "name_en": "Jiujiu Cabin",
+    "type": "服務型山屋",
+    "status": "整修中",
+    "region": "林保署",
+    "beds": 150,
+    "elev_m": 2699,
+    "logistics_index": 2,
+    "grade": "B 官方或學術",
+    "first_built_year": "1971",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.251286,
+     24.464724
+    ]
+   },
+   "properties": {
+    "id": "TWH-0029",
+    "slug": "jhongba-hut",
+    "name": "中霸山屋",
+    "name_en": "Jhongba Hut",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "林保署",
+    "beds": 12,
+    "elev_m": 3295,
+    "logistics_index": 4,
+    "grade": "C 二手彙整",
+    "first_built_year": "2014",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.2796,
+     24.0453
+    ]
+   },
+   "properties": {
+    "id": "TWH-0030",
+    "slug": "tianchih-lodge",
+    "name": "天池山莊",
+    "name_en": null,
+    "type": "服務型山屋",
+    "status": "使用中",
+    "region": "林保署",
+    "beds": 88,
+    "elev_m": 2860,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "1931",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.7385,
+     22.6147
+    ]
+   },
+   "properties": {
+    "id": "TWH-0031",
+    "slug": "kuaigu-lodge",
+    "name": "檜谷山莊",
+    "name_en": "Kuaigu Lodge",
+    "type": "服務型山屋",
+    "status": "使用中",
+    "region": "林保署",
+    "beds": 42,
+    "elev_m": 2110,
+    "logistics_index": 3,
+    "grade": "C 二手彙整",
+    "first_built_year": null,
+    "coord_precision": "文獻或民間推估",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.98443,
+     23.26263
+    ]
+   },
+   "properties": {
+    "id": "TWH-0032",
+    "slug": "siangyang-hut",
+    "name": "向陽山屋",
+    "name_en": null,
+    "type": "服務型山屋",
+    "status": "使用中",
+    "region": "林保署",
+    "beds": 70,
+    "elev_m": 2874,
+    "logistics_index": 4,
+    "grade": "C 二手彙整",
+    "first_built_year": null,
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.99675,
+     23.28363
+    ]
+   },
+   "properties": {
+    "id": "TWH-0033",
+    "slug": "jiaming-lake-hut",
+    "name": "嘉明湖避難山屋",
+    "name_en": null,
+    "type": "服務型山屋",
+    "status": "使用中",
+    "region": "林保署",
+    "beds": 70,
+    "elev_m": 3350,
+    "logistics_index": 3,
+    "grade": "C 二手彙整",
+    "first_built_year": null,
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.3119,
+     24.1206
+    ]
+   },
+   "properties": {
+    "id": "TWH-0034",
+    "slug": "heishuitang-cabin",
+    "name": "黑水塘山屋",
+    "name_en": "Heishuitang Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "太魯閣",
+    "beds": 6,
+    "elev_m": 2710,
+    "logistics_index": 3,
+    "grade": "C 二手彙整",
+    "first_built_year": null,
+    "coord_precision": "官方舊資料",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.3186,
+     24.1161
+    ]
+   },
+   "properties": {
+    "id": "TWH-0035",
+    "slug": "chenggong-cabin",
+    "name": "成功山屋",
+    "name_en": "Chenggong Cabin",
+    "type": "服務型山屋",
+    "status": "使用中",
+    "region": "太魯閣",
+    "beds": 34,
+    "elev_m": 2879,
+    "logistics_index": 3,
+    "grade": "C 二手彙整",
+    "first_built_year": "2006",
+    "coord_precision": "文獻或民間推估",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.3269,
+     24.1087
+    ]
+   },
+   "properties": {
+    "id": "TWH-0038",
+    "slug": "qilai-ridge-cabin-old",
+    "name": "奇萊稜線山屋（舊）",
+    "name_en": null,
+    "type": "已停用",
+    "status": "停用",
+    "region": "太魯閣",
+    "beds": 0,
+    "elev_m": 3344,
+    "logistics_index": 4,
+    "grade": "C 二手彙整",
+    "first_built_year": "1995",
+    "coord_precision": "文獻或民間推估",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.397,
+     24.378
+    ]
+   },
+   "properties": {
+    "id": "TWH-0039",
+    "slug": "yunleng-cabin",
+    "name": "雲稜山屋",
+    "name_en": "Yunleng Cabin",
+    "type": "服務型山屋",
+    "status": "使用中",
+    "region": "太魯閣",
+    "beds": 65,
+    "elev_m": 2615,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2004",
+    "coord_precision": "文獻或民間推估",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.4261,
+     24.3811
+    ]
+   },
+   "properties": {
+    "id": "TWH-0040",
+    "slug": "shenmazhen-cabin",
+    "name": "審馬陣山屋",
+    "name_en": "Shenmazhen Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "太魯閣",
+    "beds": 10,
+    "elev_m": 3229,
+    "logistics_index": 4,
+    "grade": "C 二手彙整",
+    "first_built_year": "1978",
+    "coord_precision": "文獻或民間推估",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.4435,
+     24.3696
+    ]
+   },
+   "properties": {
+    "id": "TWH-0041",
+    "slug": "nanhu-cabin",
+    "name": "南湖山屋",
+    "name_en": "Nanhu Cabin",
+    "type": "服務型山屋",
+    "status": "使用中",
+    "region": "太魯閣",
+    "beds": 38,
+    "elev_m": 3394,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": "2001",
+    "coord_precision": "文獻或民間推估",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.3683,
+     24.2077
+    ]
+   },
+   "properties": {
+    "id": "TWH-0042",
+    "slug": "jushan-east-cabin",
+    "name": "鋸東避難小屋",
+    "name_en": "Ju-shan East Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "太魯閣",
+    "beds": 14,
+    "elev_m": 3010,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": "2021",
+    "coord_precision": "文獻或民間推估",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.325,
+     24.1621
+    ]
+   },
+   "properties": {
+    "id": "TWH-0043",
+    "slug": "pingfong-cabin",
+    "name": "屏風避難山屋",
+    "name_en": "Pingfong Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "太魯閣",
+    "beds": 28,
+    "elev_m": 2080,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": "2021",
+    "coord_precision": "文獻或民間推估",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.4453,
+     24.1223
+    ]
+   },
+   "properties": {
+    "id": "TWH-0046",
+    "slug": "dalishi-cabin",
+    "name": "大理石營地避難小屋",
+    "name_en": "Dalishi Cabin",
+    "type": "避難型山屋",
+    "status": "使用中",
+    "region": "太魯閣",
+    "beds": 12,
+    "elev_m": 2985,
+    "logistics_index": 3,
+    "grade": "B 官方或學術",
+    "first_built_year": "2023",
+    "coord_precision": "文獻或民間推估",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.3219,
+     24.1139
+    ]
+   },
+   "properties": {
+    "id": "TWH-0047",
+    "slug": "chenggong-no1-cabin",
+    "name": "成功一號堡",
+    "name_en": null,
+    "type": "避難型山屋",
+    "status": "不明",
+    "region": "太魯閣",
+    "beds": 8,
+    "elev_m": null,
+    "logistics_index": null,
+    "grade": "D 僅知存在",
+    "first_built_year": "1971",
+    "coord_precision": "官方舊資料",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.42,
+     24.34
+    ]
+   },
+   "properties": {
+    "id": "TWH-0049",
+    "slug": "jhongyangjian-creek-hut",
+    "name": "中央尖溪木屋",
+    "name_en": null,
+    "type": "避難型山屋",
+    "status": "不明",
+    "region": "太魯閣",
+    "beds": 8,
+    "elev_m": 2438,
+    "logistics_index": 3,
+    "grade": "D 僅知存在",
+    "first_built_year": "1987",
+    "coord_precision": "文獻或民間推估",
+    "coord_rule": "1 km 網格",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.4,
+     24.37
+    ]
+   },
+   "properties": {
+    "id": "TWH-0050",
+    "slug": "nanhu-creek-hut",
+    "name": "南湖溪山屋",
+    "name_en": null,
+    "type": "避難型山屋",
+    "status": "不明",
+    "region": "太魯閣",
+    "beds": 10,
+    "elev_m": 2209,
+    "logistics_index": 3,
+    "grade": "D 僅知存在",
+    "first_built_year": "1981",
+    "coord_precision": "文獻或民間推估",
+    "coord_rule": "1 km 網格",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.254574,
+     24.392298
+    ]
+   },
+   "properties": {
+    "id": "TWH-0055",
+    "slug": "saliujiu-cabin-old",
+    "name": "舊三六九山莊",
+    "name_en": null,
+    "type": "已拆除",
+    "status": "已拆除",
+    "region": "雪霸",
+    "beds": 0,
+    "elev_m": 3150,
+    "logistics_index": 4,
+    "grade": "B 官方或學術",
+    "first_built_year": "1969",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.237291,
+     24.376272
+    ]
+   },
+   "properties": {
+    "id": "TWH-0056",
+    "slug": "xueshan-lodge-site",
+    "name": "雪山山莊舊址",
+    "name_en": "Former Site of Xue Mountain Cabin",
+    "type": "已拆除",
+    "status": "已拆除",
+    "region": "雪霸",
+    "beds": 0,
+    "elev_m": 3335,
+    "logistics_index": 4,
+    "grade": "D 僅知存在",
+    "first_built_year": null,
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.02,
+     23.49
+    ]
+   },
+   "properties": {
+    "id": "TWH-0062",
+    "slug": "banaiyike-shed",
+    "name": "巴奈伊克鐵皮屋",
+    "name_en": null,
+    "type": "工寮",
+    "status": "不明",
+    "region": "玉山",
+    "beds": 10,
+    "elev_m": 2820,
+    "logistics_index": 3,
+    "grade": "D 僅知存在",
+    "first_built_year": null,
+    "coord_precision": "官方公告",
+    "coord_rule": "1 km 網格",
+    "review": "AI 初稿待覆核"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.02297,
+     23.18638
+    ]
+   },
+   "properties": {
+    "id": "TWH-0068",
+    "slug": "lidao-lodge",
+    "name": "利稻山莊",
+    "name_en": null,
+    "type": "關聯設施",
+    "status": "停用",
+    "region": "林保署",
+    "beds": null,
+    "elev_m": null,
+    "logistics_index": 1,
+    "grade": "B 官方或學術",
+    "first_built_year": "1975",
+    "coord_precision": "官方公告",
+    "coord_rule": "完整公開",
+    "review": "AI 初稿待覆核"
+   }
+  }
+ ]
+}
