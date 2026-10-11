@@ -15,22 +15,38 @@ interface Props {
   views?: boolean; // 主地圖：顯示國家公園快速視角按鈕
 }
 import { readFileSync } from 'node:fs';
+import { huts as publishedHuts, trails as allTrails } from '../lib/data';
 const { features, center = [121.0, 23.6], zoom = 7.3, pitch = 45, class: cls = '', id = 'map', focus, views = false } = Astro.props;
-// 經典路線選單：build 時從路線檔撈出「經典縱走」，算好外框；同一路線可能分散在官方與 OSM 兩檔
-const CLASSIC = (() => {
+// 經典路線選單與介紹卡：build 時從路線檔撈出「經典縱走」，算好外框、全長、沿線山峰與登山口。
+// 同一路線可能分散在官方與 OSM 兩檔（例如嘉明湖的延伸段）。簡介與沿線山屋來自 Notion（trails.json、huts.json）
+type Classic = { id: string; name: string; en: string | null; summary: string | null; bb: number[]; km: number; sources: string[]; trailheads: string[]; peaks: { name: string; ele: number }[]; huts: { name: string; slug: string }[] };
+const CLASSIC: Classic[] = (() => {
   if (!Astro.props.views) return [];
-  const byId = new Map<string, { id: string; name: string; bb: number[] }>();
-  for (const f of ['official', 'osm']) {
-    let fc: any; try { fc = JSON.parse(readFileSync(`data/routes.${f}.geojson`, 'utf8')); } catch { continue; }
-    for (const x of fc.features) {
-      const p = x.properties; if (p.kind !== 'route' || p.category !== '經典縱走') continue;
-      const pts = (x.geometry.type === 'LineString' ? [x.geometry.coordinates] : x.geometry.coordinates).flat();
-      const e = byId.get(p.trail_id) ?? { id: p.trail_id, name: p.trail, bb: [180, 90, -180, -90] };
-      for (const [lon, lat] of pts) e.bb = [Math.min(e.bb[0], lon), Math.min(e.bb[1], lat), Math.max(e.bb[2], lon), Math.max(e.bb[3], lat)];
+  const R = 6371008.8, rad = Math.PI / 180;
+  const dist = (a: number[], b: number[]) => { const h = Math.sin((b[1] - a[1]) * rad / 2) ** 2 + Math.cos(a[1] * rad) * Math.cos(b[1] * rad) * Math.sin((b[0] - a[0]) * rad / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(h)); };
+  const read = (f: string) => { try { return JSON.parse(readFileSync(`data/${f}`, 'utf8')); } catch { return { features: [] }; } };
+  const peaks = read('peaks.geojson').features;
+  const byId = new Map<string, Classic & { pts: number[][] }>();
+  for (const f of ['official', 'osm']) for (const x of read(`routes.${f}.geojson`).features) {
+    const p = x.properties;
+    if (p.kind === 'route' && p.category === '經典縱走') {
+      const t = allTrails.find((y: any) => y.id === p.trail_id) as any;
+      const e = byId.get(p.trail_id) ?? { id: p.trail_id, name: p.trail, en: p.trail_en ?? null, summary: t?.summary ?? null, bb: [180, 90, -180, -90], km: 0, sources: [], trailheads: [], peaks: [], huts: [], pts: [] };
+      for (const l of x.geometry.type === 'LineString' ? [x.geometry.coordinates] : x.geometry.coordinates) {
+        for (let i = 0; i < l.length; i++) { const [lon, lat] = l[i]; e.bb = [Math.min(e.bb[0], lon), Math.min(e.bb[1], lat), Math.max(e.bb[2], lon), Math.max(e.bb[3], lat)]; if (i) e.km += dist(l[i - 1], l[i]) / 1000; e.pts.push(l[i]); }
+      }
+      if (!e.sources.includes(p.source)) e.sources.push(p.source);
       byId.set(p.trail_id, e);
     }
   }
-  return [...byId.values()].sort((a, b) => a.name.localeCompare(b.name, 'zh-Hant-TW'));
+  for (const f of ['osm']) for (const x of read(`routes.${f}.geojson`).features) {
+    const e = byId.get(x.properties.trail_id); if (e && x.properties.kind === 'trailhead') e.trailheads.push(x.properties.name);
+  }
+  for (const e of byId.values()) {
+    e.peaks = peaks.filter((pk: any) => e.pts.some((q) => dist(q, pk.geometry.coordinates) < 500)).map((pk: any) => ({ name: pk.properties.name, ele: pk.properties.ele })).sort((a: any, b: any) => b.ele - a.ele);
+    e.huts = publishedHuts.filter((h) => h.trails.some((t: any) => t.id === e.id) && h.type !== '關聯設施').map((h) => ({ name: h.name, slug: h.slug }));
+  }
+  return [...byId.values()].map(({ pts, ...e }) => ({ ...e, km: Math.round(e.km) })).sort((a, b) => a.name.localeCompare(b.name, 'zh-Hant-TW'));
 })();
 // 快速視角：範圍取自 data/parks.geojson 的外框（2026-10-11 計算），bearing 依主稜走向微轉，讓 3D 地形側光好讀
 const VIEWS = [
@@ -61,7 +77,26 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
     )}
   </nav>
 )}
+<div class="map-wrap">
 <div id={id} data-views={views ? '1' : ''} class:list={['map', cls]} data-features={JSON.stringify(features)} data-center={JSON.stringify(center)} data-zoom={zoom} data-pitch={pitch} data-base={base} data-focus={focus ?? ''} data-colors={JSON.stringify(CLASS_COLOR)}></div>
+{CLASSIC.map((c) => (
+  <aside class="classic-card" data-for={id} data-trail={c.id} hidden aria-live="polite">
+    <button type="button" class="classic-close" aria-label="關閉路線介紹">×</button>
+    <p class="classic-tag">經典縱走・AI 初稿待覆核</p>
+    <h3>{c.name}</h3>
+    {c.en && <p class="classic-en">{c.en}</p>}
+    {c.summary && <p class="classic-summary">{c.summary}</p>}
+    <dl>
+      <dt>全長</dt><dd>約 {c.km} km<span class="muted">（依地圖線段計算，非官方里程）</span></dd>
+      {c.huts.length > 0 && <><dt>沿線山屋</dt><dd>{c.huts.map((h, i) => <>{i > 0 && '、'}<a href={`${base}huts/${h.slug}/`}>{h.name}</a></>)}</dd></>}
+      {c.peaks.length > 0 && <><dt>主要山峰</dt><dd>{c.peaks.map((p) => `${p.name} ${p.ele.toLocaleString('zh-Hant-TW')} m`).join('、')}</dd></>}
+      {c.trailheads.length > 0 && <><dt>登山口</dt><dd>{c.trailheads.join('、')}</dd></>}
+      <dt>路線來源</dt><dd class="muted">{c.sources.join('；')}</dd>
+    </dl>
+    <p class="classic-note">路線為示意，不可作為導航。入山前請查各管理單位最新公告。</p>
+  </aside>
+))}
+</div>
 <div class="map-legend" aria-hidden="true">
   {Object.entries(CLASS_COLOR).filter(([k]) => features.features.some((f) => (f.properties as any)?.cls === k)).map(([k, c]) => <span style={`--c:${c}`}>{CLASS_LABEL[k]}</span>)}
   <span style="--c:transparent">外圈＝座標已降階至 1 km 網格</span>
@@ -263,11 +298,19 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
         for (const l of [`${src}-hl`, `${src}-hl-casing`]) map.setFilter(l, ['==', ['get', 'trail_id'], id || '__none__']);
         for (const l of [`${src}-route`, `${src}-access`]) map.setPaintProperty(l, 'line-opacity', id ? 0.35 : 1);
       }
+      document.querySelectorAll<HTMLElement>(`.classic-card[data-for="${el.id}"]`).forEach((c) => { c.hidden = c.dataset.trail !== id; });
       if (!id) return;
       document.querySelectorAll(`.map-views[data-for="${el.id}"] button`).forEach((b) => b.setAttribute('aria-pressed', 'false'));
       const bb = JSON.parse(opt.dataset.bb!);
-      map.fitBounds([[bb[0], bb[1]], [bb[2], bb[3]]], { padding: NARROW ? 24 : 64, pitch: 50, bearing: 0, maxZoom: 12.5, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1600 });
+      // 桌機的介紹卡疊在地圖左側，左邊留出卡片寬度，路線才不會被蓋住
+      map.fitBounds([[bb[0], bb[1]], [bb[2], bb[3]]], { padding: NARROW ? 24 : { top: 64, bottom: 64, right: 72, left: Math.min(380, el.clientWidth * 0.45) }, pitch: 50, bearing: 0, maxZoom: 12.5, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1600 });
     });
+
+    // 介紹卡的 × 等同把選單選回空白
+    document.querySelectorAll<HTMLElement>(`.classic-card[data-for="${el.id}"] .classic-close`).forEach((b) => b.addEventListener('click', () => {
+      const sel = document.querySelector<HTMLSelectElement>(`.map-views[data-for="${el.id}"] select`);
+      if (sel) { sel.value = ''; sel.dispatchEvent(new Event('change')); }
+    }));
 
     // 使用者自己拖曳後，按鈕不再顯示為選取中
     map.on('dragstart', () => document.querySelectorAll(`.map-views[data-for="${el.id}"] button`).forEach((b) => b.setAttribute('aria-pressed', 'false')));

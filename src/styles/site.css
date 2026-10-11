@@ -60,6 +60,23 @@ main.wrap.wide { max-width: 1440px; }
 .map-views button { font: inherit; font-size: 14px; padding: 6px 14px; min-height: 36px; border-radius: var(--pp-radius-control); border: var(--pp-border-width) solid var(--pp-line-strong); background: var(--pp-bg-card); color: var(--pp-ink); cursor: pointer; }
 .map-views button:hover { border-color: var(--pp-ink-sub); }
 .map-views button[aria-pressed="true"] { background: var(--pp-ink); border-color: var(--pp-ink); color: #FFFFFF; }
+/* 經典路線介紹卡：桌機疊在地圖左上，手機改放地圖下方 */
+.map-wrap { position: relative; }
+.classic-card { position: absolute; top: 12px; left: 12px; z-index: 2; width: min(340px, calc(100% - 96px)); max-height: calc(100% - 24px); overflow: auto; background: var(--pp-bg-card); border: var(--pp-border-width) solid var(--pp-line-strong); border-radius: var(--pp-radius-card); padding: 16px 18px; font-size: 14px; line-height: 1.7; box-shadow: 0 2px 12px rgba(35, 34, 32, 0.12); }
+.classic-card[hidden] { display: none; }
+.classic-card h3 { font-size: 17px; margin: 0; }
+.classic-tag { font-size: 12px; color: var(--pp-ink-hint); margin: 0 0 4px; letter-spacing: 0.04em; }
+.classic-en { color: var(--pp-ink-sub); font-size: 13px; margin: 0 0 8px; }
+.classic-summary { margin: 0 0 10px; }
+.classic-card dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 0 0 10px; }
+.classic-card dt { color: var(--pp-ink-sub); white-space: nowrap; }
+.classic-card dd { margin: 0; }
+.classic-card dd .muted { font-size: 12px; }
+.classic-card a { color: var(--pp-accent); }
+.classic-note { font-size: 12px; color: var(--pp-ink-hint); margin: 0; border-top: var(--pp-border-width) solid var(--pp-line); padding-top: 8px; }
+.classic-close { position: absolute; top: 6px; right: 8px; border: 0; background: none; font-size: 22px; line-height: 1; color: var(--pp-ink-sub); cursor: pointer; padding: 4px 8px; min-width: 36px; min-height: 36px; }
+.classic-close:focus-visible { outline: 2px solid var(--pp-ink); }
+@media (max-width: 640px) { .classic-card { position: static; width: auto; max-height: none; margin-top: var(--pp-space-sm); box-shadow: none; } }
 .map-classic { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--pp-ink-sub); margin-left: auto; }
 .map-classic select { font: inherit; color: var(--pp-ink); min-height: 36px; padding: 6px 10px; border-radius: var(--pp-radius-control); border: var(--pp-border-width) solid var(--pp-line-strong); background: var(--pp-bg-card); max-width: 60vw; }
 @media (max-width: 640px) { .map-classic { margin-left: 0; width: 100%; } .map-classic select { flex: 1; max-width: none; } }
