@@ -56,6 +56,7 @@ const base = import.meta.env.BASE_URL;
       <tr><td>OpenStreetMap 步道路網，本專案依山屋順序串接</td><td>南湖大山主線、南二段、八通關東段、關山、屏風山</td><td>ODbL 1.0</td></tr>
       <tr><td>OpenStreetMap 道路與登山口，本專案計算最短車行路徑</td><td>登山口位置、登山口至省道或縣道的接駁道路</td><td>ODbL 1.0</td></tr>
     </table>
+    <p>經典路線選單列出步道庫裡「分類」標為經典縱走的路線，選了就會高亮並飛到該路線：聖稜線 O 型（雪東線、聖陵線、武陵四秀三層組合）、奇萊南華、能高安東軍、玉山後四峰、干卓萬群峰、丹大東郡橫斷（以上取自 OSM 路線關聯）、新康橫斷（依向陽、三叉山、新康山、抱崖山屋串接，組成待確認），以及原有的南二段、嘉明湖。這些都是 AI 初稿，還沒覆核。</p>
     <p>串接路線是電腦依 OSM 步道算出的最短路徑，未經現勘，可能和實際慣用走法不同。南湖北一段經過座標降階的山屋，依座標降階規則不畫。接駁道路包含林道，林道常有管制或車輛限制。</p>
     <p>下載：<a href={base + 'data/routes.official.geojson'}>routes.official.geojson</a>（政府資料開放授權）・<a href={base + 'data/routes.osm.geojson'}>routes.osm.geojson</a>（ODbL 1.0，衍生自 © OpenStreetMap contributors，再利用須同樣以 ODbL 釋出）・<a href={base + 'data/parks.geojson'}>parks.geojson</a>（國家公園範圍）・<a href={base + 'data/park-hq.geojson'}>park-hq.geojson</a>（管理處位置，ODbL）・<a href={base + 'data/peaks.geojson'}>peaks.geojson</a>（主要山峰位置與標高，ODbL；標高取自 OSM 三角點資料，與常見刊載值可能差 1～2 m）。</p>
 

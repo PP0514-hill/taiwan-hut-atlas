@@ -38,6 +38,8 @@ const P = {
   山風: [121.2305, 23.32736], // OSM node 1710904624
   關山登山口: [120.9188, 23.2579], // OSM node 6011714285
   屏風山登山口: [121.31781, 24.17968], // OSM node 2297213055
+  三叉山: [121.02866, 23.29719], // OSM node 660060600
+  新康山: [121.12762, 23.31659], // OSM node 2268473295
 };
 const PLAN = {
   聖稜線: { shp: '聖陵線' },
@@ -64,6 +66,14 @@ const PLAN = {
   '南橫三山／關山線': { via: [P.關山登山口, 'TWH-0017'] },
   屏風山線: { via: [P.屏風山登山口, 'TWH-0043'] },
   '南橫公路（台 20 線）': { skip: '公路本身，底圖已有' },
+  // 經典縱走（Notion 步道庫「分類＝經典縱走」）
+  '聖稜線 O 型縱走': { shp: ['雪東線', '聖陵線', '武陵四秀'] },
+  奇萊南華: { rel: [9296111] },
+  能高安東軍縱走: { rel: [14522297] },
+  玉山後四峰: { rel: [18232409] },
+  干卓萬群峰: { rel: [19930450] },
+  丹大東郡橫斷: { rel: [18300514] },
+  新康橫斷: { via: [P.向陽管制站, P.三叉山, P.新康山, 'TWH-0015', P.山風], note: '路線組成待確認' },
 };
 
 const MOTOR = new Set(['motorway', 'trunk', 'primary', 'secondary', 'tertiary', 'unclassified', 'residential', 'service', 'living_street', 'motorway_link', 'trunk_link', 'primary_link', 'secondary_link', 'tertiary_link']);
@@ -225,11 +235,12 @@ for (const t of trails) {
   const plan = PLAN[t.name];
   if (!plan) { report.push(`未設定來源：${t.name}`); continue; }
   if (plan.skip) { report.push(`略過：${t.name}（${plan.skip}）`); continue; }
-  const props = { trail: t.name, trail_en: t.en, trail_id: t.id, system: t.system };
+  const props = { trail: t.name, trail_en: t.en, trail_id: t.id, system: t.system, category: t.category ?? '一般路線' };
   let lines, src;
   if (plan.shp) {
-    lines = await toLines(sheipa[plan.shp], 'layer.shp');
-    src = { source: '雪霸國家公園登山步道路線圖（國家公園署 TGOS）', source_layer: plan.shp, license: OGDL };
+    const layers = [plan.shp].flat();
+    lines = (await Promise.all(layers.map((l) => toLines(sheipa[l], 'layer.shp')))).flat();
+    src = { source: '雪霸國家公園登山步道路線圖（國家公園署 TGOS）', source_layer: layers.join('＋'), license: OGDL };
     official.push({ type: 'Feature', properties: { ...props, kind: 'route', ...src }, geometry: { type: 'MultiLineString', coordinates: round(lines) } });
   } else if (plan.kml) {
     const z = unzipSync(new Uint8Array(await download(plan.kml)));
@@ -283,6 +294,8 @@ for (const t of trails) {
   if (!picks.length) report.push(`  ${t.name}：端點 2.5 km 內沒有車行道路，未標登山口`);
   for (const c of picks) {
     const xy = c.xy;
+    // 同一個登山口常被好幾條路線共用：150 m 內已標過就不重複標、不重複畫接駁道路
+    if (osmOut.some((f) => f.properties.kind === 'trailhead' && dist(f.geometry.coordinates, xy) < 150)) continue;
     // 接駁道路查登山口周邊約 30 km
     const net = network(bboxOf([xy], 0.28), true);
     const [startId] = nearest(net, xy, (n) => net.adj.get(n)?.some(([, , w]) => w.motor));

@@ -60,6 +60,9 @@ main.wrap.wide { max-width: 1440px; }
 .map-views button { font: inherit; font-size: 14px; padding: 6px 14px; min-height: 36px; border-radius: var(--pp-radius-control); border: var(--pp-border-width) solid var(--pp-line-strong); background: var(--pp-bg-card); color: var(--pp-ink); cursor: pointer; }
 .map-views button:hover { border-color: var(--pp-ink-sub); }
 .map-views button[aria-pressed="true"] { background: var(--pp-ink); border-color: var(--pp-ink); color: #FFFFFF; }
+.map-classic { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--pp-ink-sub); margin-left: auto; }
+.map-classic select { font: inherit; color: var(--pp-ink); min-height: 36px; padding: 6px 10px; border-radius: var(--pp-radius-control); border: var(--pp-border-width) solid var(--pp-line-strong); background: var(--pp-bg-card); max-width: 60vw; }
+@media (max-width: 640px) { .map-classic { margin-left: 0; width: 100%; } .map-classic select { flex: 1; max-width: none; } }
 .map-views button:focus-visible { outline: 2px solid var(--pp-ink); outline-offset: 2px; }
 .map-legend { display: flex; flex-wrap: wrap; gap: var(--pp-space-sm) var(--pp-space-md); font-size: var(--pp-fs-caption); color: var(--pp-ink-sub); margin-top: var(--pp-space-sm); }
 .map-legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; background: var(--c); border: 1px solid var(--pp-ink-sub); }

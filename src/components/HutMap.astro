@@ -14,7 +14,24 @@ interface Props {
   focus?: string; // 單座山屋頁：高亮此 TWH ID
   views?: boolean; // 主地圖：顯示國家公園快速視角按鈕
 }
+import { readFileSync } from 'node:fs';
 const { features, center = [121.0, 23.6], zoom = 7.3, pitch = 45, class: cls = '', id = 'map', focus, views = false } = Astro.props;
+// 經典路線選單：build 時從路線檔撈出「經典縱走」，算好外框；同一路線可能分散在官方與 OSM 兩檔
+const CLASSIC = (() => {
+  if (!Astro.props.views) return [];
+  const byId = new Map<string, { id: string; name: string; bb: number[] }>();
+  for (const f of ['official', 'osm']) {
+    let fc: any; try { fc = JSON.parse(readFileSync(`data/routes.${f}.geojson`, 'utf8')); } catch { continue; }
+    for (const x of fc.features) {
+      const p = x.properties; if (p.kind !== 'route' || p.category !== '經典縱走') continue;
+      const pts = (x.geometry.type === 'LineString' ? [x.geometry.coordinates] : x.geometry.coordinates).flat();
+      const e = byId.get(p.trail_id) ?? { id: p.trail_id, name: p.trail, bb: [180, 90, -180, -90] };
+      for (const [lon, lat] of pts) e.bb = [Math.min(e.bb[0], lon), Math.min(e.bb[1], lat), Math.max(e.bb[2], lon), Math.max(e.bb[3], lat)];
+      byId.set(p.trail_id, e);
+    }
+  }
+  return [...byId.values()].sort((a, b) => a.name.localeCompare(b.name, 'zh-Hant-TW'));
+})();
 // 快速視角：範圍取自 data/parks.geojson 的外框（2026-10-11 計算），bearing 依主稜走向微轉，讓 3D 地形側光好讀
 const VIEWS = [
   { key: 'island', label: '全島', center, zoom, pitch, bearing: 0 },
@@ -33,6 +50,15 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
 {views && (
   <nav class="map-views" data-for={id} aria-label="國家公園快速視角">
     {VIEWS.map((v, i) => <button type="button" data-view={JSON.stringify(v)} aria-pressed={i === 0 ? 'true' : 'false'}>{v.label}</button>)}
+    {CLASSIC.length > 0 && (
+      <label class="map-classic">
+        <span>經典路線</span>
+        <select>
+          <option value="">— 選擇路線 —</option>
+          {CLASSIC.map((c) => <option value={c.id} data-bb={JSON.stringify(c.bb)}>{c.name}</option>)}
+        </select>
+      </label>
+    )}
   </nav>
 )}
 <div id={id} data-views={views ? '1' : ''} class:list={['map', cls]} data-features={JSON.stringify(features)} data-center={JSON.stringify(center)} data-zoom={zoom} data-pitch={pitch} data-base={base} data-focus={focus ?? ''} data-colors={JSON.stringify(CLASS_COLOR)}></div>
@@ -117,6 +143,13 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
               paint: { 'line-color': '#6E6B64', 'line-width': ['interpolate', ['linear'], ['zoom'], 7, 1, 13, 2.5] as any } },
             { id: `${src}-route`, type: 'line' as const, source: src, filter: ['==', ['get', 'kind'], 'route'] as any, layout: { 'line-join': 'round' as const, 'line-cap': 'round' as const },
               paint: { 'line-color': '#232220', 'line-width': ['interpolate', ['linear'], ['zoom'], 7, 1, 13, 2.5] as any } },
+          ]),
+          // 經典路線高亮：選單選了才出現，用唯一的強調色
+          ...(['routesGov', 'routesOsm'] as const).flatMap((src) => [
+            { id: `${src}-hl-casing`, type: 'line' as const, source: src, filter: ['==', ['get', 'trail_id'], '__none__'] as any, layout: { 'line-join': 'round' as const, 'line-cap': 'round' as const },
+              paint: { 'line-color': '#FFFFFF', 'line-width': ['interpolate', ['linear'], ['zoom'], 7, 5, 13, 9] as any } },
+            { id: `${src}-hl`, type: 'line' as const, source: src, filter: ['==', ['get', 'trail_id'], '__none__'] as any, layout: { 'line-join': 'round' as const, 'line-cap': 'round' as const },
+              paint: { 'line-color': '#9C3D2C', 'line-width': ['interpolate', ['linear'], ['zoom'], 7, 2.5, 13, 5] as any } },
           ]),
           { id: 'trailhead', type: 'circle', source: 'routesOsm', filter: ['==', ['get', 'kind'], 'trailhead'], minzoom: 8.5,
             paint: { 'circle-radius': 3.5, 'circle-color': '#FFFFFF', 'circle-stroke-width': 1.5, 'circle-stroke-color': '#232220' } },
@@ -221,6 +254,21 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
       if (v.bounds) map.fitBounds([[v.bounds[0], v.bounds[1]], [v.bounds[2], v.bounds[3]]], { ...motion, padding: NARROW ? 16 : 48 });
       else map.flyTo({ ...motion, center: v.center, zoom: v.zoom - (NARROW ? 0.6 : 0) });
     });
+    // 經典路線：高亮所選路線並飛過去，其他路線淡化；選回空白即復原
+    document.querySelector(`.map-views[data-for="${el.id}"] select`)?.addEventListener('change', (e) => {
+      const sel = e.target as HTMLSelectElement, id = sel.value;
+      const opt = sel.selectedOptions[0];
+      for (const src of ['routesGov', 'routesOsm']) {
+        if (!map.getLayer(`${src}-hl`)) continue;
+        for (const l of [`${src}-hl`, `${src}-hl-casing`]) map.setFilter(l, ['==', ['get', 'trail_id'], id || '__none__']);
+        for (const l of [`${src}-route`, `${src}-access`]) map.setPaintProperty(l, 'line-opacity', id ? 0.35 : 1);
+      }
+      if (!id) return;
+      document.querySelectorAll(`.map-views[data-for="${el.id}"] button`).forEach((b) => b.setAttribute('aria-pressed', 'false'));
+      const bb = JSON.parse(opt.dataset.bb!);
+      map.fitBounds([[bb[0], bb[1]], [bb[2], bb[3]]], { padding: NARROW ? 24 : 64, pitch: 50, bearing: 0, maxZoom: 12.5, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1600 });
+    });
+
     // 使用者自己拖曳後，按鈕不再顯示為選取中
     map.on('dragstart', () => document.querySelectorAll(`.map-views[data-for="${el.id}"] button`).forEach((b) => b.setAttribute('aria-pressed', 'false')));
 
@@ -229,7 +277,7 @@ for (const f of features.features) (f.properties as any).cls = CLASS_OF((f.prope
       p.address ? `<b>${p.name}</b><br>${p.address}${p.website ? `<br><a href="${p.website}" target="_blank" rel="noopener">官方網站 →</a>` : ''}`
       : p.kind === 'trailhead' ? `<b>${p.name}</b><br><span style="color:#6E6B64">${p.trail}</span>`
       : p.kind === 'access' ? `<b>${p.name}聯外道路</b><br>${p.via || '—'}・約 ${p.length_km} km<br><span style="color:#6E6B64">OSM 道路路網計算，車行限制以公告為準</span>`
-      : `<b>${p.trail}</b>${p.trail_en ? `<br><span style="color:#6E6B64">${p.trail_en}</span>` : ''}<br><span style="color:#6E6B64">${p.source}</span>`;
+      : `<b>${p.trail}</b>${p.category === '經典縱走' ? '・經典縱走' : ''}${p.trail_en ? `<br><span style="color:#6E6B64">${p.trail_en}</span>` : ''}<br><span style="color:#6E6B64">${p.source}</span>`;
     const linePopup = new maplibregl.Popup({ closeButton: TOUCH, closeOnClick: TOUCH, offset: 8, maxWidth: '280px' });
     for (const layer of ['routesGov-route', 'routesOsm-route', 'routesOsm-access', 'trailhead', 'hq']) {
       if (TOUCH) {
