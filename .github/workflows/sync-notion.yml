@@ -26,7 +26,8 @@ jobs:
         run: |
           git config user.name "hut-atlas-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data/*.json data/*.public.geojson
+          # 只加公開檔；data/*.internal.* 已 gitignore，用萬用字元會讓 git add 報錯
+          git add data/agencies.json data/trails.json data/huts.json data/events.json data/sources.json data/meta.json data/huts.public.geojson
           if git diff --cached --quiet; then
             echo "no change"
           else
