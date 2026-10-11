@@ -21,6 +21,11 @@
     "id": "3f1bf2d8-5a3b-8106-a01f-c083134e309e",
     "name": "玉山群峰線",
     "en": "Yushan Peaks Route"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-8185-89ec-fc0b14b3c9b6",
+    "name": "玉山後四峰",
+    "en": "Yushan Rear Four Peaks"
    }
   ],
   "beds": 136,
@@ -129,6 +134,11 @@
     "id": "3f1bf2d8-5a3b-8106-a01f-c083134e309e",
     "name": "玉山群峰線",
     "en": "Yushan Peaks Route"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-8185-89ec-fc0b14b3c9b6",
+    "name": "玉山後四峰",
+    "en": "Yushan Rear Four Peaks"
    }
   ],
   "beds": 15,
@@ -1051,6 +1061,11 @@
     "id": "3f1bf2d8-5a3b-81c2-aead-c02478128155",
     "name": "八通關越嶺道東段",
     "en": "Batongguan Historic Trail (East)"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-81cf-a750-fc88fe147265",
+    "name": "新康橫斷",
+    "en": "Xinkang Traverse"
    }
   ],
   "beds": 24,
@@ -1146,6 +1161,11 @@
     "id": "3f1bf2d8-5a3b-81c2-aead-c02478128155",
     "name": "八通關越嶺道東段",
     "en": "Batongguan Historic Trail (East)"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-81cf-a750-fc88fe147265",
+    "name": "新康橫斷",
+    "en": "Xinkang Traverse"
    }
   ],
   "beds": 16,
@@ -1358,6 +1378,11 @@
     "id": "3f1bf2d8-5a3b-81cf-b0b4-e0937fa4dea1",
     "name": "雪山主東線",
     "en": "Xueshan Main-East Peak Route"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-8161-b170-db63032089fd",
+    "name": "聖稜線 O 型縱走",
+    "en": "Holy Ridge O-Loop"
    }
   ],
   "beds": 106,
@@ -1439,6 +1464,11 @@
     "id": "3f1bf2d8-5a3b-81cf-b0b4-e0937fa4dea1",
     "name": "雪山主東線",
     "en": "Xueshan Main-East Peak Route"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-8161-b170-db63032089fd",
+    "name": "聖稜線 O 型縱走",
+    "en": "Holy Ridge O-Loop"
    }
   ],
   "beds": 0,
@@ -1600,6 +1630,11 @@
     "id": "3f1bf2d8-5a3b-81ee-b4e1-fee517a37d9c",
     "name": "武陵四秀",
     "en": "Wuling Four Peaks"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-8161-b170-db63032089fd",
+    "name": "聖稜線 O 型縱走",
+    "en": "Holy Ridge O-Loop"
    }
   ],
   "beds": 19,
@@ -1687,6 +1722,11 @@
     "id": "3f1bf2d8-5a3b-817a-a56c-c1e304043e4c",
     "name": "聖稜線",
     "en": "Holy Ridge"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-8161-b170-db63032089fd",
+    "name": "聖稜線 O 型縱走",
+    "en": "Holy Ridge O-Loop"
    }
   ],
   "beds": 34,
@@ -1898,6 +1938,11 @@
     "id": "3f1bf2d8-5a3b-817a-a56c-c1e304043e4c",
     "name": "聖稜線",
     "en": "Holy Ridge"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-8161-b170-db63032089fd",
+    "name": "聖稜線 O 型縱走",
+    "en": "Holy Ridge O-Loop"
    }
   ],
   "beds": 25,
@@ -1968,6 +2013,11 @@
     "id": "3f1bf2d8-5a3b-817a-a56c-c1e304043e4c",
     "name": "聖稜線",
     "en": "Holy Ridge"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-8161-b170-db63032089fd",
+    "name": "聖稜線 O 型縱走",
+    "en": "Holy Ridge O-Loop"
    }
   ],
   "beds": 24,
@@ -2043,6 +2093,11 @@
     "id": "3f1bf2d8-5a3b-8169-9cbc-f4da060574aa",
     "name": "大霸尖山國家步道",
     "en": "Dabajian Mountain National Trail"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-8161-b170-db63032089fd",
+    "name": "聖稜線 O 型縱走",
+    "en": "Holy Ridge O-Loop"
    }
   ],
   "beds": 15,
@@ -2291,6 +2346,16 @@
     "id": "3f1bf2d8-5a3b-8192-9d25-e50611862b50",
     "name": "能高越嶺國家步道西段",
     "en": "Nenggao Cross-Ridge Trail (West)"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-81ea-9f33-d8fe7e123ba4",
+    "name": "奇萊南華",
+    "en": "Qilai South Peak & Nanhua"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-8113-9e16-ff1eb9d8858f",
+    "name": "能高安東軍縱走",
+    "en": "Nenggao–Andongjun Traverse"
    }
   ],
   "beds": 88,
@@ -2477,6 +2542,11 @@
     "id": "3f1bf2d8-5a3b-81e3-a1b1-d40730d0e48c",
     "name": "嘉明湖國家步道",
     "en": "Jiaming Lake National Trail"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-81cf-a750-fc88fe147265",
+    "name": "新康橫斷",
+    "en": "Xinkang Traverse"
    }
   ],
   "beds": 70,
@@ -2533,6 +2603,11 @@
     "id": "3f1bf2d8-5a3b-81e3-a1b1-d40730d0e48c",
     "name": "嘉明湖國家步道",
     "en": "Jiaming Lake National Trail"
+   },
+   {
+    "id": "3f6bf2d8-5a3b-81cf-a750-fc88fe147265",
+    "name": "新康橫斷",
+    "en": "Xinkang Traverse"
    }
   ],
   "beds": 70,

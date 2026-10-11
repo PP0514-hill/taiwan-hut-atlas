@@ -1,12 +1,83 @@
 [
  {
+  "id": "3f6bf2d8-5a3b-8113-9e16-ff1eb9d8858f",
+  "name": "能高安東軍縱走",
+  "en": "Nenggao–Andongjun Traverse",
+  "system": "其他",
+  "code": null,
+  "gis": "OSM r14522297",
+  "notes": "AI 初稿，待覆核。沿線營地（白石池、萬里池等）尚未建檔。",
+  "category": "經典縱走"
+ },
+ {
+  "id": "3f6bf2d8-5a3b-811a-822f-c24ea4de2ec1",
+  "name": "丹大東郡橫斷",
+  "en": "Danda–Dongjun Traverse",
+  "system": "其他",
+  "code": null,
+  "gis": "OSM r18300514",
+  "notes": "AI 初稿，待覆核。沿線山屋與營地尚未建檔。",
+  "category": "經典縱走"
+ },
+ {
+  "id": "3f6bf2d8-5a3b-8161-b170-db63032089fd",
+  "name": "聖稜線 O 型縱走",
+  "en": "Holy Ridge O-Loop",
+  "system": "雪霸國家公園",
+  "code": null,
+  "gis": "組合：雪霸國家公園登山步道路線圖 雪東線＋聖陵線＋武陵四秀",
+  "notes": "AI 初稿，待覆核。武陵經雪山、聖稜線至大霸，再經品田、池有、桃山回武陵；組成待有走過的同仁確認。",
+  "category": "經典縱走"
+ },
+ {
+  "id": "3f6bf2d8-5a3b-8185-89ec-fc0b14b3c9b6",
+  "name": "玉山後四峰",
+  "en": "Yushan Rear Four Peaks",
+  "system": "玉山國家公園",
+  "code": null,
+  "gis": "OSM r18232409",
+  "notes": "AI 初稿，待覆核。",
+  "category": "經典縱走"
+ },
+ {
+  "id": "3f6bf2d8-5a3b-8194-b8d9-eed2f6a093ec",
+  "name": "干卓萬群峰",
+  "en": "Ganzhuowan Peaks",
+  "system": "其他",
+  "code": null,
+  "gis": "OSM r19930450",
+  "notes": "AI 初稿，待覆核。沿線山屋與營地尚未建檔。",
+  "category": "經典縱走"
+ },
+ {
+  "id": "3f6bf2d8-5a3b-81cf-a750-fc88fe147265",
+  "name": "新康橫斷",
+  "en": "Xinkang Traverse",
+  "system": "玉山國家公園",
+  "code": null,
+  "gis": "OSM 步道路網串接（向陽－三叉山－新康山－抱崖山屋－山風）",
+  "notes": "AI 初稿，待覆核。路線組成與下山方向（經抱崖接八通關越嶺道東段）待確認；新康山屋尚未建檔。",
+  "category": "經典縱走"
+ },
+ {
+  "id": "3f6bf2d8-5a3b-81ea-9f33-d8fe7e123ba4",
+  "name": "奇萊南華",
+  "en": "Qilai South Peak & Nanhua",
+  "system": "其他",
+  "code": null,
+  "gis": "OSM r9296111",
+  "notes": "AI 初稿，待覆核。屯原登山口經能高越嶺道西段至天池山莊，再上奇萊南峰、南華山。",
+  "category": "經典縱走"
+ },
+ {
   "id": "3f1bf2d8-5a3b-8106-a01f-c083134e309e",
   "name": "玉山群峰線",
   "en": "Yushan Peaks Route",
   "system": "玉山國家公園",
   "code": null,
   "gis": "待自繪／玉管處 GPX",
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-810d-bafc-f6ad81221ada",
@@ -15,7 +86,8 @@
   "system": "玉山國家公園",
   "code": null,
   "gis": null,
-  "notes": "東埔至大水窟；日治八通關越道路西段"
+  "notes": "東埔至大水窟；日治八通關越道路西段",
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-8113-8c80-cb97f31cae04",
@@ -24,7 +96,8 @@
   "system": "太魯閣國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-813d-90bd-fb54394dbde5",
@@ -33,7 +106,8 @@
   "system": "其他",
   "code": null,
   "gis": null,
-  "notes": "關聯設施用：利稻山莊"
+  "notes": "關聯設施用：利稻山莊",
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-813e-a14a-c68e386e7100",
@@ -42,7 +116,8 @@
   "system": "玉山國家公園",
   "code": null,
   "gis": null,
-  "notes": "塔塔加遊憩區；林道管制"
+  "notes": "塔塔加遊憩區；林道管制",
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-8156-8bc2-d01122e679b3",
@@ -51,7 +126,8 @@
   "system": "太魯閣國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-8169-9cbc-f4da060574aa",
@@ -60,7 +136,8 @@
   "system": "林保署國家步道",
   "code": "027",
   "gis": "林保署 KMZ 027",
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-816f-83a9-e78a4384a04b",
@@ -69,7 +146,8 @@
   "system": "太魯閣國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-817a-a56c-c1e304043e4c",
@@ -78,7 +156,8 @@
   "system": "雪霸國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-818a-ad39-d68425f44ba2",
@@ -87,7 +166,8 @@
   "system": "雪霸國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-8192-9d25-e50611862b50",
@@ -96,7 +176,8 @@
   "system": "林保署國家步道",
   "code": "064",
   "gis": "林保署 KMZ 064",
-  "notes": "日治駐在所：屯原、尾上、富士見、松原、能高"
+  "notes": "日治駐在所：屯原、尾上、富士見、松原、能高",
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-8195-8e38-dc5b4c908ff7",
@@ -105,7 +186,8 @@
   "system": "雪霸國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-8197-8dd2-e9f3e059be38",
@@ -114,7 +196,8 @@
   "system": "林保署國家步道",
   "code": "119",
   "gis": "林保署 KMZ 119",
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-8198-b25e-cfa8059654df",
@@ -123,7 +206,8 @@
   "system": "太魯閣國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-819b-a480-c6f6c3403b47",
@@ -132,7 +216,8 @@
   "system": "雪霸國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-81a4-8616-f1e7568f9f80",
@@ -141,7 +226,8 @@
   "system": "林保署國家步道",
   "code": "066",
   "gis": "林保署 KMZ 066",
-  "notes": "2024-07 至 2027-12 封閉"
+  "notes": "2024-07 至 2027-12 封閉",
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-81b9-a71d-e8fdd0e4a3aa",
@@ -150,7 +236,8 @@
   "system": "玉山國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "經典縱走"
  },
  {
   "id": "3f1bf2d8-5a3b-81c2-aead-c02478128155",
@@ -159,7 +246,8 @@
   "system": "歷史越嶺道",
   "code": "154（瓦拉米步道段）",
   "gis": null,
-  "notes": "山風至大水窟；日治 34 座駐在所；Phase 2 古地圖數化對象"
+  "notes": "山風至大水窟；日治 34 座駐在所；Phase 2 古地圖數化對象",
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-81cf-a16b-c3dad0f8fba7",
@@ -168,7 +256,8 @@
   "system": "玉山國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-81cf-b0b4-e0937fa4dea1",
@@ -177,7 +266,8 @@
   "system": "雪霸國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-81e3-a1b1-d40730d0e48c",
@@ -186,7 +276,8 @@
   "system": "林保署國家步道",
   "code": "139",
   "gis": "林保署 KMZ 139",
-  "notes": null
+  "notes": null,
+  "category": "經典縱走"
  },
  {
   "id": "3f1bf2d8-5a3b-81ee-b4e1-fee517a37d9c",
@@ -195,7 +286,8 @@
   "system": "雪霸國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-81f4-9e55-fac541242833",
@@ -204,7 +296,8 @@
   "system": "太魯閣國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  },
  {
   "id": "3f1bf2d8-5a3b-81fe-9e1c-ea90ed9148da",
@@ -213,6 +306,7 @@
   "system": "玉山國家公園",
   "code": null,
   "gis": null,
-  "notes": null
+  "notes": null,
+  "category": "一般路線"
  }
 ]

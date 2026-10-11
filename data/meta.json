@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T00:15:29.110Z",
+ "generated": "2026-10-11T04:54:06.510Z",
  "source": "notion-api",
  "logistics_index_version": "v0.1",
  "counts": {
@@ -7,7 +7,7 @@
   "events": 88,
   "sources": 80,
   "agencies": 11,
-  "trails": 24
+  "trails": 31
  },
  "review": {
   "已覆核": 0,
