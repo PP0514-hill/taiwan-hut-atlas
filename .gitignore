@@ -5,3 +5,5 @@ dist/
 .env.*
 !.env.example
 data/*.internal.*
+# publish-data.mjs 於 dev/build 時產生
+public/data/

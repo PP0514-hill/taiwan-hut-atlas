@@ -57,6 +57,7 @@ main.wrap.wide { max-width: 1440px; }
 .maplibregl-ctrl-group { box-shadow: none !important; border: var(--pp-border-width) solid var(--pp-line-strong); }
 .map-legend { display: flex; flex-wrap: wrap; gap: var(--pp-space-sm) var(--pp-space-md); font-size: var(--pp-fs-caption); color: var(--pp-ink-sub); margin-top: var(--pp-space-sm); }
 .map-legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; background: var(--c); border: 1px solid var(--pp-ink-sub); }
+.map-legend span.park::before { width: 16px; height: 0; border-radius: 0; border: 0; border-top: 2px dashed var(--pp-ink-sub); vertical-align: 3px; background: none; }
 
 /* 表格 */
 .table-wrap { overflow-x: auto; background: var(--pp-bg-card); border: var(--pp-border-width) solid var(--pp-line); border-radius: var(--pp-radius-card); }

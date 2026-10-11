@@ -12,6 +12,7 @@
     "fetch": "node scripts/fetch-notion.mjs",
     "backfill:logistics": "node scripts/backfill-logistics.mjs",
     "check": "node scripts/check-data.mjs",
+    "check:agency": "node scripts/check-agency.mjs",
     "prebuild": "node scripts/check-data.mjs && node scripts/publish-data.mjs",
     "predev": "node scripts/publish-data.mjs"
   },
