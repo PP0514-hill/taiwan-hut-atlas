@@ -40,6 +40,7 @@ const P = {
   屏風山登山口: [121.31781, 24.17968], // OSM node 2297213055
   三叉山: [121.02866, 23.29719], // OSM node 660060600
   新康山: [121.12762, 23.31659], // OSM node 2268473295
+  嘉明湖: [121.03404, 23.2934], // OSM natural=water 嘉明湖 面心
 };
 const PLAN = {
   聖稜線: { shp: '聖陵線' },
@@ -52,7 +53,8 @@ const PLAN = {
   能高越嶺國家步道西段: { kml: FANC(826, 83419), note: '林保署 065（2026-06-18 版）' },
   能高越嶺國家步道東段: { kml: FANC(827, 2139), note: '林保署 066' },
   北大武山國家步道: { kml: FANC(490, 2089), note: '林保署 119' },
-  嘉明湖國家步道: { kml: FANC(503, 2102), note: '林保署 139' },
+  // 林保署軌跡只到向陽山屋一帶；經典路線延伸至嘉明湖避難山屋、三叉山、嘉明湖（OSM 串接，另存 OSM 檔、同一 trail_id）
+  嘉明湖國家步道: { kml: FANC(503, 2102), note: '林保署 139', extend: ['TWH-0032', 'TWH-0033', P.三叉山, P.嘉明湖] },
   玉山群峰線: { rel: [13678202, 18229953] }, // 玉山步道、玉山北峰步道
   八通關越嶺道西段: { rel: [13678191], maxLon: 121.057 }, // 關聯含整條古道，切到大水窟以西，東段另由串接路線處理
   鹿林山步道: { rel: [13678204] },
@@ -67,13 +69,15 @@ const PLAN = {
   屏風山線: { via: [P.屏風山登山口, 'TWH-0043'] },
   '南橫公路（台 20 線）': { skip: '公路本身，底圖已有' },
   // 經典縱走（Notion 步道庫「分類＝經典縱走」）
-  '聖稜線 O 型縱走': { shp: ['雪東線', '聖陵線', '武陵四秀'] },
+  // 聖陵線圖層另含兩段非 O 型的進出路線，以框切除：
+  //   大霸西北往觀霧、九九山莊（經度 < 121.252 且緯度 > 24.456）；雪山以南經瓢簞往環山的志佳陽線（緯度 < 24.375、經度 < 121.31）
+  '聖稜線 O 型縱走': { shp: ['雪東線', '聖陵線', '武陵四秀'], exclude: [[120.9, 24.456, 121.252, 24.6], [121.15, 24.25, 121.31, 24.375]] },
   奇萊南華: { rel: [9296111] },
   能高安東軍縱走: { rel: [14522297] },
   玉山後四峰: { rel: [18232409] },
   干卓萬群峰: { rel: [19930450] },
-  丹大東郡橫斷: { rel: [18300514] },
-  新康橫斷: { via: [P.向陽管制站, P.三叉山, P.新康山, 'TWH-0015', P.山風], note: '路線組成待確認' },
+  '丹大東郡橫斷（南三段）': { rel: [18300514] },
+  新康橫斷: { via: [P.向陽管制站, P.三叉山, P.新康山, 'TWH-0015', P.山風], note: '路線組成經使用者確認（2026-10-11）' },
 };
 
 const MOTOR = new Set(['motorway', 'trunk', 'primary', 'secondary', 'tertiary', 'unclassified', 'residential', 'service', 'living_street', 'motorway_link', 'trunk_link', 'primary_link', 'secondary_link', 'tertiary_link']);
@@ -272,6 +276,25 @@ for (const t of trails) {
     lines = [line];
     src = { source: 'OpenStreetMap 步道路網串接（本專案依山屋順序計算）', license: ODBL, note: plan.note ?? null };
     osmOut.push({ type: 'Feature', properties: { ...props, kind: 'route', ...src }, geometry: { type: 'LineString', coordinates: round(lines)[0] } });
+  }
+
+  if (plan.exclude) {
+    const inBox = ([x, y]) => plan.exclude.some(([a, b, c, d]) => x >= a && y >= b && x <= c && y <= d);
+    lines = lines.flatMap((l) => { const out = [[]]; for (const p of l) inBox(p) ? out.at(-1).length && out.push([]) : out.at(-1).push(p); return out.filter((x) => x.length > 1); });
+    const f = [...official, ...osmOut].findLast((x) => x.properties.trail_id === t.id && x.properties.kind === 'route');
+    f.geometry = { type: 'MultiLineString', coordinates: round(lines) };
+  }
+  if (plan.extend) {
+    const pts = plan.extend.map((v) => (typeof v === 'string' ? hutXY[v] : v));
+    const net = network(bboxOf(pts, 0.03));
+    const ext = [];
+    for (let i = 1; i < pts.length; i++) {
+      const [a] = nearest(net, pts[i - 1]), [b] = nearest(net, pts[i]);
+      const r = dijkstra(net, a, (u) => u === b, () => 1);
+      if (!r) { report.push(`延伸段串接失敗：${t.name} 第 ${i} 段`); break; }
+      ext.push(...r.path.map((id) => net.nodes.get(id)).slice(ext.length ? 1 : 0));
+    }
+    if (ext.length > 1) osmOut.push({ type: 'Feature', properties: { ...props, kind: 'route', source: 'OpenStreetMap 步道路網串接（官方軌跡之延伸段）', license: ODBL }, geometry: { type: 'LineString', coordinates: round([ext])[0] } });
   }
 
   // 登山口與接駁道路：路線真正的端點（不與其他段相接者）中，離車行道路最近的一或兩個
