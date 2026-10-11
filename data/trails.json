@@ -8,7 +8,14 @@
   "gis": "OSM r14522297",
   "notes": "AI 初稿，待覆核。沿線營地（白石池、萬里池等）尚未建檔。",
   "category": "經典縱走",
-  "summary": "從天池山莊往南沿中央山脈主稜，經能高山主峰、能高南峰、光頭山、白石山到安東軍山。沿途有白石池、萬里池、屯鹿池等高山湖泊，尾段多往奧萬大方向下山。"
+  "summary": "從天池山莊往南沿中央山脈主稜，經能高山主峰、能高南峰、光頭山、白石山到安東軍山。沿途有白石池、萬里池、屯鹿池等高山湖泊，尾段多往奧萬大方向下山。",
+  "ref": {
+   "days": "6 天",
+   "difficulty": "高",
+   "distance": "49 公里",
+   "url": "https://hiking.biji.co/index.php?q=trail&act=detail&id=652",
+   "checked": "2026-10-11"
+  }
  },
  {
   "id": "3f6bf2d8-5a3b-811a-822f-c24ea4de2ec1",
@@ -19,7 +26,14 @@
   "gis": "OSM r18300514",
   "notes": "AI 初稿，待覆核。岳界通稱南三段，狹義為丹大山至無雙山（百岳 6 座）；廣義「大南三段」含七彩湖至丹大山主稜。來源：健行筆記、維基百科「中央山脈大縱走」（查證 2026-10-11，非官方定義）。沿線山屋與營地尚未建檔。",
   "category": "經典縱走",
-  "summary": "岳界通稱南三段，狹義指丹大山到無雙山，經內嶺爾山、馬路巴拉讓山、東郡大山等，含六座百岳；廣義的「大南三段」另加七彩湖到丹大山的主稜。位在中央山脈最偏遠的山區，沿線沒有避難山屋。"
+  "summary": "岳界通稱南三段，狹義指丹大山到無雙山，經內嶺爾山、馬路巴拉讓山、東郡大山等，含六座百岳；廣義的「大南三段」另加七彩湖到丹大山的主稜。位在中央山脈最偏遠的山區，沿線沒有避難山屋。",
+  "ref": {
+   "days": "10 天",
+   "difficulty": "高",
+   "distance": "104.1 公里",
+   "url": "https://hiking.biji.co/index.php?q=trail&act=detail&id=667",
+   "checked": "2026-10-11"
+  }
  },
  {
   "id": "3f6bf2d8-5a3b-8161-b170-db63032089fd",
@@ -30,7 +44,14 @@
   "gis": "組合：雪霸國家公園登山步道路線圖 雪東線＋聖陵線＋武陵四秀；去除聖陵線圖層中往觀霧／九九山莊的大霸線進出段",
   "notes": "AI 初稿，待覆核。武陵經雪山、聖稜線至大霸，再經品田、池有、桃山回武陵；組成待有走過的同仁確認。",
   "category": "經典縱走",
-  "summary": "從武陵出發，經雪山主峰、北稜角沿雪山山脈主稜北行到大霸尖山，再由霸南、新達山屋經品田山、池有山、桃山回到武陵，繞成一圈。主稜段大多在三千公尺以上，素密達斷崖一帶岩層破碎。"
+  "summary": "從武陵出發，經雪山主峰、北稜角沿雪山山脈主稜北行到大霸尖山，再由霸南、新達山屋經品田山、池有山、桃山回到武陵，繞成一圈。主稜段大多在三千公尺以上，素密達斷崖一帶岩層破碎。",
+  "ref": {
+   "days": "5 天",
+   "difficulty": "高",
+   "distance": "41.3 公里",
+   "url": "https://hiking.biji.co/index.php?q=trail&act=detail&id=636",
+   "checked": "2026-10-11"
+  }
  },
  {
   "id": "3f6bf2d8-5a3b-8185-89ec-fc0b14b3c9b6",
@@ -41,7 +62,14 @@
   "gis": "OSM r18232409",
   "notes": "AI 初稿，待覆核。",
   "category": "經典縱走",
-  "summary": "由排雲山莊出發，往南依序登玉山南峰、東小南山、鹿山、南玉山，四座都是百岳。玉山南峰一帶是陡峻的碎石坡，往南玉山的路跡較不明顯。"
+  "summary": "由排雲山莊出發，往南依序登玉山南峰、東小南山、鹿山、南玉山，四座都是百岳。玉山南峰一帶是陡峻的碎石坡，往南玉山的路跡較不明顯。",
+  "ref": {
+   "days": "4 天（往返）",
+   "difficulty": "高",
+   "distance": "單程 22.4 公里",
+   "url": "https://hiking.biji.co/index.php?q=trail&act=detail&id=590",
+   "checked": "2026-10-11"
+  }
  },
  {
   "id": "3f6bf2d8-5a3b-8194-b8d9-eed2f6a093ec",
@@ -52,7 +80,14 @@
   "gis": "OSM r19930450",
   "notes": "AI 初稿，待覆核。沿線山屋與營地尚未建檔。",
   "category": "經典縱走",
-  "summary": "包含卓社大山、牧山、火山、干卓萬山四座百岳，位在南投縣仁愛鄉與信義鄉交界的干卓萬山塊。岳界把它和馬博橫斷、奇萊東稜、南三段並列為百岳的「四大障礙」。"
+  "summary": "包含卓社大山、牧山、火山、干卓萬山四座百岳，位在南投縣仁愛鄉與信義鄉交界的干卓萬山塊。岳界把它和馬博橫斷、奇萊東稜、南三段並列為百岳的「四大障礙」。",
+  "ref": {
+   "days": "6 天",
+   "difficulty": "高",
+   "distance": "58.6 公里",
+   "url": "https://hiking.biji.co/index.php?q=trail&act=detail&id=881",
+   "checked": "2026-10-11"
+  }
  },
  {
   "id": "3f6bf2d8-5a3b-81cf-a750-fc88fe147265",
@@ -63,7 +98,14 @@
   "gis": "OSM 步道路網串接（向陽－三叉山－新康山－抱崖山屋－山風）",
   "notes": "AI 初稿，待覆核。路線組成（向陽－三叉山－新康山－抱崖－八通關越嶺道東段下山）已經使用者確認（2026-10-11）；新康山屋尚未建檔。",
   "category": "經典縱走",
-  "summary": "由南橫向陽出發，經嘉明湖、三叉山往東走到新康山，再下抱崖山屋，接八通關越嶺道東段到南安。新康山獨立在中央山脈主稜東側，是花蓮南部的百岳。"
+  "summary": "由南橫向陽出發，經嘉明湖、三叉山往東走到新康山，再下抱崖山屋，接八通關越嶺道東段到南安。新康山獨立在中央山脈主稜東側，是花蓮南部的百岳。",
+  "ref": {
+   "days": "6 天",
+   "difficulty": "高",
+   "distance": "77.6 公里",
+   "url": "https://hiking.biji.co/index.php?q=trail&act=detail&id=631",
+   "checked": "2026-10-11"
+  }
  },
  {
   "id": "3f6bf2d8-5a3b-81ea-9f33-d8fe7e123ba4",
@@ -74,7 +116,14 @@
   "gis": "OSM r9296111",
   "notes": "AI 初稿，待覆核。屯原登山口經能高越嶺道西段至天池山莊，再上奇萊南峰、南華山。",
   "category": "經典縱走",
-  "summary": "由屯原登山口沿能高越嶺道西段上行到天池山莊，再分別登奇萊南峰與南華山。前段是日治時期開鑑的越嶺道，坡度和緩；天池山莊以上是開闊的箭竹草原。"
+  "summary": "由屯原登山口沿能高越嶺道西段上行到天池山莊，再分別登奇萊南峰與南華山。前段是日治時期開鑑的越嶺道，坡度和緩；天池山莊以上是開闊的箭竹草原。",
+  "ref": {
+   "days": "2 天（往返）",
+   "difficulty": "中",
+   "distance": "單程 18.6 公里",
+   "url": "https://hiking.biji.co/index.php?q=trail&act=detail&id=430",
+   "checked": "2026-10-11"
+  }
  },
  {
   "id": "3f1bf2d8-5a3b-8106-a01f-c083134e309e",
@@ -85,7 +134,8 @@
   "gis": "待自繪／玉管處 GPX",
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-810d-bafc-f6ad81221ada",
@@ -96,7 +146,8 @@
   "gis": null,
   "notes": "東埔至大水窟；日治八通關越道路西段",
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-8113-8c80-cb97f31cae04",
@@ -107,7 +158,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-813d-90bd-fb54394dbde5",
@@ -118,7 +170,8 @@
   "gis": null,
   "notes": "關聯設施用：利稻山莊",
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-813e-a14a-c68e386e7100",
@@ -129,7 +182,8 @@
   "gis": null,
   "notes": "塔塔加遊憩區；林道管制",
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-8156-8bc2-d01122e679b3",
@@ -140,7 +194,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-8169-9cbc-f4da060574aa",
@@ -151,7 +206,8 @@
   "gis": "林保署 KMZ 027",
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-816f-83a9-e78a4384a04b",
@@ -162,7 +218,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-817a-a56c-c1e304043e4c",
@@ -173,7 +230,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-818a-ad39-d68425f44ba2",
@@ -184,7 +242,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-8192-9d25-e50611862b50",
@@ -195,7 +254,8 @@
   "gis": "林保署 KMZ 064",
   "notes": "日治駐在所：屯原、尾上、富士見、松原、能高",
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-8195-8e38-dc5b4c908ff7",
@@ -206,7 +266,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-8197-8dd2-e9f3e059be38",
@@ -217,7 +278,8 @@
   "gis": "林保署 KMZ 119",
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-8198-b25e-cfa8059654df",
@@ -228,7 +290,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-819b-a480-c6f6c3403b47",
@@ -239,7 +302,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-81a4-8616-f1e7568f9f80",
@@ -250,7 +314,8 @@
   "gis": "林保署 KMZ 066",
   "notes": "2024-07 至 2027-12 封閉",
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-81b9-a71d-e8fdd0e4a3aa",
@@ -261,7 +326,14 @@
   "gis": null,
   "notes": null,
   "category": "經典縱走",
-  "summary": "南橫向陽與南投東埔之間的中央山脈主稜縱走，兩頭皆可出發。沿線經向陽山、雲峰、轆轆山、達芬尖山、大水窟山、秀姑巒山、八通關山，東埔端接八通關古道。"
+  "summary": "南橫向陽與南投東埔之間的中央山脈主稜縱走，兩頭皆可出發。沿線經向陽山、雲峰、轆轆山、達芬尖山、大水窟山、秀姑巒山、八通關山，東埔端接八通關古道。",
+  "ref": {
+   "days": "8 天",
+   "difficulty": "高",
+   "distance": "87.5 公里",
+   "url": "https://hiking.biji.co/index.php?q=trail&act=detail&id=632",
+   "checked": "2026-10-11"
+  }
  },
  {
   "id": "3f1bf2d8-5a3b-81c2-aead-c02478128155",
@@ -272,7 +344,8 @@
   "gis": null,
   "notes": "山風至大水窟；日治 34 座駐在所；Phase 2 古地圖數化對象",
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-81cf-a16b-c3dad0f8fba7",
@@ -283,7 +356,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-81cf-b0b4-e0937fa4dea1",
@@ -294,7 +368,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-81e3-a1b1-d40730d0e48c",
@@ -305,7 +380,14 @@
   "gis": "林保署 KMZ 139；延伸段：OSM 步道路網串接（向陽山屋－嘉明湖避難山屋－三叉山－嘉明湖）",
   "notes": null,
   "category": "經典縱走",
-  "summary": "林保署管理的國家步道，由南橫向陽森林遊樂區旁的登山口上行，經向陽山屋、嘉明湖避難山屋，再到三叉山與嘉明湖。嘉明湖是海拔約 3,310 公尺的高山湖泊，湖面程橢圓形。"
+  "summary": "林保署管理的國家步道，由南橫向陽森林遊樂區旁的登山口上行，經向陽山屋、嘉明湖避難山屋，再到三叉山與嘉明湖。嘉明湖是海拔約 3,310 公尺的高山湖泊，湖面程橢圓形。",
+  "ref": {
+   "days": "3 天（往返）",
+   "difficulty": "中－高",
+   "distance": "單程 13 公里",
+   "url": "https://hiking.biji.co/index.php?q=trail&act=detail&id=347",
+   "checked": "2026-10-11"
+  }
  },
  {
   "id": "3f1bf2d8-5a3b-81ee-b4e1-fee517a37d9c",
@@ -316,7 +398,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-81f4-9e55-fac541242833",
@@ -327,7 +410,8 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  },
  {
   "id": "3f1bf2d8-5a3b-81fe-9e1c-ea90ed9148da",
@@ -338,6 +422,7 @@
   "gis": null,
   "notes": null,
   "category": "一般路線",
-  "summary": null
+  "summary": null,
+  "ref": null
  }
 ]
