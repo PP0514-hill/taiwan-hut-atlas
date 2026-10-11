@@ -73,6 +73,7 @@ main.wrap.wide { max-width: 1440px; }
 .classic-card dd { margin: 0; }
 .classic-card dd .muted { font-size: 12px; }
 .classic-card a { color: var(--pp-accent); }
+.classic-ref { font-size: 12px; }
 .classic-note { font-size: 12px; color: var(--pp-ink-hint); margin: 0; border-top: var(--pp-border-width) solid var(--pp-line); padding-top: 8px; }
 .classic-close { position: absolute; top: 6px; right: 8px; border: 0; background: none; font-size: 22px; line-height: 1; color: var(--pp-ink-sub); cursor: pointer; padding: 4px 8px; min-width: 36px; min-height: 36px; }
 .classic-close:focus-visible { outline: 2px solid var(--pp-ink); }

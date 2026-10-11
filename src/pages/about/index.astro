@@ -57,7 +57,7 @@ const base = import.meta.env.BASE_URL;
       <tr><td>OpenStreetMap 道路與登山口，本專案計算最短車行路徑</td><td>登山口位置、登山口至省道或縣道的接駁道路</td><td>ODbL 1.0</td></tr>
     </table>
     <p>經典路線選單列出步道庫裡「分類」標為經典縱走的路線，選了就會高亮並飛到該路線：聖稜線 O 型（雪東線、聖陵線、武陵四秀三層組合，切除往觀霧與志佳陽的進出段）、奇萊南華、能高安東軍、玉山後四峰、干卓萬群峰、丹大東郡橫斷（岳界通稱南三段；以上取自 OSM 路線關聯）、新康橫斷（依向陽、三叉山、新康山、抱崖山屋串接），以及原有的南二段與嘉明湖（林保署軌跡只到向陽山屋一帶，延伸至三叉山與嘉明湖的部分為 OSM 串接）。這些都是 AI 初稿，還沒覆核。</p>
-    <p>選了經典路線會出現介紹卡。簡介取自 Notion 步道庫的「簡介」欄，只寫可查證的路線組成與地形；全長依地圖線段計算，不是官方里程；主要山峰是已建檔山峰中離路線 500 m 以內者，標高取自 OSM。天數與難度沒有可靠出處，暫不列出。</p>
+    <p>選了經典路線會出現介紹卡。簡介取自 Notion 步道庫的「簡介」欄，只寫可查證的路線組成與地形；全長依地圖線段計算，不是官方里程；主要山峰是已建檔山峰中離路線 500 m 以內者，標高取自 OSM。參考天數、參考難度、參考里程原文照錄自<a href="https://hiking.biji.co/" target="_blank" rel="noopener">健行筆記</a>各路線頁，屬山友社群整理的資料，不是官方標準，卡片上附原頁連結與查證日期。紅色路線上的箭頭依健行筆記的常見走法標示行進方向；往返型路線（奇萊南華、玉山後四峰、嘉明湖）只標去程，聖稜線 O 型的新達至素密達一段因雪霸圖資缺漏，方向線以 OSM 步道補接。</p>
     <p>串接路線是電腦依 OSM 步道算出的最短路徑，未經現勘，可能和實際慣用走法不同。南湖北一段經過座標降階的山屋，依座標降階規則不畫。接駁道路包含林道，林道常有管制或車輛限制。</p>
     <p>下載：<a href={base + 'data/routes.official.geojson'}>routes.official.geojson</a>（政府資料開放授權）・<a href={base + 'data/routes.osm.geojson'}>routes.osm.geojson</a>（ODbL 1.0，衍生自 © OpenStreetMap contributors，再利用須同樣以 ODbL 釋出）・<a href={base + 'data/parks.geojson'}>parks.geojson</a>（國家公園範圍）・<a href={base + 'data/park-hq.geojson'}>park-hq.geojson</a>（管理處位置，ODbL）・<a href={base + 'data/peaks.geojson'}>peaks.geojson</a>（主要山峰位置與標高，ODbL；標高取自 OSM 三角點資料，與常見刊載值可能差 1～2 m）。</p>
 

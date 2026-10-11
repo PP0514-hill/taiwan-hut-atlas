@@ -80,6 +80,20 @@ const PLAN = {
   新康橫斷: { via: [P.向陽管制站, P.三叉山, P.新康山, 'TWH-0015', P.山風], note: '路線組成經使用者確認（2026-10-11）' },
 };
 
+// 經典路線行進方向：依健行筆記常見走法設途經點，在路線自己的線段上串成一條有方向的「行進線」，地圖箭頭只畫在這條上。
+// 官方 SHP 與 OSM 關聯都是方向不一的零散線段，直接畫箭頭會亂指。往返型路線只標去程。
+const FLOW = {
+  '聖稜線 O 型縱走': [[121.30693, 24.39721], 'TWH-0021', 'TWH-0022', 'TWH-0026', 'TWH-0025', 'TWH-0019', [121.29885, 24.38573]], // 武陵四秀登山口→桃山→新達→素密達→雪北→三六九→雪山登山口
+  奇萊南華: [[121.21521, 24.05049], 'TWH-0030', [121.28, 24.0613], [121.2859, 24.0393]], // 屯原→天池→奇萊南峰→南華山
+  能高安東軍縱走: [[121.2602, 23.9923], [121.2749, 23.9075], [121.2661, 23.8727]], // 能高山→白石山→安東軍山（OSM 關聯不含天池段）
+  玉山後四峰: ['TWH-0001', 'TWH-0002', [120.9249, 23.4292]], // 排雲→圓峰→南玉山（去程）
+  干卓萬群峰: [[121.139, 23.876], [121.1602, 23.8629], [121.1159, 23.8345]], // 干卓萬山→牧山→卓社大山
+  '丹大東郡橫斷（南三段）': [[121.2134, 23.6004], [121.196, 23.5793], [121.0919, 23.6268]], // 丹大山→內嶺爾山→東郡大山
+  新康橫斷: [P.向陽管制站, P.三叉山, P.新康山, 'TWH-0015', P.山風],
+  南二段: [P.東埔溫泉, 'TWH-0004', 'TWH-0007', 'TWH-0010', P.向陽管制站],
+  嘉明湖國家步道: [[120.98375, 23.25538], 'TWH-0032', 'TWH-0033', P.三叉山, P.嘉明湖], // 去程
+};
+
 const MOTOR = new Set(['motorway', 'trunk', 'primary', 'secondary', 'tertiary', 'unclassified', 'residential', 'service', 'living_street', 'motorway_link', 'trunk_link', 'primary_link', 'secondary_link', 'tertiary_link']);
 // 主要道路＝省道或縣道。OSM 台灣的省道編號有「台20」也有只寫「20」的，縣道為三碼數字
 const MAIN = (t) => (t.ref ?? '').split(';').some((r) => /^(台)?\d{1,3}[甲乙丙]?(線)?$/.test(r.trim())) || ['motorway', 'trunk', 'primary', 'secondary'].includes(t.highway);
@@ -338,6 +352,46 @@ function trailheadName(xy, trail) {
   const near = osm.trailheads.map((n) => ({ ...n, d: dist(xy, n.xy) })).sort((a, b) => a.d - b.d);
   const keys = trail.split(/[／、（）\s]/).filter(Boolean).map((w) => w.slice(0, 2));
   return near.find((n) => n.d < 2500 && keys.some((k) => n.name.includes(k)))?.name ?? near.find((n) => n.d < 600)?.name ?? null;
+}
+
+// 行進線：把該路線所有線段（官方＋OSM）組成小路網，端點 120 m 內視為相接（雪霸 SHP 品田一帶線段有數十公尺缺口），再依途經點求最短路徑
+function lineGraph(lines) {
+  const nodes = new Map(), adj = new Map(), key = (p) => `${p[0].toFixed(6)},${p[1].toFixed(6)}`;
+  const add = (a, b) => { const l = dist(nodes.get(a), nodes.get(b)); (adj.get(a) ?? adj.set(a, []).get(a)).push([b, l, {}]); (adj.get(b) ?? adj.set(b, []).get(b)).push([a, l, {}]); };
+  for (const l of lines) for (let i = 0; i < l.length; i++) { nodes.set(key(l[i]), l[i]); if (i) add(key(l[i - 1]), key(l[i])); }
+  const all = [...nodes.keys()];
+  for (const l of lines) for (const e of [l[0], l.at(-1)]) {
+    const k = key(e);
+    for (const o of all) if (o !== k && dist(nodes.get(o), e) < 120 && !adj.get(k)?.some(([n]) => n === o)) add(k, o);
+  }
+  return { nodes, adj };
+}
+for (const [name, hints] of Object.entries(FLOW)) {
+  const t = trails.find((x) => x.name === name); if (!t) { report.push(`行進線找不到路線：${name}`); continue; }
+  const feats = [...official, ...osmOut].filter((f) => f.properties.trail_id === t.id && f.properties.kind === 'route');
+  const lines = feats.flatMap((f) => (f.geometry.type === 'LineString' ? [f.geometry.coordinates] : f.geometry.coordinates));
+  const g = lineGraph(lines);
+  const pts = hints.map((v) => (typeof v === 'string' ? hutXY[v] : v));
+  const flow = [];
+  let usedOsm = false;
+  for (let i = 1; i < pts.length; i++) {
+    const [a, da] = nearest(g, pts[i - 1]), [b, db] = nearest(g, pts[i]);
+    if (Math.max(da, db) > 1500) report.push(`  行進線 ${name}：第 ${i} 個途經點離路線 ${Math.round(Math.max(da, db))} m`);
+    let seg = dijkstra(g, a, (u) => u === b, () => 1)?.path.map((id) => g.nodes.get(id));
+    if (!seg) {
+      // 路線本身線段沒相連（例如雪霸 SHP 缺新達－霸南一段）：這一段改沿 OSM 步道路網補上
+      const net = network(bboxOf([g.nodes.get(a), g.nodes.get(b)], 0.03));
+      const [oa] = nearest(net, g.nodes.get(a)), [ob] = nearest(net, g.nodes.get(b));
+      seg = dijkstra(net, oa, (u) => u === ob, () => 1)?.path.map((id) => net.nodes.get(id));
+      if (!seg) { report.push(`行進線串接失敗：${name} 第 ${i} 段`); flow.length = 0; break; }
+      usedOsm = true; report.push(`  行進線 ${name}：第 ${i} 段路線線段不相連，改以 OSM 步道補接`);
+    }
+    flow.push(...seg.slice(flow.length ? 1 : 0));
+  }
+  if (flow.length < 2) continue;
+  const onlyGov = !usedOsm && feats.every((f) => f.properties.license === OGDL);
+  (onlyGov ? official : osmOut).push({ type: 'Feature', properties: { trail: t.name, trail_id: t.id, kind: 'flow', license: onlyGov ? OGDL : ODBL }, geometry: { type: 'LineString', coordinates: flow } });
+  console.log(`→ 行進線 ${name}：${(flow.slice(1).reduce((s, p, i) => s + dist(flow[i], p), 0) / 1000).toFixed(1)} km`);
 }
 
 const meta = (license, note) => ({ generated: new Date().toISOString().slice(0, 10), license, note });
