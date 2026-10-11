@@ -67,6 +67,7 @@ main.wrap.wide { max-width: 1440px; }
 .map-legend span.access::before { border-top-color: var(--pp-ink-sub); }
 .map-legend span.trailhead::before { width: 6px; height: 6px; border-radius: 50%; border: 1.5px solid var(--pp-ink); background: #FFFFFF; }
 .map-legend span.hq::before { width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid #FFFFFF; outline: 1px solid var(--pp-line-strong); background: var(--pp-ink); }
+.map-legend span.peak::before { width: 0; height: 0; border-radius: 0; border: 5px solid transparent; border-top: 0; border-bottom: 9px solid var(--pp-ink); background: none; vertical-align: 0; }
 .map-legend span.park::before { width: 16px; height: 0; border-radius: 0; border: 0; border-top: 2px dashed var(--pp-ink-sub); vertical-align: 3px; background: none; }
 
 /* 表格 */

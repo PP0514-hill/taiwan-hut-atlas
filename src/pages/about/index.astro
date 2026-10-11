@@ -57,7 +57,7 @@ const base = import.meta.env.BASE_URL;
       <tr><td>OpenStreetMap 道路與登山口，本專案計算最短車行路徑</td><td>登山口位置、登山口至省道或縣道的接駁道路</td><td>ODbL 1.0</td></tr>
     </table>
     <p>串接路線是電腦依 OSM 步道算出的最短路徑，未經現勘，可能和實際慣用走法不同。南湖北一段經過座標降階的山屋，依座標降階規則不畫。接駁道路包含林道，林道常有管制或車輛限制。</p>
-    <p>下載：<a href={base + 'data/routes.official.geojson'}>routes.official.geojson</a>（政府資料開放授權）・<a href={base + 'data/routes.osm.geojson'}>routes.osm.geojson</a>（ODbL 1.0，衍生自 © OpenStreetMap contributors，再利用須同樣以 ODbL 釋出）・<a href={base + 'data/parks.geojson'}>parks.geojson</a>（國家公園範圍）・<a href={base + 'data/park-hq.geojson'}>park-hq.geojson</a>（管理處位置，ODbL）。</p>
+    <p>下載：<a href={base + 'data/routes.official.geojson'}>routes.official.geojson</a>（政府資料開放授權）・<a href={base + 'data/routes.osm.geojson'}>routes.osm.geojson</a>（ODbL 1.0，衍生自 © OpenStreetMap contributors，再利用須同樣以 ODbL 釋出）・<a href={base + 'data/parks.geojson'}>parks.geojson</a>（國家公園範圍）・<a href={base + 'data/park-hq.geojson'}>park-hq.geojson</a>（管理處位置，ODbL）・<a href={base + 'data/peaks.geojson'}>peaks.geojson</a>（主要山峰位置與標高，ODbL；標高取自 OSM 三角點資料，與常見刊載值可能差 1～2 m）。</p>
 
     <h2 id="license">授權</h2>
     <table>
@@ -65,7 +65,7 @@ const base = import.meta.env.BASE_URL;
       <tr><td>文字、表格、座標</td><td>CC BY 4.0，標示「台灣山屋誌 Taiwan Hut Atlas」</td></tr>
       <tr><td>照片</td><td>CC BY-NC 4.0（Phase 2 起）</td></tr>
       <tr><td>程式碼</td><td>MIT</td></tr>
-      <tr><td>OSM 衍生資料（路線、登山口、接駁道路、管理處位置）</td><td>ODbL 1.0，© OpenStreetMap contributors；與上列 CC BY 4.0 內容分檔，不混合</td></tr>
+      <tr><td>OSM 衍生資料（路線、登山口、接駁道路、管理處位置、山峰）</td><td>ODbL 1.0，© OpenStreetMap contributors；與上列 CC BY 4.0 內容分檔，不混合</td></tr>
       <tr><td>引用之第三方來源</td><td>各依原授權，逐筆標於來源表（政府資料開放授權、CC BY-SA、著作權保留等）</td></tr>
     </table>
     <p>由初樸建築師事務所 ProtoPlain Architects 發起並維護。</p>

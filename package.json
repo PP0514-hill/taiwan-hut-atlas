@@ -14,6 +14,7 @@
     "check": "node scripts/check-data.mjs",
     "check:agency": "node scripts/check-agency.mjs",
     "build:routes": "node scripts/build-routes.mjs",
+    "build:peaks": "node scripts/build-peaks.mjs",
     "prebuild": "node scripts/check-data.mjs && node scripts/publish-data.mjs",
     "predev": "node scripts/publish-data.mjs"
   },
